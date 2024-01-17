@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: BaseUI_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: eb3248e1a62d6794dbfa2ef4f1053fff, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 701604610048
+    m_Localized: Kredite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 920199151616
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1442822012928
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333640085504
+    m_Localized: Versteckte Objekte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1016869470208
+    m_Localized: Chronometer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614912540672
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240059203584
+    m_Localized: UNLOCK!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323286777856
+    m_Localized: Von E-Artsup
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95602627362816
+    m_Localized: Start/Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96046195982336
+    m_Localized: Code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96252127920128
+    m_Localized: Maschine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96371875299328
+    m_Localized: Hinweis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97098957897728
+    m_Localized: Verstecktes Objekt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97383088439296
+    m_Localized: "Hinweise \xFCberarbeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98847651315712
+    m_Localized: Strafe
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

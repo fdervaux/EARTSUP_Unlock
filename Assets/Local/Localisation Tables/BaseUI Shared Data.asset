@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: BaseUI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: BaseUI
+  m_TableCollectionNameGuidString: eb3248e1a62d6794dbfa2ef4f1053fff
+  m_Entries:
+  - m_Id: 920199151616
+    m_Key: OP_Music
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1442822012928
+    m_Key: OP_Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1333640085504
+    m_Key: OP_HiddenObjects
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1016869470208
+    m_Key: OP_Chrono
+    m_Metadata:
+      m_Items: []
+  - m_Id: 614912540672
+    m_Key: HM_Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 240059203584
+    m_Key: HM_Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 323286777856
+    m_Key: HM_SubTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 701604610048
+    m_Key: HM_Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95602627362816
+    m_Key: TU_Start/Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96046195982336
+    m_Key: TU_Code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96252127920128
+    m_Key: TU_Machine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 96371875299328
+    m_Key: TU_Hint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97098957897728
+    m_Key: TU_HiddenObject
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97383088439296
+    m_Key: TU_ReviewClues
+    m_Metadata:
+      m_Items: []
+  - m_Id: 98847651315712
+    m_Key: TU_Penalty
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 8699563997034446872
+  references:
+    version: 2
+    RefIds:
+    - rid: 8699563997034446872
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1705504015118
