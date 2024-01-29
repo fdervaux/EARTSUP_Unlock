@@ -119,6 +119,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _image: {fileID: 0}
+  _secondaryImage: {fileID: 0}
+  _changeColorOnPress: 0
+  _pressedColor: {r: 1, g: 1, b: 1, a: 1}
+  _normalColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2143106121920637487
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,6 +436,7 @@ GameObject:
   - component: {fileID: 8354338171435571274}
   - component: {fileID: 6397659837877685319}
   - component: {fileID: 1868441065387730752}
+  - component: {fileID: 5447080172399133325}
   m_Layer: 5
   m_Name: Popup - Options
   m_TagString: Untagged
@@ -492,12 +498,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _popupRectTransform: {fileID: 4756997961833154427}
-  _popupAnimationCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  _OnPopupOpen:
+    m_PersistentCalls:
+      m_Calls: []
+  _OnPopupClose:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5447080172399133325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7940604582196781336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d67aa3c05c34c8049b2fe439a97117ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _musicToggle: {fileID: 2670172708732466159}
   _chronometerToggle: {fileID: 6929973665717648024}
   _hiddenObjectsToggle: {fileID: 8420813366143992584}
@@ -655,7 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6144277463319893868, guid: 089bcebf012659f46a09ff844f244046, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6144277463319893868, guid: 089bcebf012659f46a09ff844f244046, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -911,7 +929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6144277463319893868, guid: 089bcebf012659f46a09ff844f244046, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6144277463319893868, guid: 089bcebf012659f46a09ff844f244046, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1165,6 +1183,14 @@ PrefabInstance:
       propertyPath: managedReferences[8699563997034446892].m_VariantData.Array.data[3].localeIdentifier.m_Code
       value: de
       objectReference: {fileID: 0}
+    - target: {fileID: 5998263617053785449, guid: 737d7a98c1eea1a4cb2385a0832003dd, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998263617053785449, guid: 737d7a98c1eea1a4cb2385a0832003dd, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6951049730694891104, guid: 737d7a98c1eea1a4cb2385a0832003dd, type: 3}
       propertyPath: m_Name
       value: Option Flags
@@ -1277,7 +1303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6144277463319893868, guid: 089bcebf012659f46a09ff844f244046, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6144277463319893868, guid: 089bcebf012659f46a09ff844f244046, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target

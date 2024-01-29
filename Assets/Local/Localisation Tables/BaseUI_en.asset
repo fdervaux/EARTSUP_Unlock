@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: eb3248e1a62d6794dbfa2ef4f1053fff, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8699564217816317960
   m_TableData:
   - m_Id: 240059203584
     m_Localized: UNLOCK!
@@ -78,6 +79,52 @@ MonoBehaviour:
     m_Localized: Penalty
     m_Metadata:
       m_Items: []
+  - m_Id: 3552398692106240
+    m_Localized: Please enter a 4-digit code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553134687600640
+    m_Localized: <b>Wrong code.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553558693986304
+    m_Localized: You lose {minutes} {minutes:plural:minute|minutes}.
+    m_Metadata:
+      m_Items:
+      - rid: 8699564217816317960
+  - m_Id: 3603514192609280
+    m_Localized: Nothing to report
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3650196057931776
+    m_Localized: "Hint N\xB0{hintNumber}"
+    m_Metadata:
+      m_Items:
+      - rid: 8699564217816317960
+  - m_Id: 3655009420230656
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3655250320080896
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3670168540856320
+    m_Localized: Are you sure you want to leave the game?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3677943337631744
+    m_Localized: Are you sure you want to use an hint?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3678254403993600
+    m_Localized: Are you sure you want to use the solution?
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8699564217816317960
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00c0a45bf19f0c0000c0647fd5f70c00

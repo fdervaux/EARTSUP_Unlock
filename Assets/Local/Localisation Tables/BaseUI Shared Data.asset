@@ -75,6 +75,46 @@ MonoBehaviour:
     m_Key: TU_Penalty
     m_Metadata:
       m_Items: []
+  - m_Id: 3552398692106240
+    m_Key: MP_CodeNotLongEnouth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553134687600640
+    m_Key: MP_WrongCode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553558693986304
+    m_Key: MP_Penalty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3603514192609280
+    m_Key: MP_WrongHint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3650196057931776
+    m_Key: MP_HintTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3655009420230656
+    m_Key: MP_yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3655250320080896
+    m_Key: MP_No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3670168540856320
+    m_Key: TU_QuitConfirmation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3677943337631744
+    m_Key: MP_ConfirmHint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3678254403993600
+    m_Key: MP_ConfimSolution
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

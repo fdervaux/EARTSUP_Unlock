@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: de
   m_SharedData: {fileID: 11400000, guid: eb3248e1a62d6794dbfa2ef4f1053fff, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8699564217816317968
   m_TableData:
   - m_Id: 701604610048
     m_Localized: Kredite
@@ -78,6 +79,52 @@ MonoBehaviour:
     m_Localized: Strafe
     m_Metadata:
       m_Items: []
+  - m_Id: 3552398692106240
+    m_Localized: Bitte geben Sie einen vierstelligen Code ein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553134687600640
+    m_Localized: <b>Falscher Code.</b>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553558693986304
+    m_Localized: Sie verlieren {minutes} {minutes:plural:minute|minuten}.
+    m_Metadata:
+      m_Items:
+      - rid: 8699564217816317968
+  - m_Id: 3603514192609280
+    m_Localized: Nichts zu berichten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3650196057931776
+    m_Localized: Hinweis {hintNumber}
+    m_Metadata:
+      m_Items:
+      - rid: 8699564217816317968
+  - m_Id: 3655009420230656
+    m_Localized: Ja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3655250320080896
+    m_Localized: Nicht
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3670168540856320
+    m_Localized: Sind Sie sicher, dass Sie das Spiel verlassen wollen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3677943337631744
+    m_Localized: Sind Sie sicher, dass Sie einen Hinweis verwenden wollen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3678254403993600
+    m_Localized: "Sind Sie sicher, dass Sie die L\xF6sung verwenden m\xF6chten?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8699564217816317968
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00c0a45bf19f0c0000c0647fd5f70c00

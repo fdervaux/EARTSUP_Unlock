@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: eb3248e1a62d6794dbfa2ef4f1053fff, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 8699564217816317969
   m_TableData:
   - m_Id: 920199151616
     m_Localized: "M\xFAsica"
@@ -78,6 +79,52 @@ MonoBehaviour:
     m_Localized: "sanci\xF3n"
     m_Metadata:
       m_Items: []
+  - m_Id: 3552398692106240
+    m_Localized: "Por favor, introduzca un c\xF3digo de 4 d\xEDgitos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553134687600640
+    m_Localized: "<b>C\xF3digo incorrecto</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3553558693986304
+    m_Localized: Pierdes {minutes} {minutes:plural:minuto|minutos}.
+    m_Metadata:
+      m_Items:
+      - rid: 8699564217816317969
+  - m_Id: 3603514192609280
+    m_Localized: ' nada que comunicar'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3650196057931776
+    m_Localized: "Pista n\xB0{hintNumber}"
+    m_Metadata:
+      m_Items:
+      - rid: 8699564217816317969
+  - m_Id: 3655009420230656
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3655250320080896
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3670168540856320
+    m_Localized: "\xBFEst\xE1s seguro de que quieres dejar el juego?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3677943337631744
+    m_Localized: "\xBFEst\xE1 seguro de que quiere utilizar un \xEDndice?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3678254403993600
+    m_Localized: "\xBFEst\xE1s seguro de que quieres utilizar la soluci\xF3n?"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 8699564217816317969
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 00c0a45bf19f0c0000c0647fd5f70c00

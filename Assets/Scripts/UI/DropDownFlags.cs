@@ -38,8 +38,6 @@ public class DropDownFlags : MonoBehaviour, IPointerClickHandler, ICancelHandler
                 _selectedFlagImageIndex = index;
             GameObject item = Instantiate(_itemPrefab, _itemsContainer);
 
-            Debug.Log(locale.name);
-
             DropDownFlagsItemData data = new DropDownFlagsItemData
             {
                 sprite = _localFlagDb._flags[locale.name],
@@ -168,6 +166,8 @@ public class DropDownFlags : MonoBehaviour, IPointerClickHandler, ICancelHandler
         _itemsUI[_selectedFlagImageIndex].setOn(false);
 
         _selectedFlagImageIndex = index;
+
+        Debug.Log("test change Locale");
 
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
 

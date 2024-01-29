@@ -2,26 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class PopupViewController : MonoBehaviour
 {
     private CanvasGroup _canvasgroup;
     [SerializeField] private RectTransform _popupRectTransform;
-    [SerializeField] private AnimationCurve _popupAnimationCurve;
-
-    [SerializeField] private Toggle _musicToggle;
-    [SerializeField] private Toggle _chronometerToggle;
-    [SerializeField] private Toggle _hiddenObjectsToggle;
-
+    [SerializeField] private UnityEvent _OnPopupOpen;
+    [SerializeField] private UnityEvent _OnPopupClose;
+ 
     // Start is called before the first frame update
     void Start()
     {
         _canvasgroup = GetComponent<CanvasGroup>();
-
-        _musicToggle.isOn = GameManager.Instance.UserSettingsManager.IsMusucOn;
-        _chronometerToggle.isOn = GameManager.Instance.UserSettingsManager.IsChronometerOn;
-        _hiddenObjectsToggle.isOn = GameManager.Instance.UserSettingsManager.IsHiddenObjectsOn;
+        _canvasgroup.alpha = 0;
     }
 
     public void openPopup()
@@ -36,6 +30,18 @@ public class PopupViewController : MonoBehaviour
 
         _canvasgroup.interactable = true;
         _canvasgroup.blocksRaycasts = true;
+
+        _OnPopupOpen.Invoke();
+    }
+
+    public void closePopupImmediate()
+    {
+        _canvasgroup.alpha = 0;
+        _popupRectTransform.localScale = Vector3.zero;
+        _canvasgroup.interactable = false;
+        _canvasgroup.blocksRaycasts = false;
+
+        _OnPopupClose.Invoke();
     }
 
     public void closePopup()
@@ -49,21 +55,8 @@ public class PopupViewController : MonoBehaviour
 
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;
-    }
 
-    public void OnMusicToggleChanged(bool isOn)
-    {
-        GameManager.Instance.UserSettingsManager.SetMusic(isOn);
-    }
-
-    public void OnChronometerToggleChanged(bool isOn)
-    {
-        GameManager.Instance.UserSettingsManager.SetChronometer(isOn);
-    }
-
-    public void OnHiddenObjectsToggleChanged(bool isOn)
-    {
-        GameManager.Instance.UserSettingsManager.SetHiddenObjects(isOn);
+        _OnPopupClose.Invoke();
     }
 
     // Update is called once per frame

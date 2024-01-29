@@ -78,6 +78,9 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     public void OnPointerDown(PointerEventData eventData)
     {
         transform.DOScale(1.1f, 0.1f);
+        GameManager.Instance.SoundManager.playButtonClick();
+        _onClick.Invoke();
+
     }
 
     public void OnPointerUp(PointerEventData eventData)
@@ -94,7 +97,5 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
             }
 
         }
-
-        _onClick.Invoke();
     }
 }
