@@ -121,6 +121,10 @@ MonoBehaviour:
     m_Localized: "\xBFEst\xE1s seguro de que quieres utilizar la soluci\xF3n?"
     m_Metadata:
       m_Items: []
+  - m_Id: 4647357738434560
+    m_Localized: "m\xE1quina no encontrada"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

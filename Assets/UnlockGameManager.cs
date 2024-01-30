@@ -1,9 +1,23 @@
+using System;
 using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Localization;
+using UnityEngine.Localization.SmartFormat.PersistentVariables;
+using UnityEngine.SocialPlatforms;
 
+public struct HintSelectorItem
+{
+    public string name;
+    public Hint hint;
+    public HiddenObject hiddenObject;
+}
+
+
+[DefaultExecutionOrder(-1)]
 public class UnlockGameManager : MonoBehaviour
 {
     public static UnlockGameManager Instance;
@@ -32,15 +46,62 @@ public class UnlockGameManager : MonoBehaviour
     [SerializeField] private PopupMessageController _popupMessageController;
     [SerializeField] private LocalizedString _quitGameString;
 
+    [SerializeField] private HintSelectorController _hintSelectorController;
+
+    [SerializeField] private LocalizedString _penaltyString;
+
+    private List<HintSelectorItem> _unlockedHints = new List<HintSelectorItem>();
+    public List<HintSelectorItem> UnlockedHints => _unlockedHints;
+
+
+    public void TriggerEvent(string eventName)
+    {
+        UnlockEvent unlockEvent;
+        _unlockGameData.UnlockEvents.TryGetValue(eventName, out unlockEvent);
+
+        if (unlockEvent == null)
+            return;
+    
+        if(unlockEvent._isPenaltyEvent)
+        {
+            (_penaltyString["minutes"] as IntVariable).Value = GetPenaltyTimeInMinute();
+            _popupMessageController.SetupPopupMessage("<b> " + unlockEvent.localizedString.GetLocalizedString() + "</b>" + "\n" + _penaltyString.GetLocalizedString(), true, false, false);
+            _popupMessageController.OpenPopupMessage();
+
+            TriggerPenalty();
+            return;
+        }
+
+        _popupMessageController.SetupPopupMessage(unlockEvent.localizedString.GetLocalizedString(), false, false, false);
+        _popupMessageController.OpenPopupMessage();
+    
+    }
+
+    public void OpenPopupMessage(float delay = 0f, Action action = null)
+    {
+        if (delay == 0f)
+        {
+            _popupMessageController.transform.GetComponent<PopupViewController>().openPopup();
+            return;
+        }
+
+        DOTween.Sequence()
+            .SetDelay(delay)
+            .OnComplete(() =>
+            {
+                _popupMessageController.transform.GetComponent<PopupViewController>().openPopup();
+                action?.Invoke();
+            });
+    }
+
+
+
     public void OnCloseButton()
     {
-        _popupMessageController.SetMessage(_quitGameString.GetLocalizedString());
-        _popupMessageController.ShowMessage(true);
-        _popupMessageController.ShowImage(false);
-        _popupMessageController.ShowYesNoButtons(true);
-        _popupMessageController.ShowHintButtons(false);
+        _popupMessageController.SetupPopupMessage(_quitGameString.GetLocalizedString(), false, true, false);
 
-        _popupMessageController.OnYesNoValidate.AddListener((bool value) => {
+        _popupMessageController.OnYesNoValidate.AddListener((bool value) =>
+        {
             _popupMessageController.OnYesNoValidate.RemoveAllListeners();
             if (value)
             {
@@ -52,7 +113,7 @@ public class UnlockGameManager : MonoBehaviour
             }
         });
 
-        _popupMessageController.transform.GetComponent<PopupViewController>().openPopup();
+        OpenPopupMessage();
 
     }
 
@@ -76,11 +137,46 @@ public class UnlockGameManager : MonoBehaviour
         }
     }
 
+    public Machine GetMachine(string machineName)
+    {
+        Machine machine;
+        _unlockGameData.Machines.TryGetValue(machineName, out machine);
+
+        return machine;
+    }
+
+    public Code GetCode(string codeName)
+    {
+        Code code;
+        _unlockGameData.Codes.TryGetValue(codeName, out code);
+
+        return code;
+    }
+
 
     public Hint getHint(string hintName)
     {
         Hint hint;
         _unlockGameData.Hints.TryGetValue(hintName, out hint);
+
+        if (hint == null)
+            return null;
+
+        HintSelectorItem unlockHint = _unlockedHints.Find((x) => x.name == hintName);
+
+        if (hint != null && unlockHint.hint == null)
+        {
+            HintSelectorItem item = new HintSelectorItem
+            {
+                name = hintName,
+                hint = hint,
+                hiddenObject = null
+            };
+
+            _unlockedHints.Add(item);
+            _hintSelectorController.SetupHints();
+        }
+
         return hint;
     }
 
@@ -163,32 +259,52 @@ public class UnlockGameManager : MonoBehaviour
     private void PlayPauseButtonClick()
     {
         _isPlaying = !_isPlaying;
+        _playPauseButton.SwitchImage();
 
         if (_isPlaying)
         {
-            _playPauseButton.SwitchImage();
+            GameManager.Instance.SoundManager.PlayMusic();
+        }
+        else
+        {
+            GameManager.Instance.SoundManager.PauseMusic();
+        }
+    }
+
+    public void UpdateButtonState()
+    {
+        if (_isPlaying)
+        {
             _penaltyButton.Activate();
             _clueButton.Activate();
             _codeButton.Activate();
             _machineButton.Activate();
-            GameManager.Instance.SoundManager.PlayMusic();
+
+
+            if (_unlockedHints.Count > 0)
+            {
+                _reviewClueButton.Activate();
+            }
+            else
+            {
+                _reviewClueButton.Deactivate();
+            }
         }
 
         else
         {
-            _playPauseButton.SwitchImage();
             _penaltyButton.Deactivate();
             _clueButton.Deactivate();
             _codeButton.Deactivate();
             _machineButton.Deactivate();
-            GameManager.Instance.SoundManager.PauseMusic();
+            _reviewClueButton.Deactivate();
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateTime(Time.deltaTime);
+        UpdateButtonState();
     }
 }

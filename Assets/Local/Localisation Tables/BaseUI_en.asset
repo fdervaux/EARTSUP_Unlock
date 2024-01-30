@@ -121,6 +121,10 @@ MonoBehaviour:
     m_Localized: Are you sure you want to use the solution?
     m_Metadata:
       m_Items: []
+  - m_Id: 4647357738434560
+    m_Localized: Machine not found
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:

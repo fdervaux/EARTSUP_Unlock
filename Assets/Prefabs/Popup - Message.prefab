@@ -2069,6 +2069,7 @@ MonoBehaviour:
   _OnPopupClose:
     m_PersistentCalls:
       m_Calls: []
+  _animationTime: 0.2
 --- !u!114 &3615617772067672493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2126,6 +2127,8 @@ MonoBehaviour:
     - name: hintNumber
       variable:
         rid: 8699564225758232582
+  _selectedColor: {r: 0, g: 0, b: 0, a: 0}
+  _normalColor: {r: 0, g: 0, b: 0, a: 0}
   references:
     version: 2
     RefIds:

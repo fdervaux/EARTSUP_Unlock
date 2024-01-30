@@ -30,6 +30,24 @@ MonoBehaviour:
     m_Localized: Dies ist der erste Hinweis
     m_Metadata:
       m_Items: []
+  - m_Id: 750410338189312
+    m_Localized: "Nein. Es sind die richtigen Zahlen, aber sie sind nicht in der
+      richtigen Reihenfolge. \xDCberlegen Sie: Die Farben sollen Sie leiten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750833895784448
+    m_Localized: "Bravo! Sie haben das Tutorial abgeschlossen! Sie k\xF6nnen sich
+      nun Ihre Punktzahl und Ihre Zeit ansehen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816848784637952
+    m_Localized: hiddenObject
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002951156219904
+    m_Localized: Event1
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

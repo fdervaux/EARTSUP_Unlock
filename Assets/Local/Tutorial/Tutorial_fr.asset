@@ -30,6 +30,24 @@ MonoBehaviour:
     m_Localized: Ceci est la solution
     m_Metadata:
       m_Items: []
+  - m_Id: 750410338189312
+    m_Localized: "Non. Ce sont les bons chiffres mais ils ne sont pas dans le bon
+      ordre. R\xE9fl\xE9chissez : les couleurs doivent vous guider."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 750833895784448
+    m_Localized: "Bravo ! Vous avez termin\xE9 le tutoriel ! Vous pouvez maintenant
+      regarder votre score et votre temps."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 816848784637952
+    m_Localized: hiddenObject
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1002951156219904
+    m_Localized: Event1
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

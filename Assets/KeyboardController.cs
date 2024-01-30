@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
+
 public class KeyboardController : MonoBehaviour
 {
 
@@ -15,7 +16,7 @@ public class KeyboardController : MonoBehaviour
     [SerializeField] private Color _clearColor;
     [SerializeField] private Color _okColor;
 
-    [SerializeField] private TextMeshProUGUI  _codeText;
+    [SerializeField] private TextMeshProUGUI _codeText;
 
     [SerializeField] private UnityEvent<string> _onOk;
 
@@ -24,7 +25,7 @@ public class KeyboardController : MonoBehaviour
         if (_codeText.text.Length >= 4)
         {
             return;
-        }   
+        }
         _codeText.text += i.ToString();
     }
 

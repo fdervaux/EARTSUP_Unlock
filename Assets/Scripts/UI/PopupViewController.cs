@@ -10,7 +10,13 @@ public class PopupViewController : MonoBehaviour
     [SerializeField] private RectTransform _popupRectTransform;
     [SerializeField] private UnityEvent _OnPopupOpen;
     [SerializeField] private UnityEvent _OnPopupClose;
- 
+
+    public UnityEvent OnPopupOpen => _OnPopupOpen;
+    public UnityEvent OnPopupClose => _OnPopupClose;
+
+
+    [SerializeField, Range(0, 1)] private float _animationTime = 0.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,11 +26,11 @@ public class PopupViewController : MonoBehaviour
 
     public void openPopup()
     {
-        _canvasgroup.DOFade(1, 0.2f).SetEase(Ease.OutCubic);
+        _canvasgroup.DOFade(1, _animationTime/2).SetEase(Ease.OutCubic);
 
         _popupRectTransform
-            .DOScale(1, 0.5f)
-            .SetDelay(0.2f)
+            .DOScale(1, _animationTime)
+            .SetDelay(_animationTime/2)
             .From(0)
             .SetEase(Ease.OutBack);
 
@@ -46,22 +52,24 @@ public class PopupViewController : MonoBehaviour
 
     public void closePopup()
     {
-        _canvasgroup.DOFade(0, 0.2f).SetEase(Ease.OutCubic).SetDelay(0.5f);
+        _canvasgroup.DOFade(0, _animationTime/2).SetEase(Ease.OutCubic).SetDelay(_animationTime);
 
         _popupRectTransform
-            .DOScale(0, 0.5f)
+            .DOScale(0, _animationTime)
             .From(1)
-            .SetEase(Ease.InBack);
+            .SetEase(Ease.InBack)
+            .OnComplete(() =>
+            {
+                _OnPopupClose.Invoke();
+            });
 
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;
-
-        _OnPopupClose.Invoke();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

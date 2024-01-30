@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
 using UnityEngine.Events;
@@ -37,7 +40,7 @@ public class PopupMessageController : MonoBehaviour
     //[SerializeField] public UnityEvent<int> OnHintValidate;
     [SerializeField] private Sprite _sprite;
     [SerializeField] private Color _color;
-    [SerializeField] private string _message; 
+    [SerializeField] private string _message;
 
     [SerializeField] private LocalizedString _hintConfirmString;
     [SerializeField] private LocalizedString _hintSolutionString;
@@ -47,6 +50,8 @@ public class PopupMessageController : MonoBehaviour
     [SerializeField] private Color _normalColor;
 
     private Image _image;
+
+    private PopupViewController _popupViewController;
 
     public string CurrentHintName
     {
@@ -60,30 +65,61 @@ public class PopupMessageController : MonoBehaviour
         set => _currentHint = value;
     }
 
-    public void UpdateHintPopupMessage( Hint hint, string hintName, string message)
+    public void OpenPopupMessage(float delay = 0f, Action action = null)
     {
-        (_hintTitleString["hintNumber"] as IntVariable).Value = int.Parse(hintName);
-        SetMessage("<b>" + _hintTitleString.GetLocalizedString() + "</b>\n" + message);
-        ShowMessage(true);
-        ShowImage(false);
-        ShowYesNoButtons(false);
-
-        if(hint == null)
+        if (delay == 0f)
         {
-            ShowHintButtons(false);
+            _popupViewController.openPopup();
+            action?.Invoke();
             return;
         }
 
-        ShowHintButtons(true, hint.HasMoreHint, hint.HasSolution);
+        DOTween.Sequence()
+            .SetDelay(delay)
+            .OnComplete(() =>
+            {
+                _popupViewController.openPopup();
+                action?.Invoke();
+            });
     }
 
+    public void SetupPopupMessage(string message, bool showImage, bool showYesNoButtons, bool showHintButtons, bool showSecondHint = false, bool showAnwser = false)
+    {
+        SetMessage(message);
+        ShowMessage(message != "");
+        ShowImage(showImage);
+        ShowYesNoButtons(showYesNoButtons);
+        ShowHintButtons(showHintButtons, showSecondHint, showAnwser);
+    }
+
+    public void ResetPopupMessage()
+    {
+        _messageText.gameObject.SetActive(false);
+        _imageContainer.SetActive(false);
+        _yesNoButtonsContainer.SetActive(false);
+        _hintButtonsContainer.SetActive(false);
+    }
+
+    public void UpdateHintPopupMessage(Hint hint, string hintName, string message)
+    {
+        (_hintTitleString["hintNumber"] as IntVariable).Value = int.Parse(hintName);
+        SetupPopupMessage(
+            "<b>" + _hintTitleString.GetLocalizedString() + "</b>\n" + message,
+            false,
+            false,
+            hint != null,
+            hint == null ? false : hint.HasMoreHint,
+            hint == null ? false : hint.HasSolution
+        );
+
+    }
 
     public void OnHint(int value)
-    {   
+    {
         if (value == 1)
         {
             UpdateHintPopupMessage(_currentHint, CurrentHintName, _currentHint.hintMessage1.GetLocalizedString());
-            
+
             _firstHintButton.GetComponent<Image>().color = _selectedColor;
             _secondHintButton.GetComponent<Image>().color = _normalColor;
             _anwserButton.GetComponent<Image>().color = _normalColor;
@@ -94,28 +130,22 @@ public class PopupMessageController : MonoBehaviour
         if (value == 2)
         {
             PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
-            popupMessageController.SetMessage(_hintConfirmString.GetLocalizedString());
-            popupMessageController.ShowMessage(true);
-            popupMessageController.ShowImage(false);
-            popupMessageController.ShowYesNoButtons(true);
-            popupMessageController.ShowHintButtons(false);
+            popupMessageController.SetupPopupMessage(_hintConfirmString.GetLocalizedString(), false, true, false);
 
-            popupMessageController.OnYesNoValidate.AddListener((bool value) => {
+            popupMessageController.OnYesNoValidate.AddListener((bool value) =>
+            {
                 popupMessageController.OnYesNoValidate.RemoveAllListeners();
                 if (value)
                 {
                     UpdateHintPopupMessage(_currentHint, _currentHintName, _currentHint.hintMessage2.GetLocalizedString());
                     _firstHintButton.GetComponent<Image>().color = _normalColor;
                     _secondHintButton.GetComponent<Image>().color = _selectedColor;
-                    _anwserButton.GetComponent<Image>().color = _normalColor;                
+                    _anwserButton.GetComponent<Image>().color = _normalColor;
                 }
                 _messagePopup.GetComponent<PopupViewController>().closePopup();
             });
 
             _messagePopup.GetComponent<PopupViewController>().openPopup();
-
-            
-
             return;
 
         }
@@ -123,13 +153,10 @@ public class PopupMessageController : MonoBehaviour
         if (value == 3)
         {
             PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
-            popupMessageController.SetMessage(_hintSolutionString.GetLocalizedString());
-            popupMessageController.ShowMessage(true);
-            popupMessageController.ShowImage(false);
-            popupMessageController.ShowYesNoButtons(true);
-            popupMessageController.ShowHintButtons(false);
+            popupMessageController.SetupPopupMessage(_hintConfirmString.GetLocalizedString(), false, true, false);
 
-            popupMessageController.OnYesNoValidate.AddListener((bool value) => {
+            popupMessageController.OnYesNoValidate.AddListener((bool value) =>
+            {
                 popupMessageController.OnYesNoValidate.RemoveAllListeners();
                 if (value)
                 {
@@ -167,6 +194,9 @@ public class PopupMessageController : MonoBehaviour
         _firstHintButton.GetComponent<Image>().color = _selectedColor;
         _secondHintButton.GetComponent<Image>().color = _normalColor;
         _anwserButton.GetComponent<Image>().color = _normalColor;
+
+        _popupViewController = GetComponent<PopupViewController>();
+        _popupViewController.OnPopupClose.AddListener(ResetPopupMessage);
     }
 
     public void ShowYesNoButtons(bool show)
@@ -175,14 +205,14 @@ public class PopupMessageController : MonoBehaviour
         _yesNoButtonsContainer.SetActive(show);
     }
 
-    public void ShowHintButtons(bool show, bool showSecondHint = false, bool showAnwser = false)
+    public void ShowHintButtons(bool show, bool showSecondHint, bool showAnwser)
     {
         _showHintButton = show;
         _hintButtonsContainer.SetActive(show);
         _secondHintButton.gameObject.SetActive(showSecondHint);
         _anwserButton.gameObject.SetActive(showAnwser);
 
-        _anwserButton.transform.GetComponentInChildren<TextMeshProUGUI>().text = !showSecondHint && showAnwser ? "2": "3";
+        _anwserButton.transform.GetComponentInChildren<TextMeshProUGUI>().text = !showSecondHint && showAnwser ? "2" : "3";
     }
 
     public void ShowImage(bool show)

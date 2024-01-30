@@ -504,6 +504,7 @@ MonoBehaviour:
   _OnPopupClose:
     m_PersistentCalls:
       m_Calls: []
+  _animationTime: 0.2
 --- !u!114 &5447080172399133325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,7 +1083,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 160
+          value: 0
         - localeIdentifier:
             m_Code: fr
           value: 0
@@ -1182,6 +1183,10 @@ PrefabInstance:
     - target: {fileID: 4357475993447226670, guid: 737d7a98c1eea1a4cb2385a0832003dd, type: 3}
       propertyPath: managedReferences[8699563997034446892].m_VariantData.Array.data[3].localeIdentifier.m_Code
       value: de
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998263617053785449, guid: 737d7a98c1eea1a4cb2385a0832003dd, type: 3}
+      propertyPath: m_Alpha
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5998263617053785449, guid: 737d7a98c1eea1a4cb2385a0832003dd, type: 3}
       propertyPath: m_Interactable
@@ -1517,7 +1522,7 @@ MonoBehaviour:
         m_VariantData:
         - localeIdentifier:
             m_Code: en
-          value: 160
+          value: 0
         - localeIdentifier:
             m_Code: fr
           value: 0

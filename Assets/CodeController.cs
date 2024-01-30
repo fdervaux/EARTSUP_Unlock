@@ -9,60 +9,43 @@ using UnityEngine.Localization.SmartFormat.PersistentVariables;
 
 public class CodeController : MonoBehaviour
 {
-    [SerializeField] private GameObject _messagePopup;
-    [SerializeField] private LocalizedString _notLongEnoughtString;    
+    [SerializeField] private PopupMessageController _messagePopupController;
+    [SerializeField] private LocalizedString _notLongEnoughtString;
     [SerializeField] private LocalizedString _wrongCodeString;
     [SerializeField] private LocalizedString _penaltyString;
-
-    [SerializeField] private UnityEvent _onWrongCode;
     
 
-    public void OnCodeValidate(string code)
+
+    public void OnCodeValidate(string stringCode)
     {
-        PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
+        //PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
 
-        if (code.Length != 4)
+        if (stringCode.Length != 4)
         {
-
-            popupMessageController.SetMessage(_notLongEnoughtString.GetLocalizedString());
-            popupMessageController.ShowMessage(true);
-            popupMessageController.ShowImage(false);
-            popupMessageController.ShowYesNoButtons(false);
-            popupMessageController.ShowHintButtons(false);
-            _messagePopup.GetComponent<PopupViewController>().openPopup();
+            _messagePopupController.SetupPopupMessage(_notLongEnoughtString.GetLocalizedString(), false, false, false);
+            _messagePopupController.OpenPopupMessage();
             return;
         }
 
+
+        Code code = UnlockGameManager.Instance.GetCode(stringCode);
+
+        if (code != null)
+        {
+
+            DOTween.Sequence().SetDelay(0.3f).onComplete += () => UnlockGameManager.Instance.TriggerEvent(code.eventName);
+            GetComponent<PopupViewController>().closePopup();
+
+            return;
+        }
+
+
         (_penaltyString["minutes"] as IntVariable).Value = UnlockGameManager.Instance.GetPenaltyTimeInMinute();
-        popupMessageController.SetMessage("<b> " + _wrongCodeString.GetLocalizedString() + "</b>" + "\n" + _penaltyString.GetLocalizedString());
-        popupMessageController.ShowMessage(true);
-        popupMessageController.ShowImage(true);
-        popupMessageController.ShowYesNoButtons(false);
-        popupMessageController.ShowHintButtons(false);
-
-        
-        _onWrongCode.Invoke();
-
-        DOTween.Sequence()
-            .SetDelay(0.3f)
-            .OnComplete(() => 
-            {
-                _messagePopup.GetComponent<PopupViewController>().openPopup();
-                UnlockGameManager.Instance.TriggerPenalty();
-            });
-
-        
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        _messagePopupController.SetupPopupMessage("<b> " + _wrongCodeString.GetLocalizedString() + "</b>" + "\n" + _penaltyString.GetLocalizedString(), true, false, false);
+        GetComponent<PopupViewController>().closePopup();
+        _messagePopupController.OpenPopupMessage(0.3f, () =>
+        {
+            UnlockGameManager.Instance.TriggerPenalty();
+        });
     }
 }

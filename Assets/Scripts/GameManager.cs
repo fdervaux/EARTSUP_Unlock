@@ -37,9 +37,6 @@ public class UserSettingsManager
 
     public void Load()
     {
-        Debug.Log("Load");
-        Debug.Log(PlayerPrefs.GetInt("Music", 1));
-
         SetMusic(PlayerPrefs.GetInt("Music", 1) == 1);
 
         _isChronometerOn = PlayerPrefs.GetInt("Chronometer", 1) == 1;
@@ -126,7 +123,7 @@ public class SoundManager
 
 }
 
-[DefaultExecutionOrder(-1)]
+[DefaultExecutionOrder(-2)]
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }

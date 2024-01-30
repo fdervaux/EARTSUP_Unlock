@@ -167,8 +167,6 @@ public class DropDownFlags : MonoBehaviour, IPointerClickHandler, ICancelHandler
 
         _selectedFlagImageIndex = index;
 
-        Debug.Log("test change Locale");
-
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
 
         //_selectedFlagImage.sprite = _items[index].sprite;

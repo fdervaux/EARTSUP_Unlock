@@ -18,10 +18,12 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
     [SerializeField] private Color _pressedColor = Color.white;
     [SerializeField] private Color _normalColor = Color.white;
 
+    [SerializeField] private bool _activateOnStart = false;
+
 
     private CanvasGroup _canvasgroup;
 
-    private bool _isActivated = true;
+    private bool _isActivated = false;
 
     public bool IsActivated { get => _isActivated; }
 
@@ -57,10 +59,22 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
             return;
 
         _canvasgroup.alpha = 0.5f;
+        _canvasgroup.interactable = false;
+        _canvasgroup.blocksRaycasts = false;
     }
+
+    public void Start()
+    {
+        if (_activateOnStart)
+            Activate();
+    }
+    
 
     public void Activate()
     {
+        if(_isActivated)
+            return;
+
         _canvasgroup.DOFade(1, 0.2f).SetEase(Ease.OutCubic);
         _canvasgroup.interactable = true;
         _canvasgroup.blocksRaycasts = true;
@@ -69,6 +83,9 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     public void Deactivate()
     {
+        if(!_isActivated)
+            return;
+
         _canvasgroup.DOFade(0.5f, 0.2f).SetEase(Ease.OutCubic);
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;

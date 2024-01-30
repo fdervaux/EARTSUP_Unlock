@@ -8,36 +8,24 @@ using UnityEngine.Localization.SmartFormat.PersistentVariables;
 
 public class HintViewController : MonoBehaviour
 {
-    [SerializeField] private GameObject _messagePopup;
+    [SerializeField] private PopupMessageController _messagePopupController;
     [SerializeField] private LocalizedString _wrongHintString;
-
-
-    [SerializeField] private UnityEvent _onHint;
+    [SerializeField] private LocalizedString _hintConfirmString;
+    [SerializeField] private LocalizedString _hintSolutionString;
+    
 
     public void OnHintValidate(string hintName)
     {
-
-        PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
-
         Hint hint = UnlockGameManager.Instance.getHint(hintName);
 
-        popupMessageController.CurrentHint = hint;
-        popupMessageController.CurrentHintName = hintName;
+        _messagePopupController.CurrentHint = hint;
+        _messagePopupController.CurrentHintName = hintName;
 
         if (hint != null)
         {
-            string message = hint.hintMessage1.GetLocalizedString();
-            popupMessageController.OnHint(1);
-
-            _onHint.Invoke();
-
-            DOTween.Sequence()
-                .SetDelay(0.5f)
-                .OnComplete(() =>
-                {
-                    _messagePopup.GetComponent<PopupViewController>().openPopup();
-                });
-
+            _messagePopupController.OnHint(1);
+            GetComponent<PopupViewController>().closePopup();
+            _messagePopupController.OpenPopupMessage(0.3f);
             return;
         }
 
@@ -47,16 +35,8 @@ public class HintViewController : MonoBehaviour
 
         string message2 = _wrongHintString.GetLocalizedString();
 
-        popupMessageController.UpdateHintPopupMessage(hint, hintName, message2);
-
-
-        _onHint.Invoke();
-
-        DOTween.Sequence()
-            .SetDelay(0.5f)
-            .OnComplete(() =>
-            {
-                _messagePopup.GetComponent<PopupViewController>().openPopup();
-            });
+        _messagePopupController.UpdateHintPopupMessage(hint, hintName, message2);
+        GetComponent<PopupViewController>().closePopup();
+        _messagePopupController.OpenPopupMessage(0.3f);
     }
 }
