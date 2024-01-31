@@ -17,6 +17,9 @@ MonoBehaviour:
     - Key: 69
       Value:
         Name: MachineTuto
+    - Key: 12
+      Value:
+        Name: ARMachine
   _hints:
     _serializedList:
     - Key: 1

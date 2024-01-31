@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TutoScene.unity
     guid: fca0c7da4177f2d40a121ea6073fa405
+  - enabled: 1
+    path: Assets/Scenes/Machines/MachineTuto.unity
+    guid: 6f8178b09243bc849bfddab6a76e9bee
+  - enabled: 1
+    path: Assets/Scenes/ARMachine.unity
+    guid: 0d04b790ac5570c4ea022611ab070263
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2a5a88c4c4fd93e44bc56c42dd6223c9, type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ec7ba763e0c312a4e9062ed06450f7c5, type: 2}
     com.unity.addressableassets: {fileID: 11400000, guid: 2a0b3fcc0e6443342a3dc845b1ac0e65, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: b4b2048d55341a748b1627a51543b723, type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: f98cbfa3e8603a344a2235ab8c8678d3, type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 4b6d95f3d34654f4c9a60808b2108a49, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0d8b008aa5de5c743861e91fcdd50785, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f5ea110c301ae2d4b98eb1f13f28b76b, type: 2}

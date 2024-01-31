@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using Unity.VisualScripting;
-using UnityEditor.Localization.Plugins.XLIFF.V20;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Localization;
