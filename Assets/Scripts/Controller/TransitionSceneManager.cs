@@ -25,36 +25,49 @@ public class TransitionSceneManager
     {
         _slider = _loadingScreen.GetComponentInChildren<SliderController>();
         _canvasGroup = _loadingScreen.GetComponent<CanvasGroup>();
-
         _canvasGroup.alpha = 0;
     }
 
-    public void LoadScene(int sceneIndex)
+    public void LoadScene(string sceneName, LoadSceneMode loadSceneMode = LoadSceneMode.Single, Action OnPreviousSceneHidden = null)
     {
-        //Start loading the Scene asynchronously and output the progress bar
+        InitLoader(OnPreviousSceneHidden);
+        GameManager.Instance.StartCoroutine(loadAsync(sceneName, loadSceneMode));
+    }
 
+    public void LoadScene(int sceneIndex, LoadSceneMode loadSceneMode = LoadSceneMode.Single)
+    {
+        InitLoader();
+        GameManager.Instance.StartCoroutine(loadAsync(sceneIndex, loadSceneMode));
+    }
 
+    private void InitLoader(Action OnPreviousSceneHidden = null)
+    {
         _canvasGroup.blocksRaycasts = true;
         _canvasGroup.interactable = true;
         _slider.SetProgress(0);
-        _canvasGroup.DOFade(1, 0.3f).SetEase(Ease.Linear);
-
-        GameManager.Instance.StartCoroutine(LoadSceneAsync(sceneIndex));
+        _canvasGroup.DOFade(1, 0.2f).SetEase(Ease.Linear).OnComplete(() => OnPreviousSceneHidden?.Invoke());
     }
 
-
-
-
-    IEnumerator LoadSceneAsync(int sceneIndex)
+    private IEnumerator loadAsync(string sceneName, LoadSceneMode loadSceneMode)
     {
         yield return new WaitForSeconds(0.3f);
 
-
-        //Begin to load the Scene you specify
-        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneIndex);
-        //Don't let the Scene activate until you allow it to
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName, loadSceneMode);
         asyncOperation.allowSceneActivation = false;
+        yield return LoadAsync(asyncOperation);
+    }
 
+    private IEnumerator loadAsync(int sceneIndex, LoadSceneMode loadSceneMode)
+    {
+        yield return new WaitForSeconds(0.3f);
+
+        AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneIndex, loadSceneMode);
+        asyncOperation.allowSceneActivation = false;
+        yield return LoadAsync(asyncOperation);
+    }
+
+    private IEnumerator  LoadAsync(AsyncOperation asyncOperation)
+    {
         _currentProgressTime = _minTime;
 
         //When the load is still in progress, output the Text and progress bar

@@ -17,7 +17,11 @@ public class MachineKeyboardController : MonoBehaviour
         if (machine != null)
         {   
             GetComponent<PopupViewController>().closePopup();
-            SceneManager.LoadScene(machine.Name,LoadSceneMode.Additive);
+            GameManager.Instance.TransitionSceneManager.LoadScene(machine.Name, LoadSceneMode.Additive, () =>
+            {
+                UnlockGameManager.Instance.HideMenuInstant();
+                
+            });
             //trigger new Machine
             return;
         }

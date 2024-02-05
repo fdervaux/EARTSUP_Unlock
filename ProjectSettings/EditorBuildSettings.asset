@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Machines/MachineTuto.unity
     guid: 6f8178b09243bc849bfddab6a76e9bee
   - enabled: 1
-    path: Assets/Scenes/ARMachine.unity
+    path: Assets/Scenes/Machines/ARMachine.unity
     guid: 0d04b790ac5570c4ea022611ab070263
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2a5a88c4c4fd93e44bc56c42dd6223c9, type: 2}

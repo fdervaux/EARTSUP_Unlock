@@ -22,6 +22,8 @@ public class UnlockGameManager : MonoBehaviour
 {
     public static UnlockGameManager Instance;
 
+    [SerializeField] private Canvas _mainMenu;
+
     [SerializeField] private ButtonController _playPauseButton;
     [SerializeField] private ButtonController _penaltyButton;
     [SerializeField] private ButtonController _clueButton;
@@ -50,8 +52,42 @@ public class UnlockGameManager : MonoBehaviour
 
     [SerializeField] private LocalizedString _penaltyString;
 
+
+    private CanvasGroup _mainMenuCanvasGroup;
     private List<HintSelectorItem> _unlockedHints = new List<HintSelectorItem>();
     public List<HintSelectorItem> UnlockedHints => _unlockedHints;
+
+
+    public void ShowMenu(Action onComplete = null)
+    {
+        _mainMenuCanvasGroup.DOFade(1, 0.2f).SetEase(Ease.Linear).OnComplete(() =>
+        {
+            onComplete?.Invoke();
+        });
+        _mainMenuCanvasGroup.blocksRaycasts = true;
+        _mainMenuCanvasGroup.interactable = true;
+    }
+
+    public void HideMenu()
+    {
+        _mainMenuCanvasGroup.DOFade(0, 0.2f).SetEase(Ease.Linear);
+        _mainMenuCanvasGroup.blocksRaycasts = false;
+        _mainMenuCanvasGroup.interactable = false;
+    }
+    
+    public void ShowMenuInstant()
+    {
+        _mainMenuCanvasGroup.alpha = 1;
+        _mainMenuCanvasGroup.blocksRaycasts = true;
+        _mainMenuCanvasGroup.interactable = true;
+    }
+
+    public void HideMenuInstant()
+    {
+        _mainMenuCanvasGroup.alpha = 0;
+        _mainMenuCanvasGroup.blocksRaycasts = false;
+        _mainMenuCanvasGroup.interactable = false;
+    }
 
 
     public void TriggerEvent(string eventName)
@@ -222,6 +258,8 @@ public class UnlockGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _mainMenuCanvasGroup = _mainMenu.GetComponent<CanvasGroup>();
+
         _playPauseButton.Activate();
         _penaltyButton.Deactivate();
         _clueButton.Deactivate();

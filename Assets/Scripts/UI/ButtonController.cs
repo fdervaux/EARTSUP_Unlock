@@ -20,6 +20,8 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
 
     [SerializeField] private bool _activateOnStart = false;
 
+    private static readonly float _disableAlpha = 0.3f;
+
 
     private CanvasGroup _canvasgroup;
 
@@ -58,7 +60,7 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         if (_canvasgroup == null)
             return;
 
-        _canvasgroup.alpha = 0.5f;
+        _canvasgroup.alpha = _disableAlpha;
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;
     }
@@ -86,7 +88,7 @@ public class ButtonController : MonoBehaviour, IPointerDownHandler, IPointerUpHa
         if(!_isActivated)
             return;
 
-        _canvasgroup.DOFade(0.5f, 0.2f).SetEase(Ease.OutCubic);
+        _canvasgroup.DOFade(_disableAlpha, 0.2f).SetEase(Ease.OutCubic);
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;
         _isActivated = false;
