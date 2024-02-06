@@ -58,21 +58,21 @@ namespace Subnautica
 
         public void OnWASD(InputValue value)
         {
-            Vector2 osef = value.Get<Vector2>();
-            if (osef.x > 0 && transform.position.x < 1)
-                transform.position += Vector3.right;
-            //! droite
-            if (osef.x < 0 && transform.position.x > -1)
-                transform.position += Vector3.left;
-                //! gauche
+            // Vector2 osef = value.Get<Vector2>();
+            // if (osef.x > 0 && transform.position.x < 1)
+            //     transform.position += Vector3.right;
+            // //! droite
+            // if (osef.x < 0 && transform.position.x > -1)
+            //     transform.position += Vector3.left;
+            //     //! gauche
 
             //     // print("Input");
-            //     Vector3 inputVector = Vector3.zero;
-            // inputVector.x = value.Get<Vector2>().x;
-            // inputVector.z = value.Get<Vector2>().y;
+            Vector3 inputVector = Vector3.zero;
+            inputVector.x = value.Get<Vector2>().x;
+            inputVector.z = value.Get<Vector2>().y;
 
-            // if (inputVector != Vector3.zero)
-            //     Move(inputVector);
+            if (inputVector != Vector3.zero)
+                Move(inputVector);
         }
     }
 }
