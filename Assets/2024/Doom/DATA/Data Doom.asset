@@ -14,34 +14,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _machines:
     _serializedList:
+    - Key: 99
+      Value:
+        Name: _Unlock_Doom_Pandemonium
     - Key: 66
       Value:
-        Name: Lecteur de disque
+        Name: _Unlock_Doom_LecteurDisque
     - Key: 73
       Value:
-        Name: 'Coffre fort '
+        Name: '_Unlock_Doom_CoffreFort '
     - Key: 89
       Value:
-        Name: Sarcophage
+        Name: _Unlock_Doom_Sarcophage
     - Key: 81
       Value:
-        Name: Casque en sang
+        Name: _Unlock_Doom_CasqueSang
     - Key: 46
       Value:
-        Name: 'Porte digicode '
+        Name: '_Unlock_Doom_PorteDigicode '
     - Key: 54
       Value:
-        Name: 'Salle tentacules '
+        Name: '_Unlock_Doom_Salletentacules '
     - Key: 88
       Value:
-        Name: "Xylocr\xE2ne"
+        Name: _Unlock_Doom_Xylocrane
     - Key: 44
       Value:
-        Name: PorteTour
+        Name: _Unlock_Doom_PorteTour
   _hints:
     _serializedList: []
   _hiddenObjects:
-    _serializedList: []
+    _serializedList:
+    - Key: 
+      Value:
+        Time: 0
+        message:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
   _codes:
     _serializedList: []
   _unlockEvents:

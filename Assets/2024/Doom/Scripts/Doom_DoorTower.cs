@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DoorTower : MonoBehaviour
+public class Doom_DoorTower : MonoBehaviour
 {
     [SerializeField] private GameObject _digicodeCanvas;
     [SerializeField] private TextMeshProUGUI _digicodeText;
