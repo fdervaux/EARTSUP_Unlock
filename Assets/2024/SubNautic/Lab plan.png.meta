@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9380897e8159f7a419aa5a441304f548
+guid: 00d683f200c86c54f97f7075eb63c031
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 350
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,112 +134,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Arrow_direction_Placeholder_0
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 79
-        width: 758
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44e225dd94535254b82a06ddacfce28b
-      internalID: 1936734752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arrow_direction_Placeholder_1
-      rect:
-        serializedVersion: 2
-        x: 846
-        y: 71
-        width: 674
-        height: 652
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87ed75a6ec6fcb44fad3e05511a2ad50
-      internalID: 1248409900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arrow_direction_Placeholder_2
-      rect:
-        serializedVersion: 2
-        x: 1653
-        y: 34
-        width: 737
-        height: 708
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f46c8f1cf1d7a7e49b39fd7924c7a915
-      internalID: 1040694419
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arrow_direction_Placeholder_3
-      rect:
-        serializedVersion: 2
-        x: 2445
-        y: 64
-        width: 725
-        height: 710
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb8e46788e279774999946132bcc4bfb
-      internalID: 1087365176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arrow_direction_Placeholder_4
-      rect:
-        serializedVersion: 2
-        x: 3192
-        y: 40
-        width: 784
-        height: 739
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93f07b1b8a9f8a045a98140d2cdc7ff1
-      internalID: 932107806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -250,12 +145,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Arrow_direction_Placeholder_0: 1936734752
-      Arrow_direction_Placeholder_1: 1248409900
-      Arrow_direction_Placeholder_2: 1040694419
-      Arrow_direction_Placeholder_3: 1087365176
-      Arrow_direction_Placeholder_4: 932107806
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
