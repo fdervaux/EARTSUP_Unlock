@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class _Unlock_Doom_SarcophageManager : MonoBehaviour
+public class Doom_SarcophageManager : MonoBehaviour
 {
     [SerializeField] [Tooltip("Le code du boulier fonctionne avec des états différents pour chaque branches du boulier," +
                               " l'état de chaques branches de gauche à droite correspondes au valeurs suivantes : 0-1-2, " +
@@ -10,7 +11,16 @@ public class _Unlock_Doom_SarcophageManager : MonoBehaviour
                               "  |||| UNIQUEMENT LES CHIFFRES 0-1-2 ||||")] private string codeToFind;
     [SerializeField] private string codeFound;
     [SerializeField] List<int> branches = new List<int>(4);
+    [SerializeField] Doom_SarcophageVisual sarcophageVisual;
 
+    private void Start()
+    {
+        sarcophageVisual = GetComponent<Doom_SarcophageVisual>();
+        sarcophageVisual.ActualizeBranchVisual(0, branches[0]);
+        sarcophageVisual.ActualizeBranchVisual(1, branches[1]);
+        sarcophageVisual.ActualizeBranchVisual(2, branches[2]);
+        sarcophageVisual.ActualizeBranchVisual(3, branches[3]);
+    }
 
     public void ChangeState(int brancheID)
     {
@@ -20,6 +30,7 @@ public class _Unlock_Doom_SarcophageManager : MonoBehaviour
             branches[brancheID] = 0;
         }
         ActualizeCodeFound();
+        sarcophageVisual.ActualizeBranchVisual(brancheID, branches[brancheID]);
     }
 
     public void ActualizeCodeFound()
@@ -37,10 +48,37 @@ public class _Unlock_Doom_SarcophageManager : MonoBehaviour
         if (codeFound == codeToFind)
         {
             print("YESSSSS");
+            //Close();
         }
         else
         {
             print("NOOOOOO");
         }
+    }
+
+    public void changeStateBranch0(int stateID)
+    {
+        branches[0] = stateID;
+        ActualizeCodeFound();
+    }
+    public void changeStateBranch1(int stateID)
+    {
+        branches[1] = stateID;
+        ActualizeCodeFound();
+    }
+    public void changeStateBranch2(int stateID)
+    {
+        branches[2] = stateID;
+        ActualizeCodeFound();
+    }
+    public void changeStateBranch3(int stateID)
+    {
+        branches[3] = stateID;
+        ActualizeCodeFound();
+    }
+
+    public void Close()
+    {
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
     }
 }
