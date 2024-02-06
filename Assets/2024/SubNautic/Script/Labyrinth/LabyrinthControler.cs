@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,8 @@ namespace Subnautica
         public int _distance;
         public Vector3 _startPosition;
         public Quaternion _startQuaternion;
+        private bool _canMove = true;
+        public AnimationCurve _curve;
 
         void Start()
         {
@@ -26,14 +29,27 @@ namespace Subnautica
 
         public void Move(Vector3 direction)
         {
-            // print("Input do stuff !");
+            if (!_canMove)
+                return;
 
+            _canMove = false;
             if (!CheckWall(transform.forward * direction.z * _distance))
                 transform.position += transform.forward * direction.z * _distance;
+            else
+            {
+                Vector3 startPos = transform.position;
+                DOTween.To((time) =>
+                {
+                    transform.position = startPos + (transform.forward * _curve.Evaluate(time));
+                }, 0, 1, .09f)
+                .SetEase(Ease.Linear)
+                .OnComplete(() => transform.position = startPos);
+            }
 
             Vector3 newEulerAngle = transform.eulerAngles;
-            newEulerAngle.y += 90 * direction.x;
-            transform.eulerAngles = newEulerAngle;
+            newEulerAngle.y += direction.x * 90;
+            transform.DORotate(newEulerAngle, .1f)
+            .OnComplete(() => _canMove = true);
         }
 
         bool CheckWall(Vector3 direction)
@@ -74,5 +90,10 @@ namespace Subnautica
             if (inputVector != Vector3.zero)
                 Move(inputVector);
         }
+
+        public void MoveForward() { Move(Vector3.forward); }
+        public void MoveBackward() { Move(Vector3.back); }
+        public void MoveRight() { Move(Vector3.right); }
+        public void MoveLeft() { Move(Vector3.left); }
     }
 }
