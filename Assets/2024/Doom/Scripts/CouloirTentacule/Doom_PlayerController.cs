@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Unlock_Doom_PlayerController : MonoBehaviour
+public class Doom_PlayerController : MonoBehaviour
 {
     // Méthode pour déplacer le personnage instantanément
     public void DeplacerInstantanement(Vector3 positionCible)
