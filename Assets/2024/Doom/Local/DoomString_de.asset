@@ -30,6 +30,14 @@ MonoBehaviour:
     m_Localized: Le porte est ouverte.
     m_Metadata:
       m_Items: []
+  - m_Id: 94541389488128
+    m_Localized: "Vous avez tu\xE9 le d\xE9mon."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 95223483981824
+    m_Localized: There is a demon, hurry and kill him !
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
