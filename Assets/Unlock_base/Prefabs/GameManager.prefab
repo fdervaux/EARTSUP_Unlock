@@ -521,12 +521,7 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6678403861118521737, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
-      propertyPath: m_Name
-      value: Loading bar
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1411553949937406914, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
