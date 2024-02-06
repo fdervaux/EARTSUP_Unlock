@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -139,12 +139,12 @@ TextureImporter:
       name: Arrow_direction_Placeholder_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 17
         y: 79
-        width: 756
-        height: 641
-      alignment: 9
-      pivot: {x: 0.47347865, y: 0.5208531}
+        width: 758
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,12 +160,12 @@ TextureImporter:
       name: Arrow_direction_Placeholder_1
       rect:
         serializedVersion: 2
-        x: 848
-        y: 73
-        width: 672
-        height: 650
-      alignment: 9
-      pivot: {x: 0.50994545, y: 0.46915373}
+        x: 846
+        y: 71
+        width: 674
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,12 +181,12 @@ TextureImporter:
       name: Arrow_direction_Placeholder_2
       rect:
         serializedVersion: 2
-        x: 1654
-        y: 35
-        width: 736
-        height: 706
-      alignment: 9
-      pivot: {x: 0.54086304, y: 0.49526682}
+        x: 1653
+        y: 34
+        width: 737
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: Arrow_direction_Placeholder_3
       rect:
         serializedVersion: 2
-        x: 2446
-        y: 65
-        width: 723
-        height: 708
-      alignment: 9
-      pivot: {x: 0.46764612, y: 0.5283194}
+        x: 2445
+        y: 64
+        width: 725
+        height: 710
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,6 +215,27 @@ TextureImporter:
       bones: []
       spriteID: bb8e46788e279774999946132bcc4bfb
       internalID: 1087365176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arrow_direction_Placeholder_4
+      rect:
+        serializedVersion: 2
+        x: 3192
+        y: 40
+        width: 784
+        height: 739
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f07b1b8a9f8a045a98140d2cdc7ff1
+      internalID: 932107806
       vertices: []
       indices: 
       edges: []
@@ -234,6 +255,7 @@ TextureImporter:
       Arrow_direction_Placeholder_1: 1248409900
       Arrow_direction_Placeholder_2: 1040694419
       Arrow_direction_Placeholder_3: 1087365176
+      Arrow_direction_Placeholder_4: 932107806
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
