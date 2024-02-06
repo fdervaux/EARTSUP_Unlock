@@ -57,6 +57,41 @@ public class UnlockGameManager : MonoBehaviour
     private List<HintSelectorItem> _unlockedHints = new List<HintSelectorItem>();
     public List<HintSelectorItem> UnlockedHints => _unlockedHints;
 
+    private float _timeScale = 1;
+
+    public float TimeScale
+    {
+        get => _timeScale;
+        set
+        {
+            _timeScale = value;
+            Time.timeScale = _timeScale;
+        }
+    }
+
+    public float StartTimeTimer
+    {
+        get => _startTimeTimer;
+        set
+        {
+            _startTimeTimer = value;
+            SetTime(_startTimeTimer);
+        }
+    }
+
+    public float PenaltyTime
+    {
+        get => _penaltyTime;
+        set
+        {
+            _penaltyTime = value;
+        }
+    }
+
+
+    [SerializeField] private UnityEvent<(string key,UnlockEvent UnityEvent)> _onUnlockEvent;
+    public UnityEvent<(string key,UnlockEvent UnityEvent)> OnUnlockEvent { get => _onUnlockEvent; }
+
 
     public void ShowMenu(Action onComplete = null)
     {
@@ -97,6 +132,8 @@ public class UnlockGameManager : MonoBehaviour
 
         if (unlockEvent == null)
             return;
+
+        _onUnlockEvent.Invoke((eventName,unlockEvent));
     
         if(unlockEvent._isPenaltyEvent)
         {
@@ -161,6 +198,11 @@ public class UnlockGameManager : MonoBehaviour
 
 
     private bool _isPlaying = false;
+
+    public bool IsPlaying
+    {
+        get => _isPlaying;
+    }
 
     private float _timeLeft = 0;
 
@@ -236,7 +278,7 @@ public class UnlockGameManager : MonoBehaviour
 
         if (_isPlaying)
         {
-            TimeLeft -= deltaTime;
+            TimeLeft -= deltaTime * TimeScale;
 
             UpdateTimerText();
         }
@@ -263,7 +305,7 @@ public class UnlockGameManager : MonoBehaviour
         _playPauseButton.Activate();
         _penaltyButton.Deactivate();
         _clueButton.Deactivate();
-        _codeButton.Deactivate();
+        _codeButton?.Deactivate();
         _hiddenObjectButton.Deactivate();
         _machineButton.Deactivate();
         _reviewClueButton.Deactivate();
@@ -315,7 +357,7 @@ public class UnlockGameManager : MonoBehaviour
         {
             _penaltyButton.Activate();
             _clueButton.Activate();
-            _codeButton.Activate();
+            _codeButton?.Activate();
             _machineButton.Activate();
 
 
@@ -333,7 +375,7 @@ public class UnlockGameManager : MonoBehaviour
         {
             _penaltyButton.Deactivate();
             _clueButton.Deactivate();
-            _codeButton.Deactivate();
+            _codeButton?.Deactivate();
             _machineButton.Deactivate();
             _reviewClueButton.Deactivate();
         }
