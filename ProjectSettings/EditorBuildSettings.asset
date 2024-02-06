@@ -18,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Unlock_base/Scenes/Machines/ARMachine.unity
     guid: 0d04b790ac5570c4ea022611ab070263
   - enabled: 1
-    path: Assets/2024/Doom/Scenes/PorteTour.unity
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_PorteTour.unity
     guid: ff16da62cd935cd41a7e9b2440185182
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_Pandemonium.unity
+    guid: e227cb81c23416c46be1500ff7cb5736
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2a5a88c4c4fd93e44bc56c42dd6223c9, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ec7ba763e0c312a4e9062ed06450f7c5, type: 2}
