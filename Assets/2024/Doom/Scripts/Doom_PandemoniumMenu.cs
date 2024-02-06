@@ -5,5 +5,13 @@ using UnityEngine.EventSystems;
 
 public class Doom_PandemoniumMenu : MonoBehaviour
 {
-    //UnlockGameManager.instance.AddListener(EventTrigger.TriggerEvent);
+    void Start(){
+        UnlockGameManager.Instance.OnUnlockEvent.AddListener(OnUnlockEvent);
+    }
+
+    public void OnUnlockEvent((string key, UnlockEvent UnityEvent) unlockEnventEntry){
+        //Verif After Event
+        print(unlockEnventEntry.key);
+        
+    }
 }
