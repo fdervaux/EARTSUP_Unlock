@@ -123,6 +123,16 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &106711988 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2642776556522617858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 194603661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &113292170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2642776556522617858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 3564613851561057953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &194603661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -261,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4877410097246507286, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_Name
-      value: Branche 4
+      value: Branche 3
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -368,6 +378,26 @@ Transform:
 --- !u!224 &404423725 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4587565976254792049, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 3564613851561057953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &440790085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1008331193928918858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 1565265719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &661298115 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6605736991113925125, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 194603661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &696758788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1008331193928918858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 803145796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &706459070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6605736991113925125, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
   m_PrefabInstance: {fileID: 3564613851561057953}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &803145796
@@ -508,7 +538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4877410097246507286, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_Name
-      value: Branche 3
+      value: Branche 2
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -553,8 +583,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 885022825}
-  - component: {fileID: 885022826}
   - component: {fileID: 885022827}
+  - component: {fileID: 885022828}
+  - component: {fileID: 885022826}
   m_Layer: 5
   m_Name: Branches
   m_TagString: Untagged
@@ -605,8 +636,8 @@ MonoBehaviour:
   m_ChildAlignment: 4
   m_StartCorner: 0
   m_StartAxis: 1
-  m_CellSize: {x: 800, y: 20}
-  m_Spacing: {x: 0, y: 120}
+  m_CellSize: {x: 800, y: 40}
+  m_Spacing: {x: 0, y: 340}
   m_Constraint: 2
   m_ConstraintCount: 4
 --- !u!114 &885022827
@@ -621,9 +652,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0771ec6e1a26d454dac567046ea6250d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeToFind: 0000
+  codeToFind: 1210
   codeFound: 
   branches: 00000000000000000000000000000000
+  sarcophageVisual: {fileID: 0}
+--- !u!114 &885022828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885022824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2323a29f7c8055d4d86d2f480e0d0078, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  branch0State:
+  - {fileID: 706459070}
+  - {fileID: 1486281600}
+  - {fileID: 113292170}
+  branch1State:
+  - {fileID: 1354729741}
+  - {fileID: 440790085}
+  - {fileID: 1158898531}
+  branch2State:
+  - {fileID: 1042641799}
+  - {fileID: 696758788}
+  - {fileID: 1298292075}
+  branch3State:
+  - {fileID: 661298115}
+  - {fileID: 910033548}
+  - {fileID: 106711988}
+--- !u!1 &910033548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1008331193928918858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 194603661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1042641799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6605736991113925125, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 803145796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1158898531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2642776556522617858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 1565265719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1298292075 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2642776556522617858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 803145796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1354729741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6605736991113925125, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 1565265719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1386712074
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +903,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1486281600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1008331193928918858, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+  m_PrefabInstance: {fileID: 3564613851561057953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1565265719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -956,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4877410097246507286, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_Name
-      value: Branche 2
+      value: Branche 1
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -1000,46 +1090,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 885022825}
     m_Modifications:
-    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+    - target: {fileID: 156958548741645448, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 156958548741645448, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 156958548741645448, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 885022827}
-    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
-      objectReference: {fileID: 0}
-    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 885022827}
-    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 4587565976254792049, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1122,28 +1192,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4877410097246507286, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_Name
-      value: Branche 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: Branche 0
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 885022827}
-    - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
