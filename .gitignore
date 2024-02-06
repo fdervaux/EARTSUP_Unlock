@@ -81,4 +81,4 @@ Thumbs.db.meta
 *.vscode
 .vsconfig
 
-ExternalResources/*
+/[Aa]ssets/ExternalResources/*
