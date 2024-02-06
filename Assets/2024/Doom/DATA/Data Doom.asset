@@ -37,7 +37,7 @@ MonoBehaviour:
         Name: "Xylocr\xE2ne"
     - Key: 44
       Value:
-        Name: 'Porte de la tour '
+        Name: PorteTour
   _hints:
     _serializedList: []
   _hiddenObjects:
