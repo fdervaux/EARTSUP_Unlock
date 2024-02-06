@@ -8,22 +8,62 @@ public class PromotionItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
     [SerializeField] private TMPro.TextMeshProUGUI title;
     [SerializeField] private UnityEngine.UI.Image image;
 
+    [SerializeField] private RectTransform gamesContainer;
+    [SerializeField] private RectTransform gamesContainerHeight;
+
+    public RectTransform GamesContainer { get => gamesContainer; }
+
     private HSV_UI hsv_ui;
 
 
     private UnityEvent _onClick = new UnityEvent();
     private Promotion promotion;
 
-    public UnityEvent OnClick { get => _onClick;}
+    public UnityEvent OnClick { get => _onClick; }
 
-    public void Select()
+    private bool _isAnimating = false;
+
+    public bool IsAnimating { get => _isAnimating; }
+
+
+    public void Select(bool showGames = true)
     {
         DOTween.To(() => hsv_ui.Saturation, x => hsv_ui.Saturation = x, 0f, 0.5f);
+        if (showGames)
+        {
+            gamesContainerHeight.gameObject.SetActive(true);
+            gamesContainerHeight.sizeDelta = new Vector2(gamesContainerHeight.sizeDelta.x, 0);
+            _isAnimating = true;
+            DOTween.Complete(gamesContainerHeight);
+            gamesContainerHeight.DOSizeDelta(new Vector2(gamesContainerHeight.sizeDelta.x, 400), 0.5f).OnComplete(
+                () => _isAnimating = false).SetEase(Ease.InOutCubic);
+        }
+        else
+        {
+            _isAnimating = true;
+            DOTween.Complete(gamesContainerHeight);
+            gamesContainerHeight.DOSizeDelta(new Vector2(gamesContainerHeight.sizeDelta.x, 0), 0.5f).OnComplete(
+                () => {
+                    gamesContainerHeight.gameObject.SetActive(false);
+                    _isAnimating = false;
+                    }).SetEase(Ease.InOutCubic);
+        }
     }
 
     public void Unselect()
     {
+        _isAnimating = true;
+
         DOTween.To(() => hsv_ui.Saturation, x => hsv_ui.Saturation = x, -1f, 0.5f);
+
+        _isAnimating = true;
+        DOTween.Complete(gamesContainerHeight);
+        gamesContainerHeight.DOSizeDelta(new Vector2(gamesContainerHeight.sizeDelta.x, 0), 0.5f).OnComplete(
+                () => {
+                    gamesContainerHeight.gameObject.SetActive(false);
+                    _isAnimating = false;
+                    }).SetEase(Ease.InOutCubic);
+        
     }
 
     private void Start()
@@ -40,13 +80,17 @@ public class PromotionItem : MonoBehaviour, IPointerDownHandler, IPointerUpHandl
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if(_isAnimating)
+            return;
+
         DOTween.To(() => hsv_ui.Value, x => hsv_ui.Value = x, -0.02f, 0.1f);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-
+        
         DOTween.To(() => hsv_ui.Value, x => hsv_ui.Value = x, 0f, 0.1f);
-        _onClick.Invoke();
+        if (!eventData.dragging)
+            _onClick.Invoke();
     }
 }
