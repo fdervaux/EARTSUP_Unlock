@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorTower : MonoBehaviour
 {
@@ -20,14 +21,15 @@ public class DoorTower : MonoBehaviour
     public void HandleDoor(){
         //Popup, la porte est bloqué
         print("DoorIsLocked");
-        UnlockGameManager.Instance.TriggerEvent("10");
+        UnlockGameManager.Instance.TriggerEvent("1");
     }
     public void DestroyDoor(){
         //Appuyer plusieurs fois sur la porte ce qui la fait exploser
         _doorDestroyingCounter++;
         //PlaySFX toc toc
         if (_doorDestroyingCounter >= 7){
-            print("DoorIsDestroyed");
+            UnlockGameManager.Instance.TriggerEvent("2");
+            Close();
         }
     }
     public void OpenDigicodeCanva()
@@ -50,8 +52,8 @@ public class DoorTower : MonoBehaviour
         {
             if (_answerPlayer == _finalAnswer){
                 _digicodeCanvas.SetActive(false);
-                //DoVictoryPopup
-                print("OpenDoor");
+                UnlockGameManager.Instance.TriggerEvent("3");
+                Close();
             }
             else{
                 //Play SFX Wrong
@@ -60,5 +62,9 @@ public class DoorTower : MonoBehaviour
             _digicodeText.text = _answerPlayer;
             _digicodeCounter = 0;
         }
+    }
+
+    public void Close(){
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
     }
 }

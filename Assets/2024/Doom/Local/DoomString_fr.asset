@@ -19,7 +19,15 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 99135512576
-    m_Localized: message1
+    m_Localized: "La porte est ferm\xE9e \xE0 cl\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11916670918656
+    m_Localized: "La porte est d\xE9truite vous pouvez passer. Prenez la carte 23."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12753027719168
+    m_Localized: Le porte est ouverte. Prenez la carte 23.
     m_Metadata:
       m_Items: []
   references:

@@ -16,7 +16,17 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 65ff1db757c583343a385aabe8d25504
   m_Entries:
   - m_Id: 99135512576
-    m_Key: Doom_Mesage1
+    m_Key: DoomHandleDoor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11916670918656
+    m_Key: DoomDestroyedDoor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12753027719168
+    m_Key: 'DoomOpenDoor
+
+'
     m_Metadata:
       m_Items: []
   m_Metadata:

@@ -61,6 +61,38 @@ MonoBehaviour:
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
+    - Key: 2
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 11916670918656
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 23
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 3
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 12753027719168
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 23
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
   references:
     version: 2
     RefIds: []
