@@ -199,6 +199,11 @@ public class UnlockGameManager : MonoBehaviour
 
     private bool _isPlaying = false;
 
+    public bool IsPlaying
+    {
+        get => _isPlaying;
+    }
+
     private float _timeLeft = 0;
 
     public float TimeLeft
@@ -300,7 +305,7 @@ public class UnlockGameManager : MonoBehaviour
         _playPauseButton.Activate();
         _penaltyButton.Deactivate();
         _clueButton.Deactivate();
-        _codeButton.Deactivate();
+        _codeButton?.Deactivate();
         _hiddenObjectButton.Deactivate();
         _machineButton.Deactivate();
         _reviewClueButton.Deactivate();
@@ -352,7 +357,7 @@ public class UnlockGameManager : MonoBehaviour
         {
             _penaltyButton.Activate();
             _clueButton.Activate();
-            _codeButton.Activate();
+            _codeButton?.Activate();
             _machineButton.Activate();
 
 
@@ -370,7 +375,7 @@ public class UnlockGameManager : MonoBehaviour
         {
             _penaltyButton.Deactivate();
             _clueButton.Deactivate();
-            _codeButton.Deactivate();
+            _codeButton?.Deactivate();
             _machineButton.Deactivate();
             _reviewClueButton.Deactivate();
         }
