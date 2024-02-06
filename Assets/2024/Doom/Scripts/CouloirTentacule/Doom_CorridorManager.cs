@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Unlock_Doom_CorridorManager : MonoBehaviour
+public class Doom_CorridorManager : MonoBehaviour
 {
     public interface IButton
     {
