@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mario_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 5d33d9cc29bd56843999e69504de2225, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 290210738176
+    m_Localized: Beobachten Sie den Bob-omb genau.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2711964119040
+    m_Localized: "Jedes der auf diesem Beipackzettel aufgef\xFChrten Elemente entspricht
+      einer der zu bergenden Zutaten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2837759684608
+    m_Localized: Beachten Sie die auf den Zutaten beschriebenen Mengenangaben.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4141210955776
+    m_Localized: "Lakitu ist ein regelm\xE4\xDFiger Teilnehmer an Go-Kart-Rennen.
+      Er muss einige n\xFCtzliche Informationen enth\xFCllt haben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4655772364800
+    m_Localized: "Versuchen Sie, einen Weg zu finden, wie Sie andere Konkurrenten
+      umgehen k\xF6nnen, um Ihr Ziel zu erreichen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4792271794176
+    m_Localized: "Eines Ihrer Objekte muss den von Ihnen gefundenen Weg gehen k\xF6nnen.
+      Schau dir ihre Besonderheiten genau an."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5048191447040
+    m_Localized: "Ordnen Sie die Konkurrenten gut ein, vom am weitesten zur\xFCckliegenden
+      bis zum n\xE4chsten, und vergessen Sie nicht, auch das zu ber\xFCcksichtigen,
+      was sich auf ihren Wegen befindet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5159055290368
+    m_Localized: Antizipieren Sie dank seiner Geschwindigkeit schrittweise die Bewegungen
+      des Pokeys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5475775574016
+    m_Localized: "Der Nebel in diesem Raum \xE4hnelt einem Licht, das Sie kennen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5706365825024
+    m_Localized: "Es muss m\xF6glich sein, den Kronleuchter fallen zu lassen. Dazu
+      ben\xF6tigen Sie allerdings ein gro\xDFes Gewicht."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6077410734080
+    m_Localized: "K\xF6nig Boo hat eine \xE4hnliche Konstitution wie Nebel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6494454575104
+    m_Localized: "Sie k\xF6nnen bestimmte Bewegungen ignorieren. Die Richtungen links
+      und rechts heben sich gegenseitig auf."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6840971194368
+    m_Localized: "Ihr Pfad enth\xE4lt die Informationen, die Sie ben\xF6tigen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7049277108224
+    m_Localized: "Selbst wenn sie gef\xE4hrlich ist, kann sie gegen die \xDCberzahl
+      nichts ausrichten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213291171840
+    m_Localized: Auf der Oberseite des Bob-omb befindet sich eine versteckte Kombination.
+      Die Farbe des Teils, auf dem diese liegt, ist blau. Kombiniere sie mit Kamek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7434351964160
+    m_Localized: "Die Nummern der Lakitu-Z\xE4hlung stellen ein St\xFCck Code dar.
+      So lautet der Code: 3210"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7552698445824
+    m_Localized: "Setzen Sie die gr\xFCnen Panzer von Kerbe 2 bis zur Position 4
+      ein. Dadurch erhalten Sie eine +24. Kombiniere sie und nimm Karte 61."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7683057414144
+    m_Localized: "Das Kart, das am weitesten zur\xFCckliegt, ist das Kart mit der
+      +54. Dank des roten Panzers k\xF6nnen Sie sicher sein, dass Sie es treffen.
+      Kombinieren Sie sie und nehmen Sie die Karte 97. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7942500282368
+    m_Localized: Wenn Sie den Pokey und den blauen Panzer vorantreiben, treffen sie
+      sich auf dem Feld mit der +26. Kombiniere ihn mit dem blauen Panzer und nimm
+      die Karte 82 an dich.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8062490931200
+    m_Localized: "Wenn Sie den zur\xFCckgelegten Weg nachzeichnen, k\xF6nnen Sie
+      die Nummer 29 erkennen. Nehmen Sie die Karte 29 zur Hand."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
