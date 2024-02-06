@@ -151,15 +151,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch3
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -175,15 +175,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch3
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -283,15 +283,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch3
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -418,11 +418,11 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch2
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -442,15 +442,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch2
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -550,15 +550,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch2
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -926,15 +926,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch1
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -950,11 +950,11 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch1
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -1058,15 +1058,15 @@ PrefabInstance:
       objectReference: {fileID: 885022827}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeState
+      value: changeStateBranch1
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: _Unlock_Doom_SarcophageManager, Assembly-CSharp
+      value: Doom_SarcophageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1106,10 +1106,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 885022827}
+    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStateBranch0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Doom_SarcophageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 981138414420375031, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 885022827}
+    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStateBranch0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Doom_SarcophageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377591903321810272, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4587565976254792049, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1198,6 +1222,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 885022827}
+    - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStateBranch0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683090224053335, guid: 0b6c226bbe057014693d1b88e65e9330, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Doom_SarcophageManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
