@@ -551,7 +551,7 @@ MonoBehaviour:
           m_LocalVariables: []
         _cardToTake: []
         _cardToDiscard: []
-        _isEndEvent: 0
+        _isEndEvent: 1
         _isPenaltyEvent: 0
   references:
     version: 2

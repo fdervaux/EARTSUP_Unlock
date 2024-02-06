@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: DoomString_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 65ff1db757c583343a385aabe8d25504, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 99135512576
+    m_Localized: The door is locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11916670918656
+    m_Localized: "La porte est d\xE9truite vous pouvez passer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12753027719168
+    m_Localized: Le porte est ouverte.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
