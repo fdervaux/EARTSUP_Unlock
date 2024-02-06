@@ -45,7 +45,22 @@ MonoBehaviour:
   _codes:
     _serializedList: []
   _unlockEvents:
-    _serializedList: []
+    _serializedList:
+    - Key: 1
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 99135512576
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
   references:
     version: 2
     RefIds: []
