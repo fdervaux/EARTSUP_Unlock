@@ -22,16 +22,16 @@ public class Doom_SarcophageManager : MonoBehaviour
         sarcophageVisual.ActualizeBranchVisual(3, branches[3]);
     }
 
-    public void ChangeState(int brancheID)
-    {
-        branches[brancheID]++;
-        if(branches[brancheID] > 2)
-        {
-            branches[brancheID] = 0;
-        }
-        ActualizeCodeFound();
-        sarcophageVisual.ActualizeBranchVisual(brancheID, branches[brancheID]);
-    }
+    //public void ChangeState(int brancheID)
+    //{
+    //    branches[brancheID]++;
+    //    if(branches[brancheID] > 2)
+    //    {
+    //        branches[brancheID] = 0;
+    //    }
+    //    ActualizeCodeFound();
+    //    sarcophageVisual.ActualizeBranchVisual(brancheID, branches[brancheID]);
+    //}
 
     public void ActualizeCodeFound()
     {
@@ -48,7 +48,7 @@ public class Doom_SarcophageManager : MonoBehaviour
         if (codeFound == codeToFind)
         {
             print("YESSSSS");
-            //Close();
+            Close();
         }
         else
         {
@@ -60,25 +60,29 @@ public class Doom_SarcophageManager : MonoBehaviour
     {
         branches[0] = stateID;
         ActualizeCodeFound();
+        sarcophageVisual.ActualizeBranchVisual(0, stateID);
     }
     public void changeStateBranch1(int stateID)
     {
         branches[1] = stateID;
         ActualizeCodeFound();
+        sarcophageVisual.ActualizeBranchVisual(1, stateID);
     }
     public void changeStateBranch2(int stateID)
     {
         branches[2] = stateID;
         ActualizeCodeFound();
+        sarcophageVisual.ActualizeBranchVisual(2, stateID);
     }
     public void changeStateBranch3(int stateID)
     {
         branches[3] = stateID;
         ActualizeCodeFound();
+        sarcophageVisual.ActualizeBranchVisual(3, stateID);
     }
 
     public void Close()
     {
-        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("Doom_Menu"); });
     }
 }
