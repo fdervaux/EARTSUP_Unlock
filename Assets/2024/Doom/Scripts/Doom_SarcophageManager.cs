@@ -83,6 +83,6 @@ public class Doom_SarcophageManager : MonoBehaviour
 
     public void Close()
     {
-        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("Doom_Menu"); });
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_Menu"); });
     }
 }
