@@ -9,6 +9,7 @@ namespace Subnautica
 public class DragController : MonoBehaviour
 {
     private bool isDragActive;
+    // public Rigidbody2D rb;
     private Vector2 screenPosition;
     private Vector3 worldPosition;
     private DraggingObject lastDragged;
