@@ -18,6 +18,10 @@ namespace Subnautica
         public float R = 1;
         public Transform target;
 
+        [Header("Custo :")]
+        [SerializeField] private bool _freezYaxe;
+        [SerializeField] private Vector3 _offSet;
+
         private float _f, _z, _r = 0;
         private Transform _transform;
         private SecondOrderDynamics[] _dymamics = new SecondOrderDynamics[3];
@@ -50,7 +54,10 @@ namespace Subnautica
             float y = _dymamics[1].Update(Time.deltaTime, target.position.y);
             float z = _dymamics[2].Update(Time.deltaTime, target.position.z);
 
-            _transform.position = new Vector3(x, y, z);
+            if(_freezYaxe)
+                y = target.position.y;
+            
+            _transform.position = new Vector3(x, y, z) + _offSet;
         }
 
         private void OnDrawGizmos()

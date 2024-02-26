@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,9 +8,15 @@ namespace Subnautica
 {
     public class LabyrinthControler : MonoBehaviour
     {
-        public int _distance;
-        public Vector3 _startPosition;
-        public Quaternion _startQuaternion;
+        [SerializeField] private LabyrinthCanvas _canvasManager;
+        [Space]
+        [SerializeField] private float _resetDuration;
+        [SerializeField] private AnimationCurve _moveAnimationCurve;
+        private int _moveDistance = 2;
+        private Vector3 _startPosition;
+        private Quaternion _startQuaternion;
+        private bool _canMove = true;
+
 
         void Start()
         {
@@ -20,20 +27,36 @@ namespace Subnautica
         [ContextMenu("Reset")]
         public void ResetGame()
         {
-            transform.position = _startPosition;
-            transform.rotation = _startQuaternion;
+            _canvasManager.HideGame(_resetDuration, () =>
+            {
+                transform.position = _startPosition;
+                transform.rotation = _startQuaternion;
+            });
         }
 
         public void Move(Vector3 direction)
         {
-            // print("Input do stuff !");
+            if (!_canMove)
+                return;
 
-            if (!CheckWall(transform.forward * direction.z * _distance))
-                transform.position += transform.forward * direction.z * _distance;
+            _canMove = false;
+            if (!CheckWall(transform.forward * direction.z * _moveDistance))
+                transform.position += transform.forward * direction.z * _moveDistance;
+            else
+            {
+                Vector3 startPos = transform.position;
+                DOTween.To((time) =>
+                {
+                    transform.position = startPos + (transform.forward * _moveAnimationCurve.Evaluate(time));
+                }, 0, 1, .09f)
+                .SetEase(Ease.Linear)
+                .OnComplete(() => transform.position = startPos);
+            }
 
             Vector3 newEulerAngle = transform.eulerAngles;
-            newEulerAngle.y += 90 * direction.x;
-            transform.eulerAngles = newEulerAngle;
+            newEulerAngle.y += direction.x * 90;
+            transform.DORotate(newEulerAngle, .1f)
+            .OnComplete(() => _canMove = true);
         }
 
         bool CheckWall(Vector3 direction)
@@ -43,30 +66,16 @@ namespace Subnautica
                         , direction
                         , out hit
                         , direction.magnitude);
+
             LayerAtHome l = hit.collider?.GetComponent<LayerAtHome>();
             if (l)
-            {
-                // print(l.name);
                 return true;
-            }
             else
-            {
-                // print("Y'a r");
                 return false;
-            }
         }
 
         public void OnWASD(InputValue value)
         {
-            // Vector2 osef = value.Get<Vector2>();
-            // if (osef.x > 0 && transform.position.x < 1)
-            //     transform.position += Vector3.right;
-            // //! droite
-            // if (osef.x < 0 && transform.position.x > -1)
-            //     transform.position += Vector3.left;
-            //     //! gauche
-
-            //     // print("Input");
             Vector3 inputVector = Vector3.zero;
             inputVector.x = value.Get<Vector2>().x;
             inputVector.z = value.Get<Vector2>().y;
@@ -74,5 +83,10 @@ namespace Subnautica
             if (inputVector != Vector3.zero)
                 Move(inputVector);
         }
+
+        public void MoveForward() { Move(Vector3.forward); }
+        public void MoveBackward() { Move(Vector3.back); }
+        public void MoveRight() { Move(Vector3.right); }
+        public void MoveLeft() { Move(Vector3.left); }
     }
 }
