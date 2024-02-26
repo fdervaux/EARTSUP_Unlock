@@ -13,15 +13,588 @@ MonoBehaviour:
   m_Name: MarioGameData
   m_EditorClassIdentifier: 
   _machines:
-    _serializedList: []
+    _serializedList:
+    - Key: 69
+      Value:
+        Name: Machine_Toads
+    - Key: 30
+      Value:
+        Name: Machine_FlashLight
+    - Key: 99
+      Value:
+        Name: Machine_Bowser
   _hints:
-    _serializedList: []
+    _serializedList:
+    - Key: 32
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 290210738176
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7213291171840
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 67
+      Value:
+        HasMoreHint: 1
+        HasSolution: 0
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 2711964119040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 2837759684608
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 95
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 4141210955776
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7434351964160
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 20
+      Value:
+        HasMoreHint: 1
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 4655772364800
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 4792271794176
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7552698445824
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 61
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 5048191447040
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7683057414144
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 97
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 5159055290368
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7942500282368
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 22
+      Value:
+        HasMoreHint: 0
+        HasSolution: 0
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 5475775574016
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 14
+      Value:
+        HasMoreHint: 0
+        HasSolution: 0
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 5706365825024
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 98
+      Value:
+        HasMoreHint: 0
+        HasSolution: 0
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 6077410734080
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 36
+      Value:
+        HasMoreHint: 0
+        HasSolution: 0
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 6494454575104
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 70
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 6840971194368
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 8062490931200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 71
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 6840971194368
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 8062490931200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 72
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 6840971194368
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 8062490931200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 74
+      Value:
+        HasMoreHint: 0
+        HasSolution: 1
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 6840971194368
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 8062490931200
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
+    - Key: 29
+      Value:
+        HasMoreHint: 0
+        HasSolution: 0
+        hintMessage1:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7049277108224
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessage2:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        hintMessageAnswer:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        cardsToTake: []
   _hiddenObjects:
     _serializedList: []
   _codes:
-    _serializedList: []
+    _serializedList:
+    - Key: 3210
+      Value:
+        eventName: Event_Shells
+    - Key: 9379
+      Value:
+        eventName: Event_Medecine
   _unlockEvents:
-    _serializedList: []
+    _serializedList:
+    - Key: Event_Door
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7223766009503744
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 41
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: Event_Luster
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7223901397442560
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 98
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: Event_Plant
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224310392414208
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 74
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: Event_Bowser
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224354415828992
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 1
+        _isPenaltyEvent: 0
+    - Key: Event_hO1
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224916255432704
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
   references:
     version: 2
     RefIds: []

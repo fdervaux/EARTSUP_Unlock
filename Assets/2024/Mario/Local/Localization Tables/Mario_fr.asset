@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mario_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 5d33d9cc29bd56843999e69504de2225, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 290210738176
+    m_Localized: 'Observez bien la Bob-omb.
+
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2711964119040
+    m_Localized: "Chacun des \xE9l\xE9ments list\xE9s sur cette notice correspond
+      \xE0 l'un des ingr\xE9dients \xE0 r\xE9cup\xE9rer"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2837759684608
+    m_Localized: "Observez bien les quantit\xE9s d\xE9crites sur les ingr\xE9dients."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4141210955776
+    m_Localized: "Lakitu est un habitu\xE9 des courses de karts. Il doit avoir d\xE9voil\xE9
+      quelques informations utiles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4655772364800
+    m_Localized: Essayez de trouver un moyen de contourner les autres concurrents
+      pour atteindre votre cible.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4792271794176
+    m_Localized: "Un de vos objets doit pouvoir suivre le chemin que vous avez trouvez.
+      Regardez bien leurs sp\xE9cificit\xE9s."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5048191447040
+    m_Localized: Classez bien les concurrents du plus en retrait au plus proche,
+      sans oublier de prendre en compte ce qui se trouve sur leurs chemins.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5159055290368
+    m_Localized: "Anticipez progressivement les mouvements du Pokey gr\xE2ce \xE0
+      sa vitesse."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5475775574016
+    m_Localized: "La brume dans cette salle ressemble \xE0 une lumi\xE8re que vous
+      connaissez."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5706365825024
+    m_Localized: "Il doit \xEAtre possible de faire tomber ce lustre. Vous aurez
+      cependant besoin d'un grand poids."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6077410734080
+    m_Localized: "Le Roi Boo poss\xE8de une constitution similaire \xE0 la brume."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6494454575104
+    m_Localized: Vous pouvez ignorer certains mouvements. Les directions gauche et
+      droite s'annulent.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6840971194368
+    m_Localized: Votre chemin contient les informations donc vous avez besoin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7049277108224
+    m_Localized: "Quand bien m\xEAme elle est dangereuse, elle ne peut rien face
+      au nombre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213291171840
+    m_Localized: "Il y a une combinaison cach\xE9e sur le haut de la bob-omb. La
+      couleur de la partie sur laquel celle-ci est plac\xE9e est bleue. Combinez
+      la avec Kamek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7434351964160
+    m_Localized: "Les num\xE9ros du d\xE9compte de Lakitu repr\xE9sente un morceau
+      de code. Ainsi le code est : 3210"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7552698445824
+    m_Localized: "Utilisez les carapaces vertes depuis l'encoche 2 jusqu'\xE0 la
+      position 4. Vous obtenez ainsi un +24. Combinez-les et prenez la carte 61."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7683057414144
+    m_Localized: "Le kart qui sera le plus en retrait est le kart avec le +54. Gr\xE2ce
+      \xE0 la carapace rouge, vous \xEAtes s\xFBr de le toucher. Combinez-les et
+      prenez la carte 97 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7942500282368
+    m_Localized: En faisant progresser le Pokey et la carapace bleue, ils se rencontreront
+      sur la case portant le +26. Combinez-le avec la carapace bleue et prenez la
+      carte 82.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8062490931200
+    m_Localized: "En tra\xE7ant le chemin parcouru, vous pouvez distinguer le num\xE9ro
+      29. Prenez la carte 29."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: "Le Toad vous ouvre la porte de l'int\xE9rieure. Vous pouvez entrer
+      dans le ch\xE2teau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Observer bien le puit du manoir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: Le poids des Toads fait tomber le lustre en plein sur le Roi Boo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: "La plante est vaincue, vous pouvez prendre l'ingr\xE9dient."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: "Bowser est vaincu, Papi-Champi est sauv\xE9, il est temps de rentrer."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
