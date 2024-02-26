@@ -10,6 +10,7 @@ namespace Subnautica
     {
         [SerializeField] private LabyrinthCanvas _canvasManager;
         [Space]
+        [SerializeField] private float _wallBumpLenth;
         [SerializeField] private float _resetDuration;
         [SerializeField] private AnimationCurve _moveAnimationCurve;
         private int _moveDistance = 2;
@@ -47,7 +48,7 @@ namespace Subnautica
                 Vector3 startPos = transform.position;
                 DOTween.To((time) =>
                 {
-                    transform.position = startPos + (transform.forward * _moveAnimationCurve.Evaluate(time));
+                    transform.position = startPos + transform.forward * _wallBumpLenth * _moveAnimationCurve.Evaluate(time);
                 }, 0, 1, .09f)
                 .SetEase(Ease.Linear)
                 .OnComplete(() => transform.position = startPos);
