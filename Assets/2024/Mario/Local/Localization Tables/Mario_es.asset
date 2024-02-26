@@ -111,6 +111,27 @@ MonoBehaviour:
       29. Toma la tarjeta 29."
     m_Metadata:
       m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: El Sapo abre la puerta al interior. Ahora puedes entrar en el castillo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: "El peso de los Sapos hace que la ara\xF1a caiga sobre el Rey Boo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Mira bien la casa solariega.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: "La planta est\xE1 vencida y se puede tomar el ingrediente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: "Bowser est\xE1 derrotado, Toadsworth est\xE1 a salvo, es hora de
+      volver a casa."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

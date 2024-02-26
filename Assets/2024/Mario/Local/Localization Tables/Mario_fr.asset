@@ -120,6 +120,27 @@ MonoBehaviour:
       29. Prenez la carte 29."
     m_Metadata:
       m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: "Le Toad vous ouvre la porte de l'int\xE9rieure. Vous pouvez entrer
+      dans le ch\xE2teau."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Observer bien le puit du manoir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: Le poids des Toads fait tomber le lustre en plein sur le Roi Boo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: "La plante est vaincue, vous pouvez prendre l'ingr\xE9dient."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: "Bowser est vaincu, Papi-Champi est sauv\xE9, il est temps de rentrer."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

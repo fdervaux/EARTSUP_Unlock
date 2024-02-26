@@ -110,6 +110,26 @@ MonoBehaviour:
       29. Take card 29.
     m_Metadata:
       m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: The Toad opens the door to the interior. You can now enter the castle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: The weight of the Toads causes the chandelier to fall on King Boo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Take a good look at the manor's well.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: The plant is defeated, and you can take the ingredient.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: Bowser is defeated, Toadsworth is saved, it's time to go home.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

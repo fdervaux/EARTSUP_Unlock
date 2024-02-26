@@ -514,9 +514,87 @@ MonoBehaviour:
         eventName: Event_Shells
     - Key: 9379
       Value:
-        eventName: 
+        eventName: Event_Medecine
   _unlockEvents:
-    _serializedList: []
+    _serializedList:
+    - Key: Event_Door
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7223766009503744
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 41
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: Event_Luster
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7223901397442560
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 98
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: Event_Plant
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224310392414208
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 74
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: Event_Bowser
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224354415828992
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 1
+        _isPenaltyEvent: 0
+    - Key: Event_hO1
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224916255432704
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
   references:
     version: 2
     RefIds: []

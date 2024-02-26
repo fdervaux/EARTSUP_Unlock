@@ -116,6 +116,29 @@ MonoBehaviour:
       die Nummer 29 erkennen. Nehmen Sie die Karte 29 zur Hand."
     m_Metadata:
       m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: "Der Toad \xF6ffnet Ihnen die T\xFCr zum Inneren. Sie k\xF6nnen
+      das Schloss betreten."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: "Das Gewicht der Toads l\xE4sst den Kronleuchter genau auf K\xF6nig
+      Boo fallen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Beobachten Sie den Brunnen des Herrenhauses genau.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: "Die Pflanze ist besiegt, Sie k\xF6nnen die Zutat einnehmen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: Bowser ist besiegt, Toadsworth ist gerettet, es ist Zeit, nach Hause
+      zu gehen.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

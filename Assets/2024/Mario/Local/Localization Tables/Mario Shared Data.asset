@@ -95,6 +95,26 @@ MonoBehaviour:
     m_Key: Mario_Solution70
     m_Metadata:
       m_Items: []
+  - m_Id: 7223766009503744
+    m_Key: Mario_EventDoor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Key: Mario_EventLuster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Key: Mario_EventPlant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Key: Mario_EventBowser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Key: Mario_EventHiddenObject1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
