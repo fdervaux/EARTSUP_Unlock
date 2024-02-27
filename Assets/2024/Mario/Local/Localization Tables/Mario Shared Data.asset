@@ -115,6 +115,14 @@ MonoBehaviour:
     m_Key: Mario_EventHiddenObject1
     m_Metadata:
       m_Items: []
+  - m_Id: 7579432502456320
+    m_Key: Mario_EventCodeBlock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579631044030464
+    m_Key: Mario_EventCodeMedicine
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

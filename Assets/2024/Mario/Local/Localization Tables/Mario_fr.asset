@@ -141,6 +141,15 @@ MonoBehaviour:
     m_Localized: "Bowser est vaincu, Papi-Champi est sauv\xE9, il est temps de rentrer."
     m_Metadata:
       m_Items: []
+  - m_Id: 7579631044030464
+    m_Localized: "Le rem\xE8de est termin\xE9, donnons le vite \xE0 Papi-Champi !\nPrenez
+      la carte 99."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579432502456320
+    m_Localized: "Le bloc est activ\xE9 ! \nPrenez les cartes 37, 43, 56."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
