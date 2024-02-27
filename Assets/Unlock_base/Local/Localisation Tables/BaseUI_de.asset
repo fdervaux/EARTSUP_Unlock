@@ -125,6 +125,14 @@ MonoBehaviour:
     m_Localized: Maschine nicht gefunden
     m_Metadata:
       m_Items: []
+  - m_Id: 14181543465762816
+    m_Localized: Automatisch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14181784696963072
+    m_Localized: Manuell
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds:
