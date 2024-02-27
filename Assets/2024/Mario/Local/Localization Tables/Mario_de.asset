@@ -139,6 +139,17 @@ MonoBehaviour:
       zu gehen.
     m_Metadata:
       m_Items: []
+  - m_Id: 7579432502456320
+    m_Localized: "Der Block wird aktiviert! \nNehmen Sie die Karten 37, 43, 56."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579631044030464
+    m_Localized: 'Das Heilmittel ist aufgebraucht, geben wir es schnell Papi-Champi!
+
+      Nimm
+      Karte 99.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -130,6 +130,17 @@ MonoBehaviour:
     m_Localized: Bowser is defeated, Toadsworth is saved, it's time to go home.
     m_Metadata:
       m_Items: []
+  - m_Id: 7579432502456320
+    m_Localized: "The block is activated! \nTake cards 37, 43, 56."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579631044030464
+    m_Localized: 'The medicine''s finished - let''s give it to Papi-Champi!
+
+      Take
+      card 99.'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

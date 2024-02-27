@@ -132,6 +132,15 @@ MonoBehaviour:
       volver a casa."
     m_Metadata:
       m_Items: []
+  - m_Id: 7579432502456320
+    m_Localized: "\xA1El bloque est\xE1 activado! \nToma las cartas 37, 43, 56."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579631044030464
+    m_Localized: "\xA1La cura est\xE1 terminada, vamos a d\xE1rsela al abuelo-Champi!\nToma
+      la carta 99."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
