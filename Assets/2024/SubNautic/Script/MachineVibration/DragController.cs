@@ -8,10 +8,11 @@ namespace Subnautica
 
 public class DragController : MonoBehaviour
 {
-    private bool isDragActive;
+    public bool isDragActive;
     // public Rigidbody2D rb;
     private Vector2 screenPosition;
     private Vector3 worldPosition;
+    private Vector3 mousePos;
     private DraggingObject lastDragged;
     private void Awake()
     {
@@ -78,6 +79,10 @@ public class DragController : MonoBehaviour
     public void Drop()
     {
         isDragActive = false;
+    }
+    public Vector3 MousePos()
+    {
+        return worldPosition;
     }
 }
 }
