@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
-public class ColliderDetector : MonoBehaviour
+public class Sonar : MonoBehaviour
 {
     public List<Collider2D> colliderList;
     public float timeDistance;
@@ -11,12 +12,18 @@ public class ColliderDetector : MonoBehaviour
     private AudioSource source;
     public float sonarFrequency = 5;
     public float sonarTimer;
+    public Light2D sonarLight;
+    public float lightBibRange;
+    public float rangeDecreasedSpeed;
+    public float lightRotateSpeed;
+    
 
-    private void Start() {
+    private void Start() 
+    {
         source = GetComponent<AudioSource>();
     }
 
-    public float GetColliderDistanceTime()
+    public float GetColliderDistanceTime(out Vector2 pointDirection)
     {
         float minDistance = Mathf.Infinity;
         Vector3 closestPoint = Vector3.zero;
@@ -32,12 +39,18 @@ public class ColliderDetector : MonoBehaviour
             }
         }
 
+        pointDirection = (closestPoint - transform.position).normalized;
         return Mathf.InverseLerp(0, 1, Vector2.Distance(transform.position, closestPoint));
     }
     
     private void Update() 
     {
-        timeDistance = GetColliderDistanceTime();
+        Vector2 pointDirection = Vector2.zero;
+        timeDistance = GetColliderDistanceTime(out pointDirection);
+        sonarLight.transform.up = Vector3.Slerp(sonarLight.transform.up, pointDirection, Time.deltaTime * lightRotateSpeed);
+
+        if(sonarLight.pointLightOuterRadius > 1)
+            sonarLight.pointLightOuterRadius -= Time.deltaTime * rangeDecreasedSpeed;
 
         if(timeDistance == 1)
             return;
@@ -51,5 +64,6 @@ public class ColliderDetector : MonoBehaviour
     {
         sonarTimer = 0;
         source.PlayOneShot(clip);
+        sonarLight.pointLightOuterRadius = lightBibRange;
     }
 }

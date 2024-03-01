@@ -10,7 +10,6 @@ public class LookAtMouse : MonoBehaviour
     public Vector3 currentPos;
     private void LateUpdate() 
     {
-        print(lastPos);
         currentPos = dragController.MousePos();
         if(Vector2.Distance(lastPos, currentPos) < 0.1)
         {
