@@ -5,8 +5,17 @@ using UnityEngine;
 public class ColliderDetector : MonoBehaviour
 {
     public List<Collider2D> colliderList;
-    public float time;
+    public float timeDistance;
     Vector3 point;
+    public AudioClip clip;
+    private AudioSource source;
+    public float sonarFrequency = 5;
+    public float sonarTimer;
+
+    private void Start() {
+        source = GetComponent<AudioSource>();
+    }
+
     public float GetColliderDistanceTime()
     {
         float minDistance = Mathf.Infinity;
@@ -23,10 +32,24 @@ public class ColliderDetector : MonoBehaviour
             }
         }
 
-        return Mathf.InverseLerp(1, 0, Vector2.Distance(transform.position, closestPoint));
+        return Mathf.InverseLerp(0, 1, Vector2.Distance(transform.position, closestPoint));
     }
+    
     private void Update() 
     {
-        time = GetColliderDistanceTime();
+        timeDistance = GetColliderDistanceTime();
+
+        if(timeDistance == 1)
+            return;
+
+        sonarTimer += Time.deltaTime;
+        if(sonarTimer > timeDistance / sonarFrequency)
+            Bip();
+    }
+
+    private void Bip()
+    {
+        sonarTimer = 0;
+        source.PlayOneShot(clip);
     }
 }

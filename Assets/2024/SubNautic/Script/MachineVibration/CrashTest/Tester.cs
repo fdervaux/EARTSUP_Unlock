@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace Subnautica
 {
-
 public class Tester : MonoBehaviour
 {
     private void Update() 
