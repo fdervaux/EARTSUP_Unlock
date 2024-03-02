@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Unlock_base/UI/Wallpaper/couleurs-vibrantes-coulent-dans-motif-vague-abstrait-genere-par-ia.jpg.meta
-guid: 4646fbb4a700f164c8159f3fdfe4174b
-=======
 guid: a8df1bd01eddb0948b3332d67210cd02
->>>>>>> c8daba0f86cfbc441d44d3872082d77d94691720:Assets/Unlock_base/UI/UI/chronometre.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -86,6 +82,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
