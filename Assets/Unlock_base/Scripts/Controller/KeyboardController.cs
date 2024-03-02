@@ -52,6 +52,9 @@ public class KeyboardController : MonoBehaviour
 
         }
 
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_keyboardContainer.GetComponentInParent<RectTransform>());
+        
+
         ButtonController clearButton = InstantiateButton("C", _clearColor);
         clearButton.OnClick.AddListener(OnClickClear);
 
