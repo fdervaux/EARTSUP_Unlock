@@ -9,31 +9,20 @@ using UnityEngine.Localization;
 using UnityEngine.Localization.SmartFormat.PersistentVariables;
 using UnityEngine.SocialPlatforms;
 
-public struct HintSelectorItem
-{
-    public string name;
-    public Hint hint;
-    public HiddenObject hiddenObject;
-}
-
 
 [DefaultExecutionOrder(-1)]
 public class UnlockGameManager : MonoBehaviour
 {
-    public static UnlockGameManager Instance;
 
     [SerializeField] private Canvas _mainMenu;
-
     [SerializeField] private ButtonController _playPauseButton;
     [SerializeField] private ButtonController _penaltyButton;
     [SerializeField] private ButtonController _clueButton;
     [SerializeField] private ButtonController _codeButton;
     [SerializeField] private ButtonController _hiddenObjectButton;
+    [SerializeField] private GameObject _hiddenObjectsAutoText;
     [SerializeField] private ButtonController _machineButton;
     [SerializeField] private ButtonController _reviewClueButton;
-
-    [Header("Timer")]
-
     [SerializeField] private TextMeshProUGUI _timerText;
     [SerializeField] private GameObject _noTimePanel;
     [SerializeField] private RectTransform _timerPanel; // 30 seconds
@@ -41,23 +30,60 @@ public class UnlockGameManager : MonoBehaviour
     [SerializeField] private float _penaltyTime = 60; // 60 seconds
     [SerializeField] private Color _penaltyTextColor = Color.red;
     [SerializeField] private Color _normalTextColor = Color.black;
-
     [SerializeField] private AudioClip _music;
     [SerializeField] private UnlockGameData _unlockGameData;
-
     [SerializeField] private PopupMessageController _popupMessageController;
     [SerializeField] private LocalizedString _quitGameString;
-
     [SerializeField] private HintSelectorController _hintSelectorController;
-
     [SerializeField] private LocalizedString _penaltyString;
+    [SerializeField] private List<PopupViewController> _popupsViewController;
+    [SerializeField] private UnityEvent<(string key, UnlockEvent UnityEvent)> _onUnlockEvent;
 
+    [SerializeField] private ScoreViewController _scoreViewController;
+ 
 
+    public static UnlockGameManager Instance;
     private CanvasGroup _mainMenuCanvasGroup;
-    private List<HintSelectorItem> _unlockedHints = new List<HintSelectorItem>();
-    public List<HintSelectorItem> UnlockedHints => _unlockedHints;
-
+    private List<UnlockSaveHintItem> _unlockedHints = new List<UnlockSaveHintItem>();
+    public List<UnlockSaveHintItem> UnlockedHints => _unlockedHints;
+    private List<(float timeStart, UnlockSaveHintItem hintSelector)> _beingUnlockHiddenObjects = new List<(float time, UnlockSaveHintItem)>();
+    private List<UnlockSaveHintItem> _unlockedHiddenObjects = new List<UnlockSaveHintItem>();
+    private List<UnlockSaveHintItem> _hiddenObjects = new List<UnlockSaveHintItem>();
+    private Machine _currentMachine;
+    private int _penaltyCount = 0;
     private float _timeScale = 1;
+    private bool _isPlaying = false;
+    private float _timeLeft = 0;
+    private float _hintCount = 0;
+    
+
+    public UnityEvent<(string key, UnlockEvent UnityEvent)> OnUnlockEvent { get => _onUnlockEvent; }
+
+    public float StartTimeTimer
+    {
+        get => _startTimeTimer;
+    }
+
+    public Machine CurrentMachine
+    {
+        get => _currentMachine;
+        set => _currentMachine = value;
+    }
+
+    public bool IsPlaying
+    {
+        get => _isPlaying;
+    }
+
+    public int PenaltyCount
+    {
+        get => _penaltyCount;
+    }
+
+    public int HintCount
+    {
+        get => _unlockedHints.Count;
+    }
 
     public float TimeScale
     {
@@ -65,17 +91,7 @@ public class UnlockGameManager : MonoBehaviour
         set
         {
             _timeScale = value;
-            Time.timeScale = _timeScale;
-        }
-    }
-
-    public float StartTimeTimer
-    {
-        get => _startTimeTimer;
-        set
-        {
-            _startTimeTimer = value;
-            SetTime(_startTimeTimer);
+            //Time.timeScale = _timeScale;
         }
     }
 
@@ -87,10 +103,6 @@ public class UnlockGameManager : MonoBehaviour
             _penaltyTime = value;
         }
     }
-
-
-    [SerializeField] private UnityEvent<(string key,UnlockEvent UnityEvent)> _onUnlockEvent;
-    public UnityEvent<(string key,UnlockEvent UnityEvent)> OnUnlockEvent { get => _onUnlockEvent; }
 
 
     public void ShowMenu(Action onComplete = null)
@@ -109,7 +121,7 @@ public class UnlockGameManager : MonoBehaviour
         _mainMenuCanvasGroup.blocksRaycasts = false;
         _mainMenuCanvasGroup.interactable = false;
     }
-    
+
     public void ShowMenuInstant()
     {
         _mainMenuCanvasGroup.alpha = 1;
@@ -124,20 +136,94 @@ public class UnlockGameManager : MonoBehaviour
         _mainMenuCanvasGroup.interactable = false;
     }
 
+    public void ManageHiddenObjectOnEvent(string EventIndex)
+    {
 
-    public void TriggerEvent(string eventName)
+        // add event to being unlock hidden objects if event is a preceding unlock event 
+        for (int i = 0; i < _hiddenObjects.Count; i++)
+        {
+            HiddenObject hiddenObject = _hiddenObjects[i].unlockSaveHint as HiddenObject;
+            if (hiddenObject.precedingUnlockEventID == EventIndex)
+            {
+                _beingUnlockHiddenObjects.Add((_timeLeft, _hiddenObjects[i]));
+                Debug.Log("Add being unlock hidden object: " + _hiddenObjects[i].name);
+                _hiddenObjects.RemoveAt(i);
+                i--;
+            }
+        }
+
+        if (EventIndex == "")
+            return;
+
+
+        // remove event from all hidden objects List if event is a canceling unlock event
+        for (int i = 0; i < _unlockedHiddenObjects.Count; i++)
+        {
+            HiddenObject hiddenObject = _unlockedHiddenObjects[i].unlockSaveHint as HiddenObject;
+            if (hiddenObject.cancelingUnlockEventID == EventIndex)
+            {
+                _unlockedHiddenObjects.RemoveAt(i);
+                i--;
+            }
+        }
+
+        for (int i = 0; i < _hiddenObjects.Count; i++)
+        {
+            HiddenObject hiddenObject = _hiddenObjects[i].unlockSaveHint as HiddenObject;
+            if (hiddenObject.cancelingUnlockEventID == EventIndex)
+            {
+                _hiddenObjects.RemoveAt(i);
+                i--;
+            }
+        }
+
+        for (int i = 0; i < _beingUnlockHiddenObjects.Count; i++)
+        {
+            HiddenObject hiddenObject = _beingUnlockHiddenObjects[i].hintSelector.unlockSaveHint as HiddenObject;
+            if (hiddenObject.cancelingUnlockEventID == EventIndex)
+            {
+                _beingUnlockHiddenObjects.RemoveAt(i);
+                i--;
+            }
+        }
+    }
+
+
+    public void TriggerEvent(string EventIndex)
     {
         UnlockEvent unlockEvent;
-        _unlockGameData.UnlockEvents.TryGetValue(eventName, out unlockEvent);
+        _unlockGameData.UnlockEvents.TryGetValue(EventIndex, out unlockEvent);
 
         if (unlockEvent == null)
             return;
 
-        _onUnlockEvent.Invoke((eventName,unlockEvent));
-    
-        if(unlockEvent._isPenaltyEvent)
+        _onUnlockEvent.Invoke((EventIndex, unlockEvent));
+        ManageHiddenObjectOnEvent(EventIndex);
+
+        if (unlockEvent._isEndEvent)
+        {
+            _popupMessageController.SetupPopupMessage(unlockEvent.localizedString.GetLocalizedString(), false, false, false);
+            _popupMessageController.OpenPopupMessage();
+
+            TimeScale = 0;
+
+            PopupViewController popupViewController = _popupMessageController.GetComponent<PopupViewController>();
+
+            popupViewController.OnPopupClose.AddListener(() =>
+            {
+                GameManager.Instance.SoundManager.StopMusic();
+                _scoreViewController.ShowView();
+
+                popupViewController.OnPopupClose.RemoveAllListeners();
+            });
+            return;
+        }
+
+        if (unlockEvent._isPenaltyEvent)
         {
             (_penaltyString["minutes"] as IntVariable).Value = GetPenaltyTimeInMinute();
+
+
             _popupMessageController.SetupPopupMessage("<b> " + unlockEvent.localizedString.GetLocalizedString() + "</b>" + "\n" + _penaltyString.GetLocalizedString(), true, false, false);
             _popupMessageController.OpenPopupMessage();
 
@@ -145,9 +231,9 @@ public class UnlockGameManager : MonoBehaviour
             return;
         }
 
-        _popupMessageController.SetupPopupMessage(unlockEvent.localizedString.GetLocalizedString(), false, false, false);
+        _popupMessageController.SetupPopupMessage(unlockEvent);
         _popupMessageController.OpenPopupMessage();
-    
+
     }
 
     public void OpenPopupMessage(float delay = 0f, Action action = null)
@@ -173,12 +259,15 @@ public class UnlockGameManager : MonoBehaviour
     {
         _popupMessageController.SetupPopupMessage(_quitGameString.GetLocalizedString(), false, true, false);
 
+        _popupMessageController.OnYesNoValidate.RemoveAllListeners();
+
         _popupMessageController.OnYesNoValidate.AddListener((bool value) =>
         {
             _popupMessageController.OnYesNoValidate.RemoveAllListeners();
             if (value)
             {
-                GameManager.Instance.TransitionSceneManager.LoadScene(0);
+                GameManager.Instance.TransitionSceneManager.LoadScene(1);
+                GameManager.Instance.SoundManager.StopMusic();
             }
             else
             {
@@ -187,32 +276,11 @@ public class UnlockGameManager : MonoBehaviour
         });
 
         OpenPopupMessage();
-
     }
-
 
     public int GetPenaltyTimeInMinute()
     {
         return (int)_penaltyTime / 60;
-    }
-
-
-    private bool _isPlaying = false;
-
-    public bool IsPlaying
-    {
-        get => _isPlaying;
-    }
-
-    private float _timeLeft = 0;
-
-    public float TimeLeft
-    {
-        get => _timeLeft;
-        set
-        {
-            _timeLeft = Mathf.Max(value, 0);
-        }
     }
 
     public Machine GetMachine(string machineName)
@@ -240,15 +308,14 @@ public class UnlockGameManager : MonoBehaviour
         if (hint == null)
             return null;
 
-        HintSelectorItem unlockHint = _unlockedHints.Find((x) => x.name == hintName);
+        UnlockSaveHintItem unlockHint = _unlockedHints.Find((x) => x.name == hintName);
 
-        if (hint != null && unlockHint.hint == null)
+        if (hint != null && unlockHint.unlockSaveHint == null)
         {
-            HintSelectorItem item = new HintSelectorItem
+            UnlockSaveHintItem item = new UnlockSaveHintItem
             {
                 name = hintName,
-                hint = hint,
-                hiddenObject = null
+                unlockSaveHint = hint
             };
 
             _unlockedHints.Add(item);
@@ -258,10 +325,20 @@ public class UnlockGameManager : MonoBehaviour
         return hint;
     }
 
-    private void SetTime(float time)
+    public void SetTime(float time)
     {
-        TimeLeft = time;
+        _timeLeft = time;
         UpdateTimerText();
+    }
+
+    public float GetTimeLeft()
+    {
+        return _timeLeft;
+    }
+
+    public float GetTime()
+    {
+        return _timeLeft - _penaltyCount * _penaltyTime;
     }
 
     private void UpdateTime(float deltaTime)
@@ -278,7 +355,7 @@ public class UnlockGameManager : MonoBehaviour
 
         if (_isPlaying)
         {
-            TimeLeft -= deltaTime * TimeScale;
+            _timeLeft -= deltaTime * TimeScale;
 
             UpdateTimerText();
         }
@@ -286,8 +363,17 @@ public class UnlockGameManager : MonoBehaviour
 
     private void UpdateTimerText()
     {
-        int minutes = Mathf.FloorToInt(TimeLeft / 60);
-        int seconds = Mathf.FloorToInt(TimeLeft % 60);
+        float time = GetTime();
+
+        int minutes = Mathf.FloorToInt(time / 60);
+        int seconds = Mathf.FloorToInt(time % 60);
+
+        if (minutes <= 0 && seconds <= 0)
+        {
+            minutes *= -1;
+            seconds *= -1;
+            _timerText.color = _penaltyTextColor;
+        }
 
         _timerText.text = string.Format("{0}:{1}", minutes.ToString("00"), seconds.ToString("00"));
     }
@@ -312,6 +398,7 @@ public class UnlockGameManager : MonoBehaviour
 
         _playPauseButton.OnClick.AddListener(PlayPauseButtonClick);
         _penaltyButton.OnClick.AddListener(PenaltyButtonClick);
+        _hiddenObjectButton.OnClick.AddListener(HiddenObjectButtonClick);
 
         SetTime(_startTimeTimer);
 
@@ -319,6 +406,29 @@ public class UnlockGameManager : MonoBehaviour
 
         GameManager.Instance.SoundManager.PlayMusic(_music);
         GameManager.Instance.SoundManager.PauseMusic();
+
+        foreach (var hiddenObject in _unlockGameData.HiddenObjects)
+        {
+            UnlockSaveHintItem itemSelectorItem = new UnlockSaveHintItem
+            {
+                name = hiddenObject.Key,
+                unlockSaveHint = hiddenObject.Value
+            };
+            Debug.Log("add hidden object: " + hiddenObject.Key + " " + hiddenObject.Value);
+
+            _hiddenObjects.Add(itemSelectorItem);
+        }
+
+        ManageHiddenObjectOnEvent("");
+    }
+
+    public void HiddenObjectButtonClick()
+    {
+        if (_unlockedHiddenObjects.Count > 0)
+        {
+            TriggerHiddenObject(_unlockedHiddenObjects[0]);
+            _unlockedHiddenObjects.RemoveAt(0);
+        }
     }
 
     void PenaltyButtonClick()
@@ -328,10 +438,21 @@ public class UnlockGameManager : MonoBehaviour
 
     public void TriggerPenalty()
     {
-        SetTime(TimeLeft - _penaltyTime);
+        _penaltyCount++;
 
-        _timerText.DOColor(_normalTextColor, 2f).From(_penaltyTextColor).SetEase(Ease.OutCubic);
-        _timerPanel.DOShakeAnchorPos(0.5f, 20, 100, 90, false, true).SetEase(Ease.OutCubic);
+        float time = GetTime();
+
+        if (time > 0)
+            _timerText.DOColor(_normalTextColor, 1f).From(_penaltyTextColor).SetEase(Ease.OutCubic);
+
+#if UNITY_ANDROID
+        Vibration.VibrateAndroid(500);
+#endif
+
+        _timerPanel.DOShakeAnchorPos(0.5f, 20, 100, 90, false, true).SetEase(Ease.OutCubic).OnComplete(() =>
+        {
+            _timerPanel.anchoredPosition = Vector2.zero;
+        });
 
         GameManager.Instance.SoundManager.playPenalty();
     }
@@ -353,12 +474,27 @@ public class UnlockGameManager : MonoBehaviour
 
     public void UpdateButtonState()
     {
+        bool isHiddenObjectsAutoOn = GameManager.Instance.UserSettingsManager.IsHiddenObjectsAutoOn;
+
+        if (_hiddenObjectsAutoText.activeSelf != isHiddenObjectsAutoOn)
+            _hiddenObjectsAutoText.SetActive(isHiddenObjectsAutoOn);
+
         if (_isPlaying)
         {
             _penaltyButton.Activate();
             _clueButton.Activate();
             _codeButton?.Activate();
             _machineButton.Activate();
+
+            if (!GameManager.Instance.UserSettingsManager.IsHiddenObjectsAutoOn &&
+               _unlockedHiddenObjects.Count > 0)
+            {
+                _hiddenObjectButton.Activate();
+            }
+            else
+            {
+                _hiddenObjectButton.Deactivate();
+            }
 
 
             if (_unlockedHints.Count > 0)
@@ -378,13 +514,80 @@ public class UnlockGameManager : MonoBehaviour
             _codeButton?.Deactivate();
             _machineButton.Deactivate();
             _reviewClueButton.Deactivate();
+            _hiddenObjectButton.Deactivate();
         }
+    }
+
+    public void Back()
+    {
+        foreach (PopupViewController popupViewController in _popupsViewController)
+        {
+            if (popupViewController.IsOpened)
+            {
+                popupViewController.closePopup();
+                return;
+            }
+        }
+
+        OnCloseButton();
+    }
+
+    private void ManageBeingUnlockHiddenObjects()
+    {
+        for (int i = 0; i < _beingUnlockHiddenObjects.Count; i++)
+        {
+            UnlockSaveHintItem hintSelectorItem = _beingUnlockHiddenObjects[i].hintSelector;
+            HiddenObject hiddenObject = hintSelectorItem.unlockSaveHint as HiddenObject;
+            float timeStart = _beingUnlockHiddenObjects[i].timeStart;
+
+            if (_timeLeft <= timeStart - hiddenObject.Time)
+            {
+                _unlockedHiddenObjects.Add(hintSelectorItem);
+                _beingUnlockHiddenObjects.RemoveAt(i);
+                i--;
+            }
+        }
+    }
+
+    private void ManageUnlockedHiddenObjects()
+    {
+        if (GameManager.Instance.UserSettingsManager.IsHiddenObjectsAutoOn == false)
+            return;
+
+        if (CurrentMachine != null)
+            return;
+
+        foreach (PopupViewController popupViewController in _popupsViewController)
+        {
+            if (popupViewController.IsOpened)
+                return;
+        }
+
+        for (int i = 0; i < _unlockedHiddenObjects.Count; i++)
+        {
+            UnlockSaveHintItem hintSelectorItem = _unlockedHiddenObjects[i];
+
+            TriggerHiddenObject(hintSelectorItem);
+            _unlockedHiddenObjects.RemoveAt(i);
+            i--;
+        }
+    }
+
+    private void TriggerHiddenObject(UnlockSaveHintItem hintSelectorItem)
+    {
+        _unlockedHints.Add(hintSelectorItem);
+        _hintSelectorController.SetupHints();
+        HiddenObject hiddenObject = hintSelectorItem.unlockSaveHint as HiddenObject;
+        _popupMessageController.SetupPopupMessage(hiddenObject.message.GetLocalizedString(), false, false, false);
+        _popupMessageController.OpenPopupMessage();
     }
 
     // Update is called once per frame
     void Update()
     {
         UpdateTime(Time.deltaTime);
+        ManageBeingUnlockHiddenObjects();
+        ManageUnlockedHiddenObjects();
         UpdateButtonState();
     }
 }
