@@ -14,6 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _machines:
     _serializedList:
+    - Key: 92
+      Value:
+        Name: MachineScanner
+    - Key: 47
+      Value:
+        Name: MachineFuiteLeviath
     - Key: 40
       Value:
         Name: Subnautica_Labyrinth
@@ -503,21 +509,7 @@ MonoBehaviour:
           m_LocalVariables: []
         cardsToTake: []
   _hiddenObjects:
-    _serializedList:
-    - Key: 
-      Value:
-        Time: 0
-        message:
-          m_TableReference:
-            m_TableCollectionName: 
-          m_TableEntryReference:
-            m_KeyId: 0
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        precedingUnlockEventID: 
-        cancelingUnlockEventID: 
+    _serializedList: []
   _codes:
     _serializedList:
     - Key: 2153
@@ -528,7 +520,7 @@ MonoBehaviour:
         eventName: 1_SubnauticaCodeNadir3
   _unlockEvents:
     _serializedList:
-    - Key: 1_SubnauticaCraftReservoir
+    - Key: 1_SubnauticaCraftExplosif
       Value:
         localizedString:
           m_TableReference:
@@ -540,7 +532,39 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
         _cardToTake:
-        - 19
+        - 10
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 1_SubnauticaCraftCombiAntiRad
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 23275647209472
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 91
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 1_SubnauticaCraftReservoirO23
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 23275647209472
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 26
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
