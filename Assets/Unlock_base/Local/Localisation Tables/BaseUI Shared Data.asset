@@ -119,6 +119,14 @@ MonoBehaviour:
     m_Key: TU_NoMachine
     m_Metadata:
       m_Items: []
+  - m_Id: 14181543465762816
+    m_Key: OP_Auto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14181784696963072
+    m_Key: OP_Manual
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

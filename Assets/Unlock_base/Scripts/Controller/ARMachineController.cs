@@ -16,6 +16,7 @@ public class ARMachineController : MonoBehaviour
 
     private void Close()
     {
+        UnlockGameManager.Instance.CurrentMachine = null;
         UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("ARMachine"); });
     }
 }

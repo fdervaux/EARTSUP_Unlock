@@ -22,6 +22,7 @@ public class MachineController : MonoBehaviour
 
     private void Close()
     {
+        UnlockGameManager.Instance.CurrentMachine = null;
         UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("MachineTuto"); });
     }
 

@@ -5,18 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Unlock_base/Scenes/SplashScreen.unity
+    guid: 171d1464be96f5149a284df49804cc75
+  - enabled: 0
     path: Assets/Unlock_base/Scenes/HomeMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
+  - enabled: 0
     path: Assets/Unlock_base/Scenes/TutoScene.unity
     guid: fca0c7da4177f2d40a121ea6073fa405
-  - enabled: 1
+  - enabled: 0
     path: Assets/Unlock_base/Scenes/Machines/MachineTuto.unity
     guid: 6f8178b09243bc849bfddab6a76e9bee
-  - enabled: 1
+  - enabled: 0
     path: Assets/Unlock_base/Scenes/Machines/ARMachine.unity
     guid: 0d04b790ac5570c4ea022611ab070263
+  - enabled: 1
+    path: Assets/2024/Mario/PP1/PP_Scene.unity
+    guid: f5556b685e02405428704a2e3824ab4f
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2a5a88c4c4fd93e44bc56c42dd6223c9, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ec7ba763e0c312a4e9062ed06450f7c5, type: 2}
