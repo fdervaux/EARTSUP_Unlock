@@ -131,6 +131,14 @@ MonoBehaviour:
     m_Localized: "\xA1Nos las arreglamos para escapar!"
     m_Metadata:
       m_Items: []
+  - m_Id: 22418264363008
+    m_Localized: "\xA1El esc\xE1ner funciona!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23275647209472
+    m_Localized: "La m\xE1quina de elaboraci\xF3n funcion\xF3."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

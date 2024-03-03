@@ -139,6 +139,14 @@ MonoBehaviour:
     m_Key: 1_SubnauticaEndMachineFuite
     m_Metadata:
       m_Items: []
+  - m_Id: 22418264363008
+    m_Key: 1_SubnauticaScanner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23275647209472
+    m_Key: MachineCraft
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

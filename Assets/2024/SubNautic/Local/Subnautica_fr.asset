@@ -131,6 +131,14 @@ MonoBehaviour:
     m_Localized: "On \xE0 r\xE9ussit \xE0 lui \xE9chapper ouf !"
     m_Metadata:
       m_Items: []
+  - m_Id: 22418264363008
+    m_Localized: Le scanner fonctionne !
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23275647209472
+    m_Localized: "La machine de craft a fonctionn\xE9."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

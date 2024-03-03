@@ -528,6 +528,73 @@ MonoBehaviour:
         eventName: 1_SubnauticaCodeNadir3
   _unlockEvents:
     _serializedList:
+    - Key: 1_SubnauticaCraftReservoir
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 23275647209472
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 19
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 1_SubnauticaCraftReparateur
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 23275647209472
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 19
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 1_SubnauticaScanner
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 22418264363008
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 51
+        _cardToDiscard:
+        - 81
+        - 11
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: MachineCraft_Reparateur
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 14198477119488
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 30
+        _cardToDiscard:
+        - 36
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
     - Key: 1_SubnauticaCodeSousMarines
       Value:
         localizedString:

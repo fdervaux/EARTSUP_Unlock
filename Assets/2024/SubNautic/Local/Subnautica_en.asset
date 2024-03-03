@@ -129,6 +129,14 @@ MonoBehaviour:
     m_Localized: We managed to get away from him.
     m_Metadata:
       m_Items: []
+  - m_Id: 22418264363008
+    m_Localized: The scanner works!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23275647209472
+    m_Localized: The crafting machine worked.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
