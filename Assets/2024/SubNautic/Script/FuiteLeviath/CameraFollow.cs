@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Subnautica
+{
+
 
 // Start is called before the first frame update
 public class CameraFollow : MonoBehaviour
@@ -13,4 +16,4 @@ public class CameraFollow : MonoBehaviour
         transform.position = new Vector3(transform.position.x, target.position.y, -10);
     }
 }
-
+}
