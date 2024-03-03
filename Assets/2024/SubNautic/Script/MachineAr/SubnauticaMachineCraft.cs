@@ -28,7 +28,7 @@ public class SubnauticaMachineCraft : MonoBehaviour
 
     void Start()
     {
-        Return();
+        ResetUI();
     }
 
     public void OnRecipeFind()
@@ -50,7 +50,7 @@ public class SubnauticaMachineCraft : MonoBehaviour
         _valideCraft = StartCoroutine(DelayCraftValidation());
     }
 
-    public void Return()
+    public void ResetUI()
     {
         if(_valideCraft != null)
             StopCoroutine(_valideCraft);
