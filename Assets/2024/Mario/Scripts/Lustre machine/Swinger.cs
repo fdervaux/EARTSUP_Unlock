@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class Swinger : MonoBehaviour
@@ -20,6 +21,8 @@ public class Swinger : MonoBehaviour
 
 
     }
+
+
     void CheckRange()
     {
         if (SwingerRotation > minMaxRange.x && SwingerRotation < minMaxRange.y)
@@ -43,5 +46,14 @@ public class Swinger : MonoBehaviour
             speed = -speed;
         }
         return;
+    }
+    public void GoToMiddle(float temp_t)
+    {
+        speed = 0;
+        SwingerRectTrans.DORotate(Vector3.zero, temp_t);
+    }
+    public void Shake(float temp_t)
+    {
+        SwingerRectTrans.DOShakePosition(temp_t);
     }
 }

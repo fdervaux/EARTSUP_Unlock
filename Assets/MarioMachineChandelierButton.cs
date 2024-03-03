@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class MarioMachineChandelierButton : MonoBehaviour
     [SerializeField] UnityEvent tooMuchToads;
     [SerializeField] UnityEvent onHit;
     [SerializeField] UnityEvent Miss;
+    [SerializeField] MachineController machine;
+    [SerializeField] GameObject button ;
 
     void Start()
     {
@@ -26,7 +29,7 @@ public class MarioMachineChandelierButton : MonoBehaviour
             ++toadcount;
             onHit.Invoke();
         }
-        if (chandelierCode.isInRange!)
+        if (!chandelierCode.isInRange)
         {
             if (failCountThreshold > failCount)
             {
@@ -44,9 +47,23 @@ public class MarioMachineChandelierButton : MonoBehaviour
         }
         if (toadcount > 30)
         {
-
             chandelierVisuals.color = Color.green;
             tooMuchToads.Invoke();
         }
+    }
+
+    public void EndAnim()
+    {
+        StartCoroutine(EndAnimation());
+    }
+
+    public IEnumerator EndAnimation()
+    {
+        button.GetComponent<Button>().interactable = false;
+        chandelierCode.GoToMiddle(1f);
+        yield return new WaitForSeconds(1f);
+        chandelierCode.Shake(0.5f);
+        yield return new WaitForSeconds(0.5f);
+        machine.OnCloseButton();
     }
 }
