@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScannerEvent : MonoBehaviour
 {
 
     public string TriggerEvent;
 
-   void Start()
+    void Start()
     {
         StartCoroutine(ScannerWaiting());
     }
@@ -16,6 +17,7 @@ public class ScannerEvent : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         UnlockGameManager.Instance.TriggerEvent("EVENT_NAME");
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("MachineScanner"); });
     }
 }
 

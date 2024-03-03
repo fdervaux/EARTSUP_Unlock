@@ -20,12 +20,15 @@ MonoBehaviour:
     - Key: 47
       Value:
         Name: MachineFuiteLeviath
+    - Key: 62
+      Value:
+        Name: Subnautica_MachineCraft
     - Key: 40
       Value:
         Name: Subnautica_Labyrinth
     - Key: 83
       Value:
-        Name: SubnauticaVibrateMachine
+        Name: Subnautica_SonarMachine
   _hints:
     _serializedList:
     - Key: 57
@@ -520,6 +523,22 @@ MonoBehaviour:
         eventName: 1_SubnauticaCodeNadir3
   _unlockEvents:
     _serializedList:
+    - Key: 1_SubnauticaCraftSonar
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
+          m_TableEntryReference:
+            m_KeyId: 23275647209472
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 1
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
     - Key: 1_SubnauticaCraftExplosif
       Value:
         localizedString:
@@ -552,7 +571,7 @@ MonoBehaviour:
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
-    - Key: 1_SubnauticaCraftReservoirO23
+    - Key: 1_SubnauticaCraftReservoirO2
       Value:
         localizedString:
           m_TableReference:
