@@ -19,7 +19,7 @@ MonoBehaviour:
         Name: Machine_Toads
     - Key: 30
       Value:
-        Name: Machine_FlashLight
+        Name: Machine_Flashlight
     - Key: 99
       Value:
         Name: Machine_Bowser
