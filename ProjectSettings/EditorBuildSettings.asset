@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Unlock_base/Scenes/TutoScene.unity
     guid: fca0c7da4177f2d40a121ea6073fa405
-  - enabled: 1
+  - enabled: 0
     path: Assets/Unlock_base/Scenes/Machines/MachineTuto.unity
     guid: 6f8178b09243bc849bfddab6a76e9bee
   - enabled: 1
