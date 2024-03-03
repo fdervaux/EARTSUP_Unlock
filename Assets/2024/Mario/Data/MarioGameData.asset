@@ -506,7 +506,21 @@ MonoBehaviour:
           m_LocalVariables: []
         cardsToTake: []
   _hiddenObjects:
-    _serializedList: []
+    _serializedList:
+    - Key: o1
+      Value:
+        Time: 300
+        message:
+          m_TableReference:
+            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
+          m_TableEntryReference:
+            m_KeyId: 7224916255432704
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        precedingUnlockEventID: Event_Door
+        cancelingUnlockEventID: Event_Luster
   _codes:
     _serializedList:
     - Key: 3210
@@ -611,21 +625,6 @@ MonoBehaviour:
           m_LocalVariables: []
         _cardToTake:
         - 99
-        _cardToDiscard: []
-        _isEndEvent: 0
-        _isPenaltyEvent: 0
-    - Key: Event_hO1
-      Value:
-        localizedString:
-          m_TableReference:
-            m_TableCollectionName: GUID:5d33d9cc29bd56843999e69504de2225
-          m_TableEntryReference:
-            m_KeyId: 7224916255432704
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        _cardToTake: []
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
