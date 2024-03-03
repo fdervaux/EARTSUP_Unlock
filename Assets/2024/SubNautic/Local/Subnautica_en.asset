@@ -17,7 +17,118 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 1aeca88d3bc65664ba0642196d5e9888, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 2955183874048
+    m_Localized: We can't fight him, we have to find something else.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4793035612160
+    m_Localized: We can't fight him, we have to find something else.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4948757536768
+    m_Localized: Maybe there's something to knock him out of somewhere.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386378633216
+    m_Localized: A little help wouldn't be a problem.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6439580950528
+    m_Localized: The rock seems to have a precarious equilibrium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7012233469952
+    m_Localized: It doesn't seem to work that way.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7462454255616
+    m_Localized: He'd need some energy.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7899320377344
+    m_Localized: Looks like we see differently when we look through.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8172520562688
+    m_Localized: If we look at the right place, we might be able to discover something.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8653087137792
+    m_Localized: The door looks unitizable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024069132288
+    m_Localized: Another entry may be usable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371395252224
+    m_Localized: I can't get all the mushrooms back, I only have to take the one
+      I'm interested in
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9985693016064
+    m_Localized: I think there's a book about mushrooms in the seamoth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10406578839552
+    m_Localized: He must have landed deeper.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10867721592832
+    m_Localized: Nothing to fight with, but it might cut off some things that aren't
+      too tough.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11758453350400
+    m_Localized: On this side, I can't see which key to touch.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12121961095168
+    m_Localized: If we don't have a light to see in front of us, we have to find
+      another way to avoid obstacles.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12373359288320
+    m_Localized: Dad told us about animals that would meet with sound a while back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13018023813120
+    m_Localized: Dad had to keep it so he could get into the nadir.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13127981686784
+    m_Localized: Bei so vielen Informationen muss es einen Code enthalten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13466776592384
+    m_Localized: Some pieces look more important than others.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13862362374144
+    m_Localized: Not sure that's really useful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14198477119488
+    m_Localized: Bravo, you now have access to the Seamoth!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14836757913600
+    m_Localized: The door of the Nadir opens
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15368012652544
+    m_Localized: We managed to get out, I thought we were stuck forever
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15598741315584
+    m_Localized: Sonar saved us!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15905474961408
+    m_Localized: We managed to get away from him.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

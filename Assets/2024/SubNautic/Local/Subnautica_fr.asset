@@ -17,7 +17,120 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 1aeca88d3bc65664ba0642196d5e9888, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 2955183874048
+    m_Localized: On ne peut pas le combattre, il faut trouver autre chose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4793035612160
+    m_Localized: On ne peut pas le combattre, il faut trouver autre chose
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4948757536768
+    m_Localized: Il y a peut etre de quoi le faire s'assomer quelque part
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386378633216
+    m_Localized: 'Un peu d''aide ne serait pas de refus '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6439580950528
+    m_Localized: Le rocher semble avoir un equilibre prequaire
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7012233469952
+    m_Localized: Il n'a pas l'air de fonctionner comme ca
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7462454255616
+    m_Localized: Il lui faudrait de l'energie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7899320377344
+    m_Localized: 'On dirait qu''on voit differement en regardant a travers '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8172520562688
+    m_Localized: ' En regardant le bon endroit on pourrait peut etre y decouvrir
+      quelques chose'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8653087137792
+    m_Localized: La porte a l'air unitilisable
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024069132288
+    m_Localized: "Une autre entr\xE9e est peut etre utilisable"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371395252224
+    m_Localized: Je peux pas recuperer tout les champignon, je dois prendre seulement
+      celui qui m'interesse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9985693016064
+    m_Localized: Il me semble qu'il y a un livre sur les champignon dans le seamoth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10406578839552
+    m_Localized: Il a du atterir plus profondement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10867721592832
+    m_Localized: Pas de quoi combattre  mais ca pourrait couper quelques choses pas
+      trop resistant
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11758453350400
+    m_Localized: "De ce cot\xE9, je ne peux pas voir quelle touche toucher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12121961095168
+    m_Localized: Si on a pas de lumiere pour voir devant nous on doit trouver un
+      autre moyen d'eviter les obstacles
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12373359288320
+    m_Localized: Papa nous avait parler d'animaux qui se reperais avec le son il
+      y a quelques temps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13018023813120
+    m_Localized: "Papa a du garder ca pour pouvoir entr\xE9 dans le nadir"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13127981686784
+    m_Localized: Avec autant d'information, ca doit contenir un code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13466776592384
+    m_Localized: Certaine pieces on l'air plus importantes que d'autre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13862362374144
+    m_Localized: Pas sur que ce soit vraiment utile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14198477119488
+    m_Localized: "Bravo vous avez maintenant acc\xE8s au Seamoth !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14836757913600
+    m_Localized: La porte du Nadir s'ouvre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15368012652544
+    m_Localized: "Nous avez r\xE9ussir a sortir, je nous croyais bloqu\xE9 pour toujours"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15598741315584
+    m_Localized: "Le sonar nous a sauv\xE9 !!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15905474961408
+    m_Localized: "On \xE0 r\xE9ussit \xE0 lui \xE9chapper ouf !"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
