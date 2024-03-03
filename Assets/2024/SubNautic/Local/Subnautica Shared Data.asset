@@ -13,8 +13,132 @@ MonoBehaviour:
   m_Name: Subnautica Shared Data
   m_EditorClassIdentifier: 
   m_TableCollectionName: Subnautica
-  m_TableCollectionNameGuidString: 00000000000000000000000000000000
-  m_Entries: []
+  m_TableCollectionNameGuidString: 1aeca88d3bc65664ba0642196d5e9888
+  m_Entries:
+  - m_Id: 4793035612160
+    m_Key: 'HintShark
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4948757536768
+    m_Key: HintShark2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386378633216
+    m_Key: 'HintRock
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6439580950528
+    m_Key: HintRock2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7012233469952
+    m_Key: 'HintAlienScanner
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7462454255616
+    m_Key: HintAlienScanner2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7899320377344
+    m_Key: 'HintMachineScanner
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8172520562688
+    m_Key: 'HintMachineScanner2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8653087137792
+    m_Key: HintDoor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024069132288
+    m_Key: HintDoor2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371395252224
+    m_Key: HintMushroom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9985693016064
+    m_Key: 'HintMushroom2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10406578839552
+    m_Key: HintFallingrock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10867721592832
+    m_Key: 'HintCut
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11758453350400
+    m_Key: HintDigicode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12121961095168
+    m_Key: 'HintSeamothLowBattery
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12373359288320
+    m_Key: 'HintSeamothLowBattery2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13018023813120
+    m_Key: HintSas
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13127981686784
+    m_Key: HintSas2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13466776592384
+    m_Key: 'HintFolderTechniqual
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13862362374144
+    m_Key: HintPhotoClasse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14198477119488
+    m_Key: 1_SubnauticaCodeSousMarines
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14836757913600
+    m_Key: 1_SubnauticaCodeNadir3
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15368012652544
+    m_Key: 1_SubnauticaEndMachineLabyrinthe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15598741315584
+    m_Key: 1_SubnauticaEndMachineSonar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15905474961408
+    m_Key: 1_SubnauticaEndMachineFuite
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
