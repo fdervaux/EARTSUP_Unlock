@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -20, y: -20}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 110, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7171071656140668935
 CanvasRenderer:
@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb30198aa32dd140b5750692dd48104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 75
+  radius: 55
   image: {fileID: 4526077077924971903}
 --- !u!114 &1434243994404274815
 MonoBehaviour:
@@ -124,6 +124,7 @@ MonoBehaviour:
   _changeColorOnPress: 0
   _pressedColor: {r: 1, g: 1, b: 1, a: 1}
   _normalColor: {r: 1, g: 1, b: 1, a: 1}
+  _activateOnStart: 0
 --- !u!1 &2143106121920637487
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 110, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9052026124482577986
 CanvasRenderer:

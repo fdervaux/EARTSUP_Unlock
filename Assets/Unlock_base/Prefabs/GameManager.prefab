@@ -138,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3863367129911702936}
   - component: {fileID: 7225332812999310558}
-  - component: {fileID: 2914048860603045148}
+  - component: {fileID: 6393444791918646633}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &2914048860603045148
+--- !u!114 &6393444791918646633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,17 +185,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 3659777626573097629}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_PointAction: {fileID: -8682795618752692656, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_MoveAction: {fileID: 8871657941231718756, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_SubmitAction: {fileID: 782406736214989305, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_CancelAction: {fileID: 5493926399282626352, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_LeftClickAction: {fileID: 7444406442592901810, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_MiddleClickAction: {fileID: -4109920874141541476, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_RightClickAction: {fileID: 2462451628787126174, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_ScrollWheelAction: {fileID: 5149436928210787703, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_TrackedDevicePositionAction: {fileID: -2550161588110903597, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1526681679407197069, guid: cb54f187ccfe1c645816e70f7aab8dd1, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &3922744696986088253
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +444,20 @@ PrefabInstance:
       value: Canvas - Loading bar
       objectReference: {fileID: 0}
     - target: {fileID: 937410023427098553, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
-      propertyPath: m_Material
-      value: 
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 937410023427098553, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_Color.b
+      value: 0.3018868
+      objectReference: {fileID: 0}
+    - target: {fileID: 937410023427098553, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_Color.g
+      value: 0.25369745
+      objectReference: {fileID: 0}
+    - target: {fileID: 937410023427098553, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_Color.r
+      value: 0.11269897
       objectReference: {fileID: 0}
     - target: {fileID: 1458685066923982435, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
       propertyPath: m_Pivot.x
@@ -517,9 +539,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3674860903526988838, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674860903526988838, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3674860903526988838, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 480
+      objectReference: {fileID: 0}
     - target: {fileID: 5407914653522976681, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
-      propertyPath: m_Material
-      value: 
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407914653522976681, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5407914653522976681, guid: d829e83eee87c4b42b0f91481f7edecc, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -48,9 +48,19 @@ public class PopupMessageController : MonoBehaviour
     [SerializeField] private Color _selectedColor;
     [SerializeField] private Color _normalColor;
 
+    [SerializeField] private GameObject _CardToDiscardContainer;
+    [SerializeField] private List<GameObject> _CardToDiscards;
+    [SerializeField] private GameObject _CardToTakeContainer;
+    [SerializeField] private List<GameObject> _CardToTakes;
+
+
     private Image _image;
 
     private PopupViewController _popupViewController;
+
+
+
+
 
     public string CurrentHintName
     {
@@ -82,6 +92,18 @@ public class PopupMessageController : MonoBehaviour
             });
     }
 
+    public void SetupPopupMessage(UnlockEvent unlockEvent)
+    {
+        string message = unlockEvent.localizedString.GetLocalizedString();
+        SetMessage(message);
+        ShowMessage(message != "");
+        ShowImage(false);
+        ShowYesNoButtons(false);
+        ShowHintButtons(false, false, false);
+        ShowCardToTake(new List<string>(unlockEvent._cardToTake));
+        ShowDiscardCard(new List<string>(unlockEvent._cardToDiscard));
+    }
+
     public void SetupPopupMessage(string message, bool showImage, bool showYesNoButtons, bool showHintButtons, bool showSecondHint = false, bool showAnwser = false)
     {
         SetMessage(message);
@@ -89,6 +111,8 @@ public class PopupMessageController : MonoBehaviour
         ShowImage(showImage);
         ShowYesNoButtons(showYesNoButtons);
         ShowHintButtons(showHintButtons, showSecondHint, showAnwser);
+        ShowCardToTake();
+        ShowDiscardCard();
     }
 
     public void ResetPopupMessage()
@@ -131,6 +155,8 @@ public class PopupMessageController : MonoBehaviour
             PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
             popupMessageController.SetupPopupMessage(_hintConfirmString.GetLocalizedString(), false, true, false);
 
+            popupMessageController.OnYesNoValidate.RemoveAllListeners();
+
             popupMessageController.OnYesNoValidate.AddListener((bool value) =>
             {
                 popupMessageController.OnYesNoValidate.RemoveAllListeners();
@@ -153,6 +179,8 @@ public class PopupMessageController : MonoBehaviour
         {
             PopupMessageController popupMessageController = _messagePopup.GetComponent<PopupMessageController>();
             popupMessageController.SetupPopupMessage(_hintConfirmString.GetLocalizedString(), false, true, false);
+
+            popupMessageController.OnYesNoValidate.RemoveAllListeners();
 
             popupMessageController.OnYesNoValidate.AddListener((bool value) =>
             {
@@ -202,6 +230,48 @@ public class PopupMessageController : MonoBehaviour
     {
         _showYesNoButtons = show;
         _yesNoButtonsContainer.SetActive(show);
+    }
+
+    public void ShowDiscardCard(List<string> cards = null)
+    {
+        if(cards == null)
+        {
+            _CardToDiscardContainer.SetActive(false);
+            return;
+        }
+
+        _CardToDiscardContainer.SetActive(cards.Count > 0);
+
+        for (int i = 0; i < _CardToDiscards.Count; i++)
+        {
+            _CardToDiscards[i].SetActive(i < cards.Count);
+
+            if (i >= cards.Count)
+                continue;
+
+            _CardToDiscards[i].GetComponentInChildren<TextMeshProUGUI>().text = cards[i];
+        }
+    }
+
+    public void ShowCardToTake(List<string> cards = null)
+    {
+        if(cards == null)
+        {
+            _CardToTakeContainer.SetActive(false);
+            return;
+        }
+
+        _CardToTakeContainer.SetActive(cards.Count > 0);
+
+        for (int i = 0; i < _CardToTakes.Count; i++)
+        {
+            _CardToTakes[i].SetActive(i < cards.Count);
+
+            if (i >= cards.Count)
+                continue;
+
+            _CardToTakes[i].GetComponentInChildren<TextMeshProUGUI>().text = cards[i];
+        }
     }
 
     public void ShowHintButtons(bool show, bool showSecondHint, bool showAnwser)

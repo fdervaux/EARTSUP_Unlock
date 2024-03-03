@@ -12,7 +12,7 @@ public class PopupOptionController : MonoBehaviour
     {
         _musicToggle.isOn = GameManager.Instance.UserSettingsManager.IsMusucOn;
         _chronometerToggle.isOn = GameManager.Instance.UserSettingsManager.IsChronometerOn;
-        _hiddenObjectsToggle.isOn = GameManager.Instance.UserSettingsManager.IsHiddenObjectsOn;
+        _hiddenObjectsToggle.isOn = GameManager.Instance.UserSettingsManager.IsHiddenObjectsAutoOn;
 
         _musicToggle.onValueChanged.AddListener(OnMusicToggleChanged);
         _chronometerToggle.onValueChanged.AddListener(OnChronometerToggleChanged);
