@@ -14,6 +14,10 @@ public class PopupViewController : MonoBehaviour
     public UnityEvent OnPopupOpen => _OnPopupOpen;
     public UnityEvent OnPopupClose => _OnPopupClose;
 
+    private bool _isOpened = false;
+
+    public bool IsOpened { get => _isOpened; }
+
 
     [SerializeField, Range(0, 1)] private float _animationTime = 0.5f;
 
@@ -38,16 +42,22 @@ public class PopupViewController : MonoBehaviour
         _canvasgroup.blocksRaycasts = true;
 
         _OnPopupOpen.Invoke();
+
+        _isOpened = true;
     }
 
     public void closePopupImmediate()
     {
+
+        
         _canvasgroup.alpha = 0;
         _popupRectTransform.localScale = Vector3.zero;
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;
 
         _OnPopupClose.Invoke();
+
+        _isOpened = false;
     }
 
     public void closePopup()
@@ -65,6 +75,8 @@ public class PopupViewController : MonoBehaviour
 
         _canvasgroup.interactable = false;
         _canvasgroup.blocksRaycasts = false;
+
+        _isOpened = false;
     }
 
     // Update is called once per frame

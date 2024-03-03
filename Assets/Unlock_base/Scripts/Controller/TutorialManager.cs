@@ -13,14 +13,14 @@ public class TutorialManager : MonoBehaviour
     void Start()
     {
 
-        _triggerTime = UnlockGameManager.Instance.TimeLeft - _TimerTime;
+        _triggerTime = UnlockGameManager.Instance.GetTime() - _TimerTime;
         _isTimerRunning = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(UnlockGameManager.Instance.TimeLeft < _triggerTime && _isTimerRunning)
+        if(UnlockGameManager.Instance.GetTime() < _triggerTime && _isTimerRunning)
         {
             UnlockGameManager.Instance.TriggerEvent("1"); 
             _isTimerRunning = false;
