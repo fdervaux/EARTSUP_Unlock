@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66bc4eb0dc565764589ca74e41563d7c, type: 3}
+  m_Name: Data Doom
+  m_EditorClassIdentifier: 
+  _machines:
+    _serializedList:
+    - Key: 99
+      Value:
+        Name: _Unlock_Doom_Pandemonium
+    - Key: 66
+      Value:
+        Name: _Unlock_Doom_LecteurDisque
+    - Key: 73
+      Value:
+        Name: '_Unlock_Doom_CoffreFort '
+    - Key: 89
+      Value:
+        Name: _Unlock_Doom_Sarcophage
+    - Key: 81
+      Value:
+        Name: _Unlock_Doom_CasqueSang
+    - Key: 46
+      Value:
+        Name: '_Unlock_Doom_PorteDigicode '
+    - Key: 54
+      Value:
+        Name: '_Unlock_Doom_Salletentacules '
+    - Key: 88
+      Value:
+        Name: _Unlock_Doom_Xylocrane
+    - Key: 44
+      Value:
+        Name: _Unlock_Doom_PorteTour
+  _hints:
+    _serializedList: []
+  _hiddenObjects:
+    _serializedList:
+    - Key: 
+      Value:
+        Time: 0
+        message:
+          m_TableReference:
+            m_TableCollectionName: 
+          m_TableEntryReference:
+            m_KeyId: 0
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+  _codes:
+    _serializedList: []
+  _unlockEvents:
+    _serializedList:
+    - Key: 1
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 99135512576
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 2
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 11916670918656
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 23
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 3
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 12753027719168
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 23
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 98
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 95223483981824
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 99
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 94541389488128
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+  references:
+    version: 2
+    RefIds: []

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Subnautica
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: 1aeca88d3bc65664ba0642196d5e9888, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: b36415dee74006b41bd88a3166085ed0, type: 2}
+  - {fileID: 11400000, guid: aeabab522b9f2c847a47b5333ff1dc41, type: 2}
+  - {fileID: 11400000, guid: fd6d71035e8223a4c87fac9053c822cb, type: 2}
+  - {fileID: 11400000, guid: 063f0dd59bb2bd94cbe4831a76567f47, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []
