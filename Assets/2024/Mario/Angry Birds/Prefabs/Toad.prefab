@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 38517052428737018}
   m_Layer: 0
   m_Name: Toad
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,12 +99,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5587677282803893941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55f99a098811348449b99cc301221500, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ee767dccb073c347b959cde3a8c7da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 1.5
-  curvedLineRenderer: {fileID: 0}
-  bloodStainPrefab: {fileID: 4951180529596512253, guid: d94ce73a669fbc84dbbd1ab634ea42c1, type: 3}
+  launchForce: 10
+  curvedLineRenderer: {fileID: 3311969164374132948}
+  bloodStainPrefab: {fileID: 4951180529596512253, guid: 86ff330594208504bb0b49dcd4a1c1b2, type: 3}
+  tutorialText: {fileID: 0}
   doPrint: 0
 --- !u!50 &1014034910748520610
 Rigidbody2D:
@@ -154,7 +155,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d2ff5b365a50189489ee8ebb35cdae3e, type: 2}
+  - {fileID: 2100000, guid: 5ccbfa371bf884d49a2e9e7a8aa2f9fa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -246,7 +247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5587677282803893941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1b7698cb6e149142b5a6333b120372c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e4b16e0f74a87d41ba547ed2d1c5467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   segmentsCount: 0
@@ -261,7 +262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5587677282803893941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e1d651485522ef4fad36000aefc7ef4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f302e7adc85c88468467748f048ac22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraLimits: {fileID: 0}
