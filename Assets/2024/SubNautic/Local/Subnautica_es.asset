@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Subnautica_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 1aeca88d3bc65664ba0642196d5e9888, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2955183874048
+    m_Localized: "No podemos luchar contra \xE9l, tenemos que encontrar otra cosa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4793035612160
+    m_Localized: "No podemos luchar contra \xE9l, tenemos que encontrar otra cosa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4948757536768
+    m_Localized: Tal vez haya algo para que se desmaye en alguna parte.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386378633216
+    m_Localized: "Un poco de ayuda no ser\xEDa un rechazo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6439580950528
+    m_Localized: La roca parece tener un equilibrio precario.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7012233469952
+    m_Localized: "No parece que funcione as\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7462454255616
+    m_Localized: "Necesitar\xEDa energ\xEDa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7899320377344
+    m_Localized: "Parece que se ve diferente cuando se mira a trav\xE9s de ella."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8172520562688
+    m_Localized: Si miramos en el lugar correcto, tal vez encontremos algo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8653087137792
+    m_Localized: La puerta parece inutilizable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024069132288
+    m_Localized: "Otra entrada puede ser \xFAtil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371395252224
+    m_Localized: No puedo recuperar todos los hongos, solo tengo que coger los que
+      me interesan.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9985693016064
+    m_Localized: Creo que hay un libro sobre hongos en el Seamoth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10406578839552
+    m_Localized: "Debe haber aterrizado m\xE1s profundo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10867721592832
+    m_Localized: "No hay nada con lo que luchar, pero podr\xEDa cortar algunas cosas
+      que no son muy resistentes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11758453350400
+    m_Localized: "De este lado, no puedo ver qu\xE9 tecla tocar."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12121961095168
+    m_Localized: "Si no hay luz para ver delante de nosotros, tenemos que encontrar
+      otra forma de evitar los obst\xE1culos."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12373359288320
+    m_Localized: "Pap\xE1 nos habl\xF3 de animales que se recuperaban con el sonido
+      hace un tiempo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13018023813120
+    m_Localized: "Pap\xE1 tuvo que guardarlo para poder entrar en el nadir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13127981686784
+    m_Localized: "Con tanta informaci\xF3n, tiene que haber un c\xF3digo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13466776592384
+    m_Localized: "Algunas piezas parecen m\xE1s importantes que otras."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13862362374144
+    m_Localized: "No estoy seguro de que sea realmente \xFAtil."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14198477119488
+    m_Localized: "\xA1Bravo, ahora tienes acceso al Seamoth!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14836757913600
+    m_Localized: La puerta del Nadir se abre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15368012652544
+    m_Localized: "Nos las arreglamos para salir, pens\xE9 que est\xE1bamos atrapados
+      para siempre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15598741315584
+    m_Localized: "\xA1\xA1El sonar nos ha salvado!!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15905474961408
+    m_Localized: "\xA1Nos las arreglamos para escapar!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22418264363008
+    m_Localized: "\xA1El esc\xE1ner funciona!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23275647209472
+    m_Localized: "La m\xE1quina de elaboraci\xF3n funcion\xF3."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
