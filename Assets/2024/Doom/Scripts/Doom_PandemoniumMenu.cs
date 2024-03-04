@@ -78,7 +78,7 @@ public class Doom_PandemoniumMenu : MonoBehaviour
         
         foreach (KeyValuePair<string, Demon> demon in _pandemoniumData.Demon)
         {
-            if (demon.Value.Time > UnlockGameManager.Instance.TimeLeft && !demon.Value.hasBeenCalled)
+            if (demon.Value.Time > UnlockGameManager.Instance.GetTime() && !demon.Value.hasBeenCalled)
             {
                 PandemoniumActivate();
                 demon.Value.hasBeenCalled = true;
