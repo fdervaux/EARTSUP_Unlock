@@ -20,11 +20,11 @@ MonoBehaviour:
     - gameName: MARIO
       difficulty: 0
       image: {fileID: 21300000, guid: 3f8be434588487d4fa429d45e4b8636b, type: 3}
-      sceneName: 
+      sceneName: MarioMainScene
     - gameName: SUBNAUTICA
       difficulty: 0
       image: {fileID: 21300000, guid: f40c9da6ddb48864da2b8d10b1c78e77, type: 3}
-      sceneName: 
+      sceneName: SubnauticaMain
     - gameName: DOOM
       difficulty: 0
       image: {fileID: 21300000, guid: 6877c25c1ffe3a34a8614bb76a82f236, type: 3}
