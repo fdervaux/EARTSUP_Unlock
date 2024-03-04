@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Mario_ARLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 0
+  m_GuidHigh: 0
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5364742899548663770
+      m_GuidHigh: 7415362691652723592
+    m_SerializedTextureGuid:
+      m_GuidLow: 8337394559691807920
+      m_GuidHigh: 7591302090274761177
+    m_Size: {x: 0.1, y: 0.16672967}
+    m_SpecifySize: 1
+    m_Name: 22
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5288017221095634761
+      m_GuidHigh: 6592930002766750853
+    m_SerializedTextureGuid:
+      m_GuidLow: 14178517676716994376
+      m_GuidHigh: 18391801527393681818
+    m_Size: {x: 0.1, y: 0.16717269}
+    m_SpecifySize: 1
+    m_Name: 94
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4628146378678041254
+      m_GuidHigh: 10707975930727925922
+    m_SerializedTextureGuid:
+      m_GuidLow: 3342997423555328775
+      m_GuidHigh: 15877569090201840938
+    m_Size: {x: 0.1, y: 0.16654065}
+    m_SpecifySize: 1
+    m_Name: 98
+    m_Texture: {fileID: 0}

@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mario_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 5d33d9cc29bd56843999e69504de2225, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 290210738176
+    m_Localized: "F\xEDjate bien en el Bob-omb."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2711964119040
+    m_Localized: Cada uno de los elementos enumerados en este folleto corresponde
+      a uno de los ingredientes que deben recogerse.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2837759684608
+    m_Localized: "Preste mucha atenci\xF3n a las cantidades descritas en los ingredientes."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4141210955776
+    m_Localized: "Lakitu es un habitual de las carreras de karts. Debe haber revelado
+      alguna informaci\xF3n \xFAtil"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4655772364800
+    m_Localized: Intente encontrar una forma de evitar a otros competidores para
+      llegar a su objetivo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4792271794176
+    m_Localized: "Uno de tus objetos debe poder seguir el camino que has encontrado.
+      F\xEDjate bien en sus caracter\xEDsticas espec\xEDficas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5048191447040
+    m_Localized: "Clasifique a los competidores de m\xE1s atr\xE1s a m\xE1s cerca,
+      sin olvidar tener en cuenta lo que se encuentra en su camino."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5159055290368
+    m_Localized: Anticipa gradualmente los movimientos del Pokey gracias a su velocidad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5475775574016
+    m_Localized: "La niebla en esta habitaci\xF3n parece una luz que conoces."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5706365825024
+    m_Localized: "Debe ser posible hacer caer la ara\xF1a. Pero necesitar\xE1s mucho
+      peso."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6077410734080
+    m_Localized: "El Rey Boo tiene una constituci\xF3n similar a la niebla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6494454575104
+    m_Localized: Puedes ignorar ciertos movimientos. Las direcciones izquierda y
+      derecha se anulan mutuamente.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6840971194368
+    m_Localized: "Tu ruta contiene la informaci\xF3n que necesitas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7049277108224
+    m_Localized: "Aunque sea peligroso, no es rival para los n\xFAmeros."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213291171840
+    m_Localized: "Hay una combinaci\xF3n oculta en la parte superior del bob-omb.
+      El color de la parte sobre la que se coloca es azul. Comb\xEDnalo con Kamek."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7434351964160
+    m_Localized: "Los n\xFAmeros de la cuenta atr\xE1s de Lakitu representan un c\xF3digo.
+      El c\xF3digo es: 3210"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7552698445824
+    m_Localized: "Usa las conchas verdes de la ranura 2 a la posici\xF3n 4. Esto
+      te da un +24. Comb\xEDnalas y coge la carta 61."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7683057414144
+    m_Localized: "El kart que estar\xE1 m\xE1s atr\xE1s es el kart con el +54. Gracias
+      al caparaz\xF3n rojo, acertar\xE1s seguro. Comb\xEDnalos y coge la carta 97. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7942500282368
+    m_Localized: By advancing the Pokey and the blue carapace, they will meet on
+      the square marked +26. Combine it with the blue carapace and take card 82.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8062490931200
+    m_Localized: "Si trazas la ruta que has seguido, podr\xE1s distinguir el n\xFAmero
+      29. Toma la tarjeta 29."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: El Sapo abre la puerta al interior. Ahora puedes entrar en el castillo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: "El peso de los Sapos hace que la ara\xF1a caiga sobre el Rey Boo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Mira bien la casa solariega.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: "La planta est\xE1 vencida y se puede tomar el ingrediente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: "Bowser est\xE1 derrotado, Toadsworth est\xE1 a salvo, es hora de
+      volver a casa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579432502456320
+    m_Localized: "\xA1El bloque est\xE1 activado! \nToma las cartas 37, 43, 56."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579631044030464
+    m_Localized: "\xA1La cura est\xE1 terminada, vamos a d\xE1rsela al abuelo-Champi!\nToma
+      la carta 99."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

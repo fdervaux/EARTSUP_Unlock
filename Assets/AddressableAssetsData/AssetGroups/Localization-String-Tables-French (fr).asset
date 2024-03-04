@@ -29,8 +29,8 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-fr
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: aeabab522b9f2c847a47b5333ff1dc41
-    m_Address: Subnautica_fr
+  - m_GUID: a9acfe4eb73c509418307faf1d8554e4
+    m_Address: Mario_fr
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-fr

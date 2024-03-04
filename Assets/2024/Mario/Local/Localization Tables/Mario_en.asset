@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Mario_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 5d33d9cc29bd56843999e69504de2225, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 290210738176
+    m_Localized: Take a good look at the Bob-omb.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2711964119040
+    m_Localized: Each of the items listed in this leaflet corresponds to one of the
+      ingredients to be collected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2837759684608
+    m_Localized: Observe the quantities described on the ingredients.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4141210955776
+    m_Localized: Lakitu is a regular at go-kart races. He must have revealed some
+      useful information
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4655772364800
+    m_Localized: Try to find a way around other competitors to reach your target.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4792271794176
+    m_Localized: One of your objects must be able to follow the path you've found.
+      Take a close look at their specific features.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5048191447040
+    m_Localized: Rank the competitors from furthest back to closest, without forgetting
+      to take into account what is in their path.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5159055290368
+    m_Localized: Anticipate the Pokey's movements gradually thanks to its speed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5475775574016
+    m_Localized: The mist in this room looks like a light you know.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5706365825024
+    m_Localized: It must be possible to make the chandelier fall. But you'll need
+      a lot of weight.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6077410734080
+    m_Localized: King Boo has a constitution similar to mist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6494454575104
+    m_Localized: You can ignore certain movements. Left and right directions cancel
+      each other out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6840971194368
+    m_Localized: Your path contains the information you need.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7049277108224
+    m_Localized: Even if it's dangerous, it's no match for numbers.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7213291171840
+    m_Localized: There is a hidden combination on the top of the bob-omb. The colour
+      of the part on which it is placed is blue. Combine it with Kamek.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7434351964160
+    m_Localized: 'The numbers in the Lakitu countdown represent a piece of code.
+      The code is: 3210'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7552698445824
+    m_Localized: Use the green shells from slot 2 to position 4. This gives you a
+      +24. Combine them and take card 61.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7683057414144
+    m_Localized: 'The kart that will be furthest back is the kart with the +54. Thanks
+      to the red shell, you''re sure to hit it. Combine them and take the 97 card. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7942500282368
+    m_Localized: By advancing the Pokey and the blue carapace, they will meet on
+      the square marked +26. Combine it with the blue carapace and take card 82.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8062490931200
+    m_Localized: If you trace the route you've taken, you can make out the number
+      29. Take card 29.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223766009503744
+    m_Localized: The Toad opens the door to the interior. You can now enter the castle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7223901397442560
+    m_Localized: The weight of the Toads causes the chandelier to fall on King Boo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224916255432704
+    m_Localized: Take a good look at the manor's well.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224310392414208
+    m_Localized: The plant is defeated, and you can take the ingredient.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7224354415828992
+    m_Localized: Bowser is defeated, Toadsworth is saved, it's time to go home.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579432502456320
+    m_Localized: "The block is activated! \nTake cards 37, 43, 56."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7579631044030464
+    m_Localized: 'The medicine''s finished - let''s give it to Papi-Champi!
+
+      Take
+      card 99.'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

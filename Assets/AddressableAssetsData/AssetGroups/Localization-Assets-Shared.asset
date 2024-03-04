@@ -32,8 +32,8 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 1aeca88d3bc65664ba0642196d5e9888
-    m_Address: Assets/2024/SubNautic/Local/Subnautica Shared Data.asset
+  - m_GUID: 5d33d9cc29bd56843999e69504de2225
+    m_Address: Assets/2024/Mario/Local/Localization Tables/Mario Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
