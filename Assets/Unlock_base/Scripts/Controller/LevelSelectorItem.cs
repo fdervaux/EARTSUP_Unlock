@@ -11,13 +11,16 @@ public class LevelSelectorItem : MonoBehaviour, IPointerDownHandler, IPointerUpH
 {
     [SerializeField] private Image _image;
     [SerializeField] private TextMeshProUGUI _nameText;
-
+    private string _levelSceneName;
     private UnlockGame _game = null;
 
     private UnityEvent _onClick = new UnityEvent();
     public UnityEvent OnClick { get => _onClick;}
 
-    
+    public void SetLevelSceneName(string sceneName)
+    {
+        _levelSceneName = sceneName;
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -28,6 +31,11 @@ public class LevelSelectorItem : MonoBehaviour, IPointerDownHandler, IPointerUpH
     {
         if(!eventData.dragging)
             OnClick.Invoke();
+
+        if(_levelSceneName == null || _levelSceneName == "")
+            return;
+
+        GameManager.Instance.TransitionSceneManager.LoadScene(_levelSceneName);
     }
 
     public void SetUnlockGame(UnlockGame game)
