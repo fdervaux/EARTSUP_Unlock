@@ -10,23 +10,27 @@ public class HintSelectorController : MonoBehaviour
 
     [SerializeField] private GameObject _hintContainer;
 
-    public void OnClickHint(HintSelectorItem hintSelector)
+    public void OnClickHint(UnlockSaveHintItem hintSelector)
     {
+        if (hintSelector.unlockSaveHint == null)
+            return;
 
-        if (hintSelector.hint != null)
+
+        if (hintSelector.unlockSaveHint is HiddenObject hiddenObject)
         {
-            _messagePopupController.CurrentHint = hintSelector.hint;
+            _messagePopupController.SetupPopupMessage(hiddenObject.message.GetLocalizedString(), false, false, false);
+        }
+
+        if (hintSelector.unlockSaveHint is Hint hint)
+        {
+            _messagePopupController.CurrentHint = hint;
             _messagePopupController.CurrentHintName = hintSelector.name;
 
             _messagePopupController.OnHint(1);
-            GetComponent<PopupViewController>().closePopup();
-            _messagePopupController.OpenPopupMessage(0.3f);
-            return;
         }
 
-        //Need to manage HiddenObject
-
-
+        GetComponent<PopupViewController>().closePopup();
+        _messagePopupController.OpenPopupMessage(0.3f);
     }
 
     public void SetupHints()
@@ -37,9 +41,9 @@ public class HintSelectorController : MonoBehaviour
         }
 
         //print only last 12 hints unlocked
-        for(int i = Mathf.Max(UnlockGameManager.Instance.UnlockedHints.Count - 12, 0); i < UnlockGameManager.Instance.UnlockedHints.Count; ++i)
+        for (int i = Mathf.Max(UnlockGameManager.Instance.UnlockedHints.Count - 12, 0); i < UnlockGameManager.Instance.UnlockedHints.Count; ++i)
         {
-            HintSelectorItem item = UnlockGameManager.Instance.UnlockedHints[i];
+            UnlockSaveHintItem item = UnlockGameManager.Instance.UnlockedHints[i];
             ButtonController button = InstantiateButton(item.name);
             button.OnClick.AddListener(() => OnClickHint(item));
             button.Activate();

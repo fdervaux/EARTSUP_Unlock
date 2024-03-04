@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -51,6 +51,9 @@ public class KeyboardController : MonoBehaviour
             button.OnClick.AddListener(() => OnClickNumber(index));
 
         }
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(_keyboardContainer.GetComponentInParent<RectTransform>());
+        
 
         ButtonController clearButton = InstantiateButton("C", _clearColor);
         clearButton.OnClick.AddListener(OnClickClear);

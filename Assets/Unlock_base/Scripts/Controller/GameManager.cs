@@ -1,6 +1,7 @@
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem.UI;
 
 [Serializable]
 public class UserSettingsManager
@@ -11,7 +12,12 @@ public class UserSettingsManager
 
     public bool IsMusucOn { get => _isMusucOn; }
     public bool IsChronometerOn { get => _isChronometerOn; }
-    public bool IsHiddenObjectsOn { get => _isHiddenObjectsOn; }
+    public bool IsHiddenObjectsAutoOn { get => _isHiddenObjectsOn; }
+
+    public void Back()
+    {
+
+    }
 
     public bool SetMusic(bool isOn)
     {
@@ -136,18 +142,37 @@ public class GameManager : MonoBehaviour
     public TransitionSceneManager TransitionSceneManager { get => _transitionSceneManager; }
     public SoundManager SoundManager { get => _soundManager; }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
     private void Start()
     {
+        Vibration.Init();
+
         _userSettingsManager.Load();
         _transitionSceneManager.Init();
+
+        ApplicationChrome.statusBarState = ApplicationChrome.States.VisibleOverContent;
+        //ApplicationChrome.navigationBarState = ApplicationChrome.States.Hidden;
+
+        //ApplicationChrome.statusBarColor = 0x00000000;
+        //ApplicationChrome.navigationBarColor = 0x0035849F;
     }
 
     private void Awake()
     {
+        Screen.fullScreen = false;
         Application.targetFrameRate = 60;
 
         if (Instance != null && Instance != this)
         {
+            var inputUI = Instance.GetComponentInChildren<InputSystemUIInputModule>();
+
+            inputUI.enabled = false;
+            inputUI.enabled = true;
+
             foreach (Transform child in transform)
             {
                 Destroy(child.gameObject);
