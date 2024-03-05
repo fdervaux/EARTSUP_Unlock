@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Doom_XyolcraneCodeManager : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Doom_XyolcraneCodeManager : MonoBehaviour
     {
         if (codeFound == codeToFind)
         {
-            print("You Find It !!!!");
+            Close();
         }
     }
 
@@ -33,5 +34,11 @@ public class Doom_XyolcraneCodeManager : MonoBehaviour
         {
             codeFound = "";
         }
+    }
+
+    public void Close()
+    {
+        UnlockGameManager.Instance.TriggerEvent("5");
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
     }
 }

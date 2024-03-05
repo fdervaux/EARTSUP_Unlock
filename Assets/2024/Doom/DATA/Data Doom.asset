@@ -19,13 +19,13 @@ MonoBehaviour:
         Name: _Unlock_Doom_Pandemonium
     - Key: 66
       Value:
-        Name: _Unlock_Doom_LecteurDisque
+        Name: _Unlock_Doom_LecteurDeDisque
     - Key: 73
       Value:
         Name: '_Unlock_Doom_CoffreFort '
     - Key: 89
       Value:
-        Name: _Unlock_Doom_Sarcophage
+        Name: _Unlock_Doom_SarcophageBoulier
     - Key: 81
       Value:
         Name: _Unlock_Doom_CasqueSang
@@ -37,7 +37,7 @@ MonoBehaviour:
         Name: '_Unlock_Doom_Salletentacules '
     - Key: 88
       Value:
-        Name: _Unlock_Doom_Xylocrane
+        Name: _Unlock_Doom_XylocraneComplet
     - Key: 44
       Value:
         Name: _Unlock_Doom_PorteTour
@@ -92,6 +92,43 @@ MonoBehaviour:
         _cardToTake:
         - 23
         _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 4
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 10145718213492736
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 33
+        _cardToDiscard:
+        - 89
+        - 41
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 5
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+          m_TableEntryReference:
+            m_KeyId: 10146484085014528
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard:
+        - 88
+        - 94
+        - 74
+        - 69
         _isEndEvent: 0
         _isPenaltyEvent: 0
     - Key: 3

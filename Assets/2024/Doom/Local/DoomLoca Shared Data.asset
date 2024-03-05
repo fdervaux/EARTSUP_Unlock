@@ -41,6 +41,14 @@ MonoBehaviour:
     m_Key: TU_Pandemonium
     m_Metadata:
       m_Items: []
+  - m_Id: 10145718213492736
+    m_Key: Doom_BoulierOpen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10146484085014528
+    m_Key: Doom_XylocraneCompleter
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
