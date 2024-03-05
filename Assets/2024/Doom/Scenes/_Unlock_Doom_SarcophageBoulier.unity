@@ -655,7 +655,7 @@ MonoBehaviour:
   codeToFind: 1210
   codeFound: 
   branches: 00000000000000000000000000000000
-  sarcophageVisual: {fileID: 0}
+  sarcophageVisual: {fileID: 885022828}
 --- !u!114 &885022828
 MonoBehaviour:
   m_ObjectHideFlags: 0
