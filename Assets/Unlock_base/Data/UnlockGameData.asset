@@ -498,6 +498,22 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
+        precedingUnlockEventID: 3
+        cancelingUnlockEventID: 2
+    - Key: o2
+      Value:
+        Time: 10
+        message:
+          m_TableReference:
+            m_TableCollectionName: GUID:b50357110ebf7b04ab70a446b8a2ce46
+          m_TableEntryReference:
+            m_KeyId: 816848784637952
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        precedingUnlockEventID: 
+        cancelingUnlockEventID: 2
   _codes:
     _serializedList:
     - Key: 7239
@@ -549,8 +565,14 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
-        _cardToTake: []
-        _cardToDiscard: []
+        _cardToTake:
+        - 12
+        - 24
+        - A
+        _cardToDiscard:
+        - 55
+        - 6
+        - C
         _isEndEvent: 1
         _isPenaltyEvent: 0
   references:

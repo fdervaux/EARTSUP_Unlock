@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Subnautica_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 1aeca88d3bc65664ba0642196d5e9888, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 2955183874048
+    m_Localized: "Wir k\xF6nnen ihn nicht bek\xE4mpfen. Wir m\xFCssen etwas anderes
+      finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4793035612160
+    m_Localized: "Wir k\xF6nnen ihn nicht bek\xE4mpfen. Wir m\xFCssen etwas anderes
+      finden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4948757536768
+    m_Localized: "Vielleicht gibt es etwas, was ihn dazu bringen k\xF6nnte, sich
+      zu benehmen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5386378633216
+    m_Localized: "Ein wenig Hilfe w\xE4re nicht verwerflich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6439580950528
+    m_Localized: "Der Fels scheint ein prek\xE4res Gleichgewicht zu haben"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7012233469952
+    m_Localized: "Es sieht nicht so aus, als w\xFCrde es funktionieren."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7462454255616
+    m_Localized: Er braucht Energie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7899320377344
+    m_Localized: Man sieht anders, wenn man durchschaut.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8172520562688
+    m_Localized: Wenn wir uns den richtigen Ort ansehen, finden wir vielleicht etwas
+      heraus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8653087137792
+    m_Localized: "Die T\xFCr sieht vereinheitlicht aus."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9024069132288
+    m_Localized: Ein anderer Eintrag kann verwendet werden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9371395252224
+    m_Localized: "Ich kann nicht alle Pilze zur\xFCckbekommen, ich muss nur den nehmen,
+      der mir wichtig ist."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9985693016064
+    m_Localized: "Ich glaube, es gibt ein Buch \xFCber Pilze im Seamoth."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10406578839552
+    m_Localized: Er muss tiefer gelandet sein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10867721592832
+    m_Localized: "Nichts zu k\xE4mpfen, aber es k\xF6nnte ein paar Dinge schneiden
+      nicht zu widerstandsf\xE4hig"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11758453350400
+    m_Localized: "Auf dieser Seite kann ich nicht sehen, welche Taste ich ber\xFChren
+      soll."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12121961095168
+    m_Localized: "Wenn wir kein Licht haben, um vor uns zu sehen, m\xFCssen wir einen
+      anderen Weg finden, um den Hindernissen auszuweichen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12373359288320
+    m_Localized: "Dad hat uns mal von Tieren erz\xE4hlt, die durch Ger\xE4usche entdeckt
+      werden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13018023813120
+    m_Localized: Dad musste das behalten, um in den Nadir zu kommen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13127981686784
+    m_Localized: Bei so vielen Informationen muss es einen Code enthalten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13466776592384
+    m_Localized: Manche Teile scheinen wichtiger zu sein als andere.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13862362374144
+    m_Localized: "Ich wei\xDF nicht, ob das wirklich n\xFCtzlich ist."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14198477119488
+    m_Localized: Bravo, Sie haben jetzt Zugang zum Seamoth!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14836757913600
+    m_Localized: "Die T\xFCr des Nadir \xF6ffnet sich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15368012652544
+    m_Localized: "Wir haben es geschafft, rauszukommen. Ich dachte, wir stecken f\xFCr
+      immer fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15598741315584
+    m_Localized: Das Sonar hat uns gerettet !!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15905474961408
+    m_Localized: Wir haben es geschafft, ihm zu entkommen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22418264363008
+    m_Localized: Der Scanner funktioniert!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 23275647209472
+    m_Localized: Die Bastelmaschine funktionierte.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -26,6 +26,8 @@ public class TransitionSceneManager
         _slider = _loadingScreen.GetComponentInChildren<SliderController>();
         _canvasGroup = _loadingScreen.GetComponent<CanvasGroup>();
         _canvasGroup.alpha = 0;
+
+        
     }
 
     public void LoadScene(string sceneName, LoadSceneMode loadSceneMode = LoadSceneMode.Single, Action OnPreviousSceneHidden = null)
@@ -69,6 +71,8 @@ public class TransitionSceneManager
     private IEnumerator  LoadAsync(AsyncOperation asyncOperation)
     {
         _currentProgressTime = _minTime;
+        Application.backgroundLoadingPriority = ThreadPriority.Low;
+        
 
         //When the load is still in progress, output the Text and progress bar
         while (_currentProgressTime > 0 || !asyncOperation.isDone)

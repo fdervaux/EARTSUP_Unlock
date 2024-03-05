@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Unlock_base/Scenes/SplashScreen.unity
+    guid: 171d1464be96f5149a284df49804cc75
+  - enabled: 1
     path: Assets/Unlock_base/Scenes/HomeMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
@@ -18,17 +21,33 @@ EditorBuildSettings:
     path: Assets/Unlock_base/Scenes/Machines/ARMachine.unity
     guid: 0d04b790ac5570c4ea022611ab070263
   - enabled: 1
-    path: Assets/2024/Doom/Scenes/_Unlock_Doom_PorteTour.unity
-    guid: ff16da62cd935cd41a7e9b2440185182
+    path: Assets/2024/Mario/Scenes/Machines/Machine Lustre.unity
+    guid: 0efe74fe50e7c7043a8b816dd5d47244
   - enabled: 1
-    path: Assets/2024/Doom/Scenes/_Unlock_Doom_Pandemonium.unity
-    guid: e227cb81c23416c46be1500ff7cb5736
+    path: Assets/2024/Mario/Scenes/Machines/Machine_Flashlight.unity
+    guid: db1039f3196650445affd313e83f526f
   - enabled: 1
-    path: Assets/2024/Doom/Scenes/_Unlock_Doom_SarcophageBoulier.unity
-    guid: 2cb88607f41511844b7e2e5d30f1ac72
+    path: Assets/2024/Mario/Scenes/MarioMainScene.unity
+    guid: dbe4c85c08fb8a746b8bef23b9edf8d5
   - enabled: 1
-    path: Assets/2024/Doom/Scenes/_Unlock_Doom_Menu.unity
-    guid: 91fad3f60175ee243bd7e3f935cb4527
+    path: Assets/2024/Mario/Angry Birds/Scenes/AngryBirds.unity
+    guid: 32ac659a97481d74fa14b40e863285bc
+  - enabled: 1
+    path: Assets/2024/SubNautic/Scene/MachineFuiteLeviath.unity
+    guid: 703a66f070430a940b6af96d3a6c6d90
+  - enabled: 1
+    path: Assets/2024/SubNautic/Scene/MachineScanner.unity
+    guid: b88eb38a2f8b39443a4c724739df1618
+  - enabled: 1
+    path: Assets/2024/SubNautic/Scene/Subnautica_Labyrinth.unity
+    guid: 083b99cd24f0ce141a8162fa9083a7c6
+  - enabled: 1
+    path: Assets/2024/SubNautic/Scene/Subnautica_MachineCraft.unity
+    guid: 1cd988a341b88dc419fa83d3eb83652c
+  - enabled: 1
+    path: Assets/2024/SubNautic/Scene/Subnautica_SonarMachine.unity
+    guid: 946b957d68ee856408a1f252b7005250
+  - enabled: 1
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2a5a88c4c4fd93e44bc56c42dd6223c9, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ec7ba763e0c312a4e9062ed06450f7c5, type: 2}

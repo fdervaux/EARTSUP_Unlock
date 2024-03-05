@@ -29,8 +29,14 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-de
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4b18272ca3cf3034098821db0dc37acf
-    m_Address: DoomString_de
+  - m_GUID: b51d3b7014654874a9cfe526c57e0345
+    m_Address: Mario_de
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-de
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd6d71035e8223a4c87fac9053c822cb
+    m_Address: Subnautica_de
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-de
