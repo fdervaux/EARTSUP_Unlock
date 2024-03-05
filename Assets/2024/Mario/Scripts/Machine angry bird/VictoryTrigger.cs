@@ -24,6 +24,8 @@ namespace Unlock.Mario
 
             Destroy(GameObject.FindGameObjectWithTag("Player"));
             
+            UnlockGameManager.Instance.TriggerEvent("Event_Door");
+            
             onWin.Invoke();
         }
     }
