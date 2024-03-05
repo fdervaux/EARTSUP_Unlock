@@ -10,7 +10,7 @@ namespace Subnautica
         [SerializeField] private bool _endWithColliderTrigger = false;
         private void OnTriggerEnter(Collider other)
         {
-            if (_endWithColliderTrigger)
+            if (other.tag == "Player")
                 End();
         }
 
