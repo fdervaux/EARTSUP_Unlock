@@ -42,6 +42,14 @@ MonoBehaviour:
     m_Localized: Pandemonium
     m_Metadata:
       m_Items: []
+  - m_Id: 10145718213492736
+    m_Localized: "Der Sarkophag \xF6ffnet sich. Eine Waffe befindet sich darin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10146484085014528
+    m_Localized: "Das Xylokranium wurde vervollst\xE4ndigt!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
