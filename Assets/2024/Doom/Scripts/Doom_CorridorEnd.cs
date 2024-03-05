@@ -1,20 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Doom_CorridorEnd : MonoBehaviour
 {
-    // Événement déclenché lorsque le joueur entre en collision avec la case
-    public UnityEvent onPlayerEnter;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Vérifie si le joueur entre en collision avec la case
         if (other.CompareTag("Player"))
         {
-            // Déclenche l'événement
-            onPlayerEnter.Invoke();
+            // Déclenche la victoire
+            Close();
         }
+    }
+    
+    public void Close(){
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_Salletentacules"); });
     }
 }

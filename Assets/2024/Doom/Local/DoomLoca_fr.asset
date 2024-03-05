@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: "Le xylocr\xE2ne a \xE9t\xE9 compl\xE9t\xE9 !"
     m_Metadata:
       m_Items: []
+  - m_Id: 40948561076224
+    m_Localized: Le porte est ouverte.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

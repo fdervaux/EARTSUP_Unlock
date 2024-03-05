@@ -49,6 +49,10 @@ MonoBehaviour:
     m_Key: Doom_XylocraneCompleter
     m_Metadata:
       m_Items: []
+  - m_Id: 40948561076224
+    m_Key: Doom_Digicode
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Doom_CrankInteraction : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class Doom_CrankInteraction : MonoBehaviour
                 rotationCompleted = true;
                 // Désactiver le composant CrankInteraction pour arrêter la rotation
                 enabled = false;
+                Close();
             }
         }
     }
@@ -63,5 +65,8 @@ public class Doom_CrankInteraction : MonoBehaviour
         }
 
         return false;
+    }
+    public void Close(){
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_CoffreFort"); });
     }
 }

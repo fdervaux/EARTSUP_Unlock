@@ -40,6 +40,8 @@ public class Doom_Lab_Tower : MonoBehaviour
             if (_answerPlayer == _finalAnswer){
                 _digicodeCanvas.SetActive(false);
                 Debug.Log("Code correctement reconnu !");
+                UnlockGameManager.Instance.TriggerEvent("6");
+                Close();
             }
             else{
                 //Play SFX Wrong
@@ -48,8 +50,9 @@ public class Doom_Lab_Tower : MonoBehaviour
             _digicodeText.text = _answerPlayer;
             _digicodeCounter = 0;
         } 
-
-           
-        
+    }
+    
+    public void Close(){
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_Salletentacules"); });
     }
 }

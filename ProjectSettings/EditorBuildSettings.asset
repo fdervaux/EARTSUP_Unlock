@@ -62,6 +62,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2024/Doom/Scenes/_Unlock_Doom_XylocraneComplet.unity
     guid: b2b315d56cf2ecb459bcf3e6d675fa66
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_Menu.unity
+    guid: e07fa47abe4b56f469575c6002033812
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_CasqueSang.unity
+    guid: 7c06f1a1a1faba742975ddc15197950a
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_CoffreFort.unity
+    guid: 1fe17a28e2cc18a4e9a708a564cc31c6
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_LecteurDeDisque.unity
+    guid: 6a971185088f66046a3d2e1e2447a475
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_PorteDigicode.unity
+    guid: 2bcbc547bbb4d0442b78a70971f8701b
+  - enabled: 1
+    path: Assets/2024/Doom/Scenes/_Unlock_Doom_Salletentacules.unity
+    guid: 476d2a0a924032541a52982846249f52
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 2a5a88c4c4fd93e44bc56c42dd6223c9, type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: ec7ba763e0c312a4e9062ed06450f7c5, type: 2}

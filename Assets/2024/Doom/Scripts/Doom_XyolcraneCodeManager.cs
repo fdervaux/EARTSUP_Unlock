@@ -39,6 +39,6 @@ public class Doom_XyolcraneCodeManager : MonoBehaviour
     public void Close()
     {
         UnlockGameManager.Instance.TriggerEvent("5");
-        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_XylocraneComplet"); });
     }
 }

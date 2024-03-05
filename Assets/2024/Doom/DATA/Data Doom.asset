@@ -22,7 +22,7 @@ MonoBehaviour:
         Name: _Unlock_Doom_LecteurDeDisque
     - Key: 73
       Value:
-        Name: '_Unlock_Doom_CoffreFort '
+        Name: _Unlock_Doom_CoffreFort
     - Key: 89
       Value:
         Name: _Unlock_Doom_SarcophageBoulier
@@ -31,10 +31,10 @@ MonoBehaviour:
         Name: _Unlock_Doom_CasqueSang
     - Key: 46
       Value:
-        Name: '_Unlock_Doom_PorteDigicode '
+        Name: _Unlock_Doom_PorteDigicode
     - Key: 54
       Value:
-        Name: '_Unlock_Doom_Salletentacules '
+        Name: _Unlock_Doom_Salletentacules
     - Key: 88
       Value:
         Name: _Unlock_Doom_XylocraneComplet
@@ -145,6 +145,51 @@ MonoBehaviour:
         - 94
         - 74
         - 69
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 6
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
+          m_TableEntryReference:
+            m_KeyId: 40948561076224
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 7
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
+          m_TableEntryReference:
+            m_KeyId: 99135512576
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 8
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
+          m_TableEntryReference:
+            m_KeyId: 99135512576
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake: []
+        _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
     - Key: 98

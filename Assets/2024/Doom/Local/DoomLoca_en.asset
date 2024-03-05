@@ -50,6 +50,10 @@ MonoBehaviour:
     m_Localized: The xylocranium has been completed!
     m_Metadata:
       m_Items: []
+  - m_Id: 40948561076224
+    m_Localized: Le porte est ouverte. Prenez la carte 23.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

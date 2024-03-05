@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Doom_SarcophageManager : MonoBehaviour
 {
-    [SerializeField] [Tooltip("Le code du boulier fonctionne avec des états différents pour chaque branches du boulier," +
-                              " l'état de chaques branches de gauche à droite correspondes au valeurs suivantes : 0-1-2, " +
-                              " Donc si un code comme 0022, le boulier aura les deux premières boules tout à gauches et les deux dernières tout à droite, " +
+    [SerializeField] [Tooltip("Le code du boulier fonctionne avec des ï¿½tats diffï¿½rents pour chaque branches du boulier," +
+                              " l'ï¿½tat de chaques branches de gauche ï¿½ droite correspondes au valeurs suivantes : 0-1-2, " +
+                              " Donc si un code comme 0022, le boulier aura les deux premiï¿½res boules tout ï¿½ gauches et les deux derniï¿½res tout ï¿½ droite, " +
                               "  |||| UNIQUEMENT LES CHIFFRES 0-1-2 ||||")] private string codeToFind;
     [SerializeField] private string codeFound;
     [SerializeField] List<int> branches = new List<int>(4);
@@ -84,6 +84,7 @@ public class Doom_SarcophageManager : MonoBehaviour
     public void Close()
     {
         UnlockGameManager.Instance.TriggerEvent("4");
-        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_SarcophageBoulier" +
+            ""); });
     }
 }
