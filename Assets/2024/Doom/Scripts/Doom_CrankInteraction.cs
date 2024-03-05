@@ -45,6 +45,7 @@ public class Doom_CrankInteraction : MonoBehaviour
                 rotationCompleted = true;
                 // Désactiver le composant CrankInteraction pour arrêter la rotation
                 enabled = false;
+                UnlockGameManager.Instance.TriggerEvent("7");
                 Close();
             }
         }

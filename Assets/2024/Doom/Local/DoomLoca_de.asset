@@ -51,7 +51,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 40948561076224
-    m_Localized: Le porte est ouverte. Prenez la carte 23.
+    m_Localized: "Die T\xFCr ist offen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47765571448832
+    m_Localized: Truhe freigeschaltet!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48673323692032
+    m_Localized: Schlechter Code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49356810694656
+    m_Localized: "\rDu hast den Flur \xFCberquert!"
     m_Metadata:
       m_Items: []
   references:

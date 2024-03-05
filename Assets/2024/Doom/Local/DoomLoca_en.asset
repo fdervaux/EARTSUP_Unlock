@@ -51,7 +51,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 40948561076224
-    m_Localized: Le porte est ouverte. Prenez la carte 23.
+    m_Localized: The door is open.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47765571448832
+    m_Localized: "\rChest Unlocked !"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48673323692032
+    m_Localized: Wrong code.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49356810694656
+    m_Localized: You walked down the hall !
     m_Metadata:
       m_Items: []
   references:

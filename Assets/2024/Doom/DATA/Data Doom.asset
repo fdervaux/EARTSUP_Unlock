@@ -158,7 +158,32 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
-        _cardToTake: []
+        _cardToTake:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
@@ -168,12 +193,23 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 99135512576
+            m_KeyId: 47765571448832
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
-        _cardToTake: []
+        _cardToTake:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
@@ -183,12 +219,112 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 99135512576
+            m_KeyId: 48673323692032
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
         _cardToTake: []
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
+    - Key: 9
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
+          m_TableEntryReference:
+            m_KeyId: 49356810694656
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0

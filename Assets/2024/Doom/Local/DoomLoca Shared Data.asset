@@ -53,6 +53,18 @@ MonoBehaviour:
     m_Key: Doom_Digicode
     m_Metadata:
       m_Items: []
+  - m_Id: 47765571448832
+    m_Key: Doom_CoffreOuvert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48673323692032
+    m_Key: Doom_Coffre_code_faux
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49356810694656
+    m_Key: Doom_TentacleWin
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -51,7 +51,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 40948561076224
-    m_Localized: Le porte est ouverte. Prenez la carte 23.
+    m_Localized: "La puerta est\xE1 abierta."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47765571448832
+    m_Localized: "\xA1Cofre desbloqueado!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48673323692032
+    m_Localized: "\rC\xF3digo incorrecto."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49356810694656
+    m_Localized: "\xA1Has cruzado el pasillo!"
     m_Metadata:
       m_Items: []
   references:
