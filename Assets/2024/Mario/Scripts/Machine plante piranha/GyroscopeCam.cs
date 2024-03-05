@@ -14,7 +14,7 @@ public class GyroscopeCam : MonoBehaviour
 
     void Start()
     {
-       gyroSupported = SystemInfo.supportsGyroscope;
+        gyroSupported = SystemInfo.supportsGyroscope;
         GameObject camParent = new GameObject ("camParent");
         camParent.transform.position = transform.position;
         transform.parent = camParent.transform;
