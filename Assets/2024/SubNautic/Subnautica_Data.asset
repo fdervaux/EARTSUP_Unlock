@@ -33,8 +33,6 @@ MonoBehaviour:
     _serializedList:
     - Key: 57
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -65,8 +63,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 38
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -97,8 +93,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 11
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -129,8 +123,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 46
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -161,8 +153,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 82
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -193,8 +183,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 45
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -225,8 +213,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 24
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -257,8 +243,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 48
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -289,8 +273,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 68
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -321,8 +303,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 34
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -353,8 +333,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 92
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -385,8 +363,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 95
       Value:
-        HasMoreHint: 0
-        HasSolution: 1
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -417,8 +393,6 @@ MonoBehaviour:
         cardsToTake: []
     - Key: 15
       Value:
-        HasMoreHint: 0
-        HasSolution: 0
         hintMessage1:
           m_TableReference:
             m_TableCollectionName: GUID:1aeca88d3bc65664ba0642196d5e9888
@@ -433,70 +407,6 @@ MonoBehaviour:
             m_TableCollectionName: 
           m_TableEntryReference:
             m_KeyId: 0
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        hintMessageAnswer:
-          m_TableReference:
-            m_TableCollectionName: 
-          m_TableEntryReference:
-            m_KeyId: 0
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        cardsToTake: []
-    - Key: 95
-      Value:
-        HasMoreHint: 0
-        HasSolution: 0
-        hintMessage1:
-          m_TableReference:
-            m_TableCollectionName: GUID:b50357110ebf7b04ab70a446b8a2ce46
-          m_TableEntryReference:
-            m_KeyId: 12637950792654848
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        hintMessage2:
-          m_TableReference:
-            m_TableCollectionName: 
-          m_TableEntryReference:
-            m_KeyId: 0
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        hintMessageAnswer:
-          m_TableReference:
-            m_TableCollectionName: 
-          m_TableEntryReference:
-            m_KeyId: 0
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        cardsToTake: []
-    - Key: 38
-      Value:
-        HasMoreHint: 1
-        HasSolution: 0
-        hintMessage1:
-          m_TableReference:
-            m_TableCollectionName: GUID:b50357110ebf7b04ab70a446b8a2ce46
-          m_TableEntryReference:
-            m_KeyId: 12630751244673024
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        hintMessage2:
-          m_TableReference:
-            m_TableCollectionName: GUID:b50357110ebf7b04ab70a446b8a2ce46
-          m_TableEntryReference:
-            m_KeyId: 12630972989136896
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
