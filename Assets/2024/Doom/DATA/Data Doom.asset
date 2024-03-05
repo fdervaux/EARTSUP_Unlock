@@ -69,7 +69,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 94541389488128
+            m_KeyId: 99135512576
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -94,11 +94,27 @@ MonoBehaviour:
         _cardToDiscard: []
         _isEndEvent: 0
         _isPenaltyEvent: 0
+    - Key: 3
+      Value:
+        localizedString:
+          m_TableReference:
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
+          m_TableEntryReference:
+            m_KeyId: 12753027719168
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        _cardToTake:
+        - 23
+        _cardToDiscard: []
+        _isEndEvent: 0
+        _isPenaltyEvent: 0
     - Key: 4
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
             m_KeyId: 10145718213492736
             m_Key: 
@@ -116,7 +132,7 @@ MonoBehaviour:
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
             m_KeyId: 10146484085014528
             m_Key: 
@@ -131,29 +147,13 @@ MonoBehaviour:
         - 69
         _isEndEvent: 0
         _isPenaltyEvent: 0
-    - Key: 3
-      Value:
-        localizedString:
-          m_TableReference:
-            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
-          m_TableEntryReference:
-            m_KeyId: 99135512576
-            m_Key: 
-          m_FallbackState: 0
-          m_WaitForCompletion: 0
-          m_LocalVariables: []
-        _cardToTake:
-        - 23
-        _cardToDiscard: []
-        _isEndEvent: 0
-        _isPenaltyEvent: 0
     - Key: 98
       Value:
         localizedString:
           m_TableReference:
             m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 12753027719168
+            m_KeyId: 95223483981824
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 95223483981824
+            m_KeyId: 94541389488128
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

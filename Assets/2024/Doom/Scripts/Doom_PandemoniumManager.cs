@@ -22,6 +22,6 @@ public class Doom_PandemoniumManager : MonoBehaviour
     public void Close()
     {
         UnlockGameManager.Instance.TriggerEvent("99");
-        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_DoomMenu"); });
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_Pandemonium"); });
     }
 }

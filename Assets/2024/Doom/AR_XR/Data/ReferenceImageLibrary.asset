@@ -16,4 +16,24 @@ MonoBehaviour:
   m_GuidHigh: 3821933490844922044
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5659573412938838472
+      m_GuidHigh: 14474122886457927811
+    m_SerializedTextureGuid:
+      m_GuidLow: 15196381619185526499
+      m_GuidHigh: 2305215379379847739
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: MP3
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5442980636038366965
+      m_GuidHigh: 13294076308271786129
+    m_SerializedTextureGuid:
+      m_GuidLow: 6026982106593576306
+      m_GuidHigh: 1810073483745392219
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: MP3 Lecteur
+    m_Texture: {fileID: 0}
