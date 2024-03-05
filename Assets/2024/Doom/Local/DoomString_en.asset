@@ -42,6 +42,14 @@ MonoBehaviour:
     m_Localized: Pandemonium
     m_Metadata:
       m_Items: []
+  - m_Id: 10145718213492736
+    m_Localized: The sarcophagus opens and a weapon is inside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10146484085014528
+    m_Localized: The xylocranium has been completed!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
