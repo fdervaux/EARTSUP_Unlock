@@ -57,6 +57,8 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
+        precedingUnlockEventID: 
+        cancelingUnlockEventID: 
   _codes:
     _serializedList: []
   _unlockEvents:
@@ -65,9 +67,9 @@ MonoBehaviour:
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 99135512576
+            m_KeyId: 94541389488128
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -80,7 +82,7 @@ MonoBehaviour:
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
             m_KeyId: 11916670918656
             m_Key: 
@@ -96,9 +98,9 @@ MonoBehaviour:
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 12753027719168
+            m_KeyId: 99135512576
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -112,9 +114,9 @@ MonoBehaviour:
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 95223483981824
+            m_KeyId: 12753027719168
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -127,9 +129,9 @@ MonoBehaviour:
       Value:
         localizedString:
           m_TableReference:
-            m_TableCollectionName: GUID:65ff1db757c583343a385aabe8d25504
+            m_TableCollectionName: GUID:a16e20405e5b35a46834b03038fcb585
           m_TableEntryReference:
-            m_KeyId: 94541389488128
+            m_KeyId: 95223483981824
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0

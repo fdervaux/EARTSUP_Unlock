@@ -10,32 +10,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: DoomString_fr
+  m_Name: DoomLoca_es
   m_EditorClassIdentifier: 
   m_LocaleId:
-    m_Code: fr
-  m_SharedData: {fileID: 11400000, guid: 65ff1db757c583343a385aabe8d25504, type: 2}
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: a16e20405e5b35a46834b03038fcb585, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 99135512576
-    m_Localized: "La porte est ferm\xE9e \xE0 cl\xE9."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 11916670918656
-    m_Localized: "La porte est d\xE9truite vous pouvez passer. Prenez la carte 23."
-    m_Metadata:
-      m_Items: []
-  - m_Id: 12753027719168
-    m_Localized: Le porte est ouverte. Prenez la carte 23.
-    m_Metadata:
-      m_Items: []
   - m_Id: 94541389488128
     m_Localized: "Vous avez tu\xE9 le d\xE9mon."
     m_Metadata:
       m_Items: []
+  - m_Id: 11916670918656
+    m_Localized: "La porte est d\xE9truite vous pouvez passer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99135512576
+    m_Localized: The door is locked
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12753027719168
+    m_Localized: Le porte est ouverte.
+    m_Metadata:
+      m_Items: []
   - m_Id: 95223483981824
-    m_Localized: "Il y a un d\xE9mon, allez vite le tuer !"
+    m_Localized: There is a demon, hurry and kill him !
     m_Metadata:
       m_Items: []
   - m_Id: 449933697081344
