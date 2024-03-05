@@ -65,6 +65,6 @@ public class Doom_DoorTower : MonoBehaviour
     }
 
     public void Close(){
-        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("DoomMenu"); });
+        UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("_Unlock_Doom_PorteTour"); });
     }
 }

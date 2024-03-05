@@ -10,27 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: DoomString Shared Data
+  m_Name: DoomLoca Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: DoomString
-  m_TableCollectionNameGuidString: 65ff1db757c583343a385aabe8d25504
+  m_TableCollectionName: DoomLoca
+  m_TableCollectionNameGuidString: a16e20405e5b35a46834b03038fcb585
   m_Entries:
-  - m_Id: 99135512576
-    m_Key: DoomHandleDoor
+  - m_Id: 94541389488128
+    m_Key: DoomDefeatPandemonium
     m_Metadata:
       m_Items: []
   - m_Id: 11916670918656
     m_Key: DoomDestroyedDoor
     m_Metadata:
       m_Items: []
+  - m_Id: 99135512576
+    m_Key: DoomHandleDoor
+    m_Metadata:
+      m_Items: []
   - m_Id: 12753027719168
     m_Key: 'DoomOpenDoor
 
 '
-    m_Metadata:
-      m_Items: []
-  - m_Id: 94541389488128
-    m_Key: DoomDefeatPandemonium
     m_Metadata:
       m_Items: []
   - m_Id: 95223483981824
@@ -41,14 +41,22 @@ MonoBehaviour:
     m_Key: TU_Pandemonium
     m_Metadata:
       m_Items: []
+  - m_Id: 10145718213492736
+    m_Key: Doom_BoulierOpen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10146484085014528
+    m_Key: Doom_XylocraneCompleter
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 1866735592002813954
+    rid: 1798107353851101192
   references:
     version: 2
     RefIds:
-    - rid: 1866735592002813954
+    - rid: 1798107353851101192
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1707208946582
+        m_CustomEpoch: 1709633352500

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
-  m_Name: DoomString
+  m_Name: DoomLoca
   m_EditorClassIdentifier: 
-  m_SharedTableData: {fileID: 11400000, guid: 65ff1db757c583343a385aabe8d25504, type: 2}
+  m_SharedTableData: {fileID: 11400000, guid: a16e20405e5b35a46834b03038fcb585, type: 2}
   m_Tables:
-  - {fileID: 11400000, guid: 38bb262358a65b24b8c5b798ef77c493, type: 2}
-  - {fileID: 11400000, guid: a086f1dd4c2c1624eb813aa46feb8286, type: 2}
-  - {fileID: 11400000, guid: 4b18272ca3cf3034098821db0dc37acf, type: 2}
-  - {fileID: 11400000, guid: c8d5cac7d8c507a40aef00fe8e650eb5, type: 2}
+  - {fileID: 11400000, guid: fe7631df7c8ad0247b8fac1c69b44509, type: 2}
+  - {fileID: 11400000, guid: 50689b62e3852ab409ebd836f3812228, type: 2}
+  - {fileID: 11400000, guid: b9070ba6b0d0aa54ca060655ce331844, type: 2}
+  - {fileID: 11400000, guid: f66a64130b74c5c4e9cac3412396e604, type: 2}
   m_Extensions: []
   m_Group: String Table
   references:
