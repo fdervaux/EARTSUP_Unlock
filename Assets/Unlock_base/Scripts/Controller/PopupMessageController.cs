@@ -125,14 +125,20 @@ public class PopupMessageController : MonoBehaviour
 
     public void UpdateHintPopupMessage(Hint hint, string hintName, string message)
     {
+        bool hasMoreHint = hint.hintMessage2 != null 
+            && hint.hintMessage2.TableEntryReference.KeyId != 0;
+
+        bool hasSolution = hint.hintMessageAnswer != null
+            && hint.hintMessageAnswer.TableEntryReference.KeyId != 0;
+
         (_hintTitleString["hintNumber"] as IntVariable).Value = int.Parse(hintName);
         SetupPopupMessage(
             "<b>" + _hintTitleString.GetLocalizedString() + "</b>\n" + message,
             false,
             false,
             hint != null,
-            hint == null ? false : hint.HasMoreHint,
-            hint == null ? false : hint.HasSolution
+            hint == null ? false : hasMoreHint,
+            hint == null ? false : hasSolution
         );
 
     }

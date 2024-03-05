@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Subnautica
 {
@@ -9,13 +10,14 @@ namespace Subnautica
         [SerializeField] private bool _endWithColliderTrigger = false;
         private void OnTriggerEnter(Collider other)
         {
-            if(_endWithColliderTrigger)
+            if (other.tag == "Player")
                 End();
         }
 
         public void End()
         {
-            print("End !!!");
+            UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("Subnautica_Labyrinth"); });
+            UnlockGameManager.Instance.TriggerEvent("1_SubnauticaEndMachineLabyrinthe");
         }
     }
 }

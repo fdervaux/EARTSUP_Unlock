@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VictoryCondition : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class VictoryCondition : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("Victory");
+            UnlockGameManager.Instance.ShowMenu(() => { SceneManager.UnloadSceneAsync("SubnauticaVibrateMachine"); });
+            UnlockGameManager.Instance.TriggerEvent("1_SubnauticaEndMachineSonar");
         }
     }
 }

@@ -110,10 +110,10 @@ public class SelectGameController : MonoBehaviour
                 var gameItem = Instantiate(gameItemPrefab, promotionItem.GamesContainer);
                 LevelSelectorItem levelSelectorItem = gameItem.GetComponent<LevelSelectorItem>();
                 levelSelectorItem.SetUnlockGame(game);
+                levelSelectorItem.SetLevelSceneName(game.sceneName);
                 levelSelectorItem.OnClick.AddListener(() =>
                 {
                     Debug.Log("Game Selected: " + game.gameName);
-                    //promotionItem.Unselect();
                 });
             }
 
