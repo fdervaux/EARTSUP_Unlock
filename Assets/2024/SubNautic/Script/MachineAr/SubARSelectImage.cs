@@ -52,7 +52,6 @@ public class SubARSelectImage : MonoBehaviour
         }
     }
 
-
     void OnEnable()
     {
         UpdatePrefabsDictionary();
@@ -72,13 +71,14 @@ public class SubARSelectImage : MonoBehaviour
 
     void ImageManagerOnTrackedImagesChanged(ARTrackedImagesChangedEventArgs obj)
     {
-        // added, spawn prefab
+        // traque une nouvelle image
         foreach (ARTrackedImage image in obj.added)
         {
             if (_prefabsDictionary.TryGetValue(image.referenceImage.guid, out GameObject prefab))
             {
-                GameObject spawnedPrefab = Instantiate(prefab, image.transform.position, image.transform.rotation);
-                _spawnedPrefabs.Add(image.referenceImage.guid, new ImageTracked(spawnedPrefab));
+                // GameObject spawnedPrefab = Instantiate(prefab, image.transform.position, image.transform.rotation);
+                // _spawnedPrefabs.Add(image.referenceImage.guid, new ImageTracked(spawnedPrefab));
+                UnlockGameManager.Instance.TriggerEvent("1_SubnauticaCraftSonar");
             }
         }
 
