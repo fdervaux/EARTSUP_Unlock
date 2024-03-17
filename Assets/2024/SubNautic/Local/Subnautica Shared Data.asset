@@ -147,6 +147,26 @@ MonoBehaviour:
     m_Key: MachineCraft
     m_Metadata:
       m_Items: []
+  - m_Id: 4982851106705408
+    m_Key: Craft_Reparateur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4984133544513536
+    m_Key: Craft_Sonar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4984718213713920
+    m_Key: Craft_Explosif
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4986116967960576
+    m_Key: Craft_AntiRad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4986685782691840
+    m_Key: Craft_O2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
