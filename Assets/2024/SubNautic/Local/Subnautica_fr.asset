@@ -139,6 +139,27 @@ MonoBehaviour:
     m_Localized: "La machine de craft a fonctionn\xE9."
     m_Metadata:
       m_Items: []
+  - m_Id: 4982851106705408
+    m_Localized: "On a r\xE9ussi \xE0 fabriquer le r\xE9parateur."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4984133544513536
+    m_Localized: "Ce sonar pourrait nous \xEAtre utile pour voir dans le noir."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4984718213713920
+    m_Localized: "Avec sa m\xEAme les porte les plus solides ne tiendront pas."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4986116967960576
+    m_Localized: "Avec cette combinaison on pourra \xEAtre prot\xE9ger des radiations."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4986685782691840
+    m_Localized: "On vient de gagner beaucoup de temps grace \xE0 ces r\xE9serves
+      d'oxyg\xE8ne."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

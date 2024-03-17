@@ -4,19 +4,23 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.ARFoundation;
 
 [Serializable]
 public class Craft
 {
     public string itemName;
+    public GameObject prefab1;
+    public GameObject prefab2;
     public Image itemImage;
     public Image targetAR;
-    [Space]
     public string eventName;
 }
 
 public class SubnauticaMachineCraft : MonoBehaviour
 {
+    [SerializeField] private SubARSelectImage _subARSelectImage;
+    [Space]
     [SerializeField] private GameObject _buttonPanel;
     [SerializeField] private GameObject _selectedCraftPanel;
     [Space]
@@ -29,6 +33,12 @@ public class SubnauticaMachineCraft : MonoBehaviour
     void Start()
     {
         ResetUI();
+    }
+
+    public void OnTargetFound()
+    {
+        // _arManager.
+        //! 
     }
 
     public void OnRecipeFind()
@@ -48,6 +58,8 @@ public class SubnauticaMachineCraft : MonoBehaviour
         _selectedCraftPanel.SetActive(true);
 
         _valideCraft = StartCoroutine(DelayCraftValidation());
+
+        // _subARSelectImage.CurrentCraft = 
     }
 
     public void ResetUI()
