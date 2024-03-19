@@ -89,5 +89,6 @@ namespace Subnautica
         public void MoveBackward() { Move(Vector3.back); }
         public void MoveRight() { Move(Vector3.right); }
         public void MoveLeft() { Move(Vector3.left); }
+
     }
 }
